@@ -1,0 +1,51 @@
+.desktop-all-box{
+  background-color: #F0F0F0;
+  height: 100%;
+}
+.desktop{
+  position: relative;
+  height: 100%;
+  margin: 0 120px;
+  display: flex;
+  .desktop-menu {
+    flex: 0 1 180px;
+    min-width: 90px;
+    border-right: 1px solid #ccc;
+    ul {
+      li {
+        .size(auto, 35px);
+        margin-bottom: 10px;
+        line-height: 35px;
+        color: @grayColor;
+        font-size: 13px;
+        text-align: center;
+        a {
+          display: inline-block;
+          width: 100%;
+          vertical-align: top;
+          span {
+            color: @grayDeepColor;
+          }
+          i {
+            color: @grayColor;
+            margin-right: 10px;
+          }
+          &:hover,
+          &.active {
+            span {
+              color: #333333;
+            }
+            i {
+              color: @blueColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  .desktop-main{
+    flex: 1;
+    padding-left: 45px;
+    padding-bottom: 320px;
+  }
+}

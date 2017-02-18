@@ -1,0 +1,14 @@
+<div class="header" ui-view="headerView"></div>
+<div class="root-view" ng-class="{bg:isHasBg}">
+    <div class="main-view">
+        <div ui-view="mainView"></div>
+    </div>
+</div>
+<div class="global-tips" ng-show="globalTipsFlag">
+    <p>{{globalTipsWord}}</p>
+</div>
+<div class="global-loading" ng-class="{active:globalLoadingFlag}">
+    <i class="loading-circle" ng-class="{active:globalLoadingFlag}"></i>
+</div>
+<div class="footer" footer ng-show="footerFlag"></div>
+

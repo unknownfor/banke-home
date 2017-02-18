@@ -1,0 +1,45 @@
+.search-reader-box {
+  position: relative;
+  .header-search {
+    flex: 0 1 35px;
+    font-size: 12px;
+    color: @blueColor;
+    position: relative;
+    cursor: pointer;
+    &:after {
+      content: '';
+      position: absolute;
+      margin-top: 2px;
+      margin-left: 5px;
+      .size(8px, 8px);
+      display: inline-block;
+      border: 1px solid @grayColor;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      transform: rotate(135deg);
+      transition: all 200ms ease;
+    }
+    &.active {
+      &:after {
+        transform: rotate(-45deg);
+        margin-top: 7px;
+      }
+    }
+  }
+  .readers-modal-box{
+    border:1px solid #ccc;
+    .size(290px,320px);
+    right:-250px;
+    top: 25px;
+    z-index: 10000;
+    .readers-modal-header{
+      input{
+        flex: 1;
+        margin-right: 10px;
+      }
+      i{
+        cursor: pointer;
+      }
+    }
+  }
+}

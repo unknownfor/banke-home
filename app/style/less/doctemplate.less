@@ -1,0 +1,57 @@
+.doc-template-box{
+  .doc-template-main{
+    display: flex;
+    flex-wrap: wrap;
+    .template-item {
+      .size(110px, 130px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      text-align: center;
+      .c;
+      position: relative;
+      .icon-word{
+        font-size: 60px
+      }
+      .icon-add{
+        margin-top: 10px;
+        font-size: 45px;
+      }
+      .title{
+        font-size: 12px;
+        color: @grayColor;
+      }
+      .setting-btn{
+        position: absolute;
+        display: inline-block;
+        .size(20px,20px);
+        color: @grayColor;
+        bottom: 10px;
+        right: 10px;
+        display: none;
+        &:hover{
+          color: @blueColor;
+        }
+      }
+      .menu-box{
+        top: 153px;
+      }
+      &:hover {
+        background-color: #E1E9EF;
+        .setting-btn {
+          display: block;
+        }
+      }
+      &.add{
+        padding-top: 17px;
+        height: 123px;
+        .title{
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  #uploader-file-btn{
+    width: 80px;
+  }
+}

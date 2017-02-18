@@ -1,0 +1,32 @@
+.common-error-tips{
+  @w:245px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  >div{
+    margin-left: 30px;
+    @color:RGB(25, 26, 25);
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    .size(auto,32px);
+    min-width: 120px;
+    line-height: 32px;
+    background-color: @color;
+    .radius(2px);
+    position: relative;
+    padding: 0px 6px;
+    &::before{
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: -18px;
+      top: 4px;
+      border-top:12px solid transparent;
+      border-bottom:12px solid transparent;
+      border-right: 22px solid @color;
+    }
+  }
+}
