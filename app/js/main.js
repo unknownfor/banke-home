@@ -6,7 +6,7 @@ requirejs.config({
     baseUrl: 'js/',
     paths: {
         angular:'libs/angular.min',
-        'ui-router':'libs/angular-ui-router',
+        'ui-router':'libs/angular-ui-router.min',
         domReady: 'libs/domReady',
         fileUploader: 'libs/angular-file-upload.min',
         cookies: 'libs/angular-cookies.min',

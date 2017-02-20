@@ -2,16 +2,31 @@
 	<div class="logo">
 		<div class="logo-img"></div>
 		<div class="logo-word">
-			<div>半课</div>
+			<div class="slogen">一半学费上好课</div>
 		</div>
 	</div>
-	<div class="left-box">
-
-		<ul class="banner-items-container" ng-hide="showRegisterBtn">
-			<li ng-repeat="item in topBannerItems">
-
+	<div class="banner-box" ng-controller="bannerNavs">
+		<ul class="banner-items-container">
+			<li>
+				<a ui-sref="home" title="首页">
+					<span>首页</span>
+				</a>
+			</li>
+			<li>
+				<a ui-sref="org" title="精选机构">
+					<span>精选机构</span>
+				</a>
+			</li>
+			<li>
+				<a ui-sref="join" title="机构入驻">
+					<span>机构入驻</span>
+				</a>
+			</li>
+			<li>
+				<a ui-sref="partner" title="城市合伙人">
+					<span>城市合伙人</span>
+				</a>
 			</li>
 		</ul>
-		<a ng-show="showRegisterBtn" class="register" title="注册" ui-sref="register">注册</a>
 	</div>
 </div>
