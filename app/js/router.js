@@ -2,6 +2,7 @@ define('router',[
     'app',
     'ui-router',
     'httpinterceptor',
+    'commonService',
     'cookies',
     'filterService',
     'footer',
@@ -20,7 +21,7 @@ define('router',[
         $rootScope.$on('$stateChangeStart',function(event,toState,toParams,fromState,fromParams) {
             //$rootScope.showRegisterBtn = true; //显示注册按钮
             //$rootScope.isHasBg=false;  //不使用灰色背景
-            //$rootScope.footerFlag=true;  //不使用灰色背景
+            $rootScope.footerFlag=true;  //
             //var name=toState.name;
             //if (name == 'login' || name == 'register') {
             //    return;
