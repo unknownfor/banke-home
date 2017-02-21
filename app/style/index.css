@@ -130,7 +130,6 @@ html {
   background: url('../img/header/logo.png') 0 0 no-repeat;
 }
 .banner-wrapper {
-  background-color: #5e5e5e;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: -webkit-box;
@@ -365,4 +364,12 @@ html {
 .footer-wrapper .footer-contact .license {
   font-size: 12px;
   color: #8a8b8c;
+}
+.home-wrapper {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.home-wrapper img {
+  max-width: 100%;
 }
