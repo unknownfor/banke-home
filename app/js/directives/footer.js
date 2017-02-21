@@ -2,11 +2,24 @@
  * Created by jimmy on 16/9/11.
  */
 define(['app'],function(app){
-    app.directive('footer',function(){
+    app.directive('footer',['commonService',function(commonService){
         return {
             templateUrl: '../app/views/include/footer.html',
             restrict: 'A',
-            replace:true
+            replace:true,
+            link:function($scope,$element,$attrs){
+                var allParas = {
+                    url: window.globalObj.restUrl + 'reports',
+                    type: 'get',
+                    callback: function (result) {
+                        if (result.status = 'success') {
+                            var footerNavs = result.data.message.data.length;
+                            $scope.footerNavs = footerNavs;
+                        }
+                    }
+                };
+                commonService.getData(allParas);
+            }
         }
-    });
+    }]);
 });
