@@ -6,8 +6,34 @@
     max-width: 100%;
   }
   .content {
-
-  }
-  .top {
+    &.top {
+      position: relative;
+      color: #FFFFFF;
+      .bg {
+        z-index: -10;
+      }
+      .top-slogen {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        #slogen-one {
+          width: 100%;
+          font-size: 28px;
+        }
+      }
+      .top-icon {
+        position: absolute;
+        top: 60%;
+        left: 20%;
+        .size(200px,60px);
+        display: inline-block;
+        .icon-li {
+          .size(25%,100%);
+          .icon-img {
+            background: url("../../app/img/home/sprite.png");
+          }
+        }
+      }
+    }
   }
 }
