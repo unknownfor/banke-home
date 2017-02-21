@@ -2,7 +2,7 @@
   background-color: @mColor;
   height: auto;
   text-align: center;
-  padding: 56px 250px;
+  padding: 56px 250px 50px 250px;
   .footer {
     display: flex;
     flex: 1;
@@ -10,7 +10,7 @@
     .footer-section {
       //两边固定宽度，中间自适应宽度
       flex: 0 0 150px;
-      padding: 1.6%;
+      margin: 1.6%;
       .footer-index {
         font-size: 12px;
         display: inline-block;
@@ -27,32 +27,42 @@
       .footer-about {
         font-size: 10px;
         color: #5b6065;
-        line-height: 20px;
+        line-height: 25px;
       }
       &.about {
       }
       &.news {
-        background-color: #f2dede;
         flex: 1;
-        .txt-ellipsis-p(1);
         .footer-navs {
-          text-align: left;
-          width: 100%;
-          height: 200px;
           > li {
-            height: 20%;
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            a {
+              display: flex;
+              flex: 1;
+              overflow-x: hidden;
+            }
             .news-img {
-                padding-right: 10px;
+              flex: 0 0 24px;
+              padding-right: 10px;
                 img {
                   .size(24px,24px);
                   border-radius: 24px;
-                  border: 2px solid #bcbcbc;
+                  border: 2px solid rgba(188,188,188,0.4);
                 }
             }
             .news-title {
+              flex: 1;
               color: #717171;
-              font-size: 12px;
-              vertical-align: 8px;
+              text-align: left;
+              .txt-ellipsis-p(1);
+              //限定高度，避免新闻标题超长时候露出
+              height:25px;
+            }
+            .news-time {
+              flex: 0 0 70px;
+              color: #aaa;
             }
           }
         }
@@ -63,6 +73,44 @@
         }
 
       }
+    }
+    }
+  .footer-contact {
+    margin-top: 60px;
+    text-align: center;
+    .contact {
+      color: #373d43;
+      font-size: 18px;
+      .footer-contact-img {
+        display: inline-block;
+        .size(30px,30px);
+        background: url(../../app/img/footer/sprite.png);
+      }
+      #call-img {
+        background-position: 0 0;
+        margin-right: 14px;
+      }
+      #weibo {
+        background-position: -68px 4px;
+        margin-left: 24px;
+      }
+      #wechat {
+        background-position: -37px 5px;
+        margin-left: 20px;
+      }
+      .call-num {
+        vertical-align: 8px;
+      }
+    }
+    .address {
+      margin-top: 28px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: #373d43;
+    }
+    .license {
+      font-size: 12px;
+      color: #8a8b8c;
     }
   }
 
