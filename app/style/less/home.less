@@ -6,28 +6,28 @@
     max-width: 100%;
   }
   .content {
+    .bg {
+      z-index: -10;
+    }
     &.top {
       position: relative;
       color: #FFFFFF;
-      .bg {
-        z-index: -10;
-      }
       .top-slogen {
         position: absolute;
         top: 30%;
         left: 20%;
         #slogen-one {
-          width: 100%;
-          font-size: 28px;
+          font-weight: normal;
         }
       }
       .top-icon {
         position: absolute;
-        top: 60%;
+        top: 65%;
         left: 20%;
         .size(300px,80px);
         display: inline-block;
         .icon-li {
+          float: left;
           .size(25%,100%);
           .icon-pic {
             display: inline-block;
@@ -36,12 +36,29 @@
             &.choice {
               background-position: -36px 0px;
             }
+            &.half {
+              background-position: 0 0;
+            }
+            &.employment {
+              background-position: -75px 0;
+            }
+            &.guarantee {
+              background-position: -116px 0;
+            }
           }
           .icon-tip {
             font-size: 12px;
             color: #ffffff;
           }
         }
+      }
+      .top-img {
+        position: absolute;
+        top: 25%;
+        right: 20%;
+        .size(230px,460px);
+        background: url("../../app/img/home/sprite.png") no-repeat;
+        background-position: -26px -37px;
       }
     }
   }
