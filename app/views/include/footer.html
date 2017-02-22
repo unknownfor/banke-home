@@ -15,18 +15,11 @@
             <p class="footer-index"><span>新闻动态</span></p>
             <ul class="footer-navs">
                 <li ng-repeat="item in footerNavs">
-                    {{footerNavs}}
-                <!--&lt;!&ndash;<li>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<a ui-sref="news" title="新闻一号">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<span class="news-img"><img src="img/footer/head.jpg"></span>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<span class="news-title">嘿设汇创始人高辉成为洪山区首批“城市合伙人”</span>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<span class="news-time">2016-12-11</span>&ndash;&gt;-->
-                    <!--&lt;!&ndash;</a>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<a ui-sref="news" title="新闻一号">&ndash;&gt;-->
-                        <!--&lt;!&ndash;<span class="news-img"><img src="img/footer/head.jpg"></span>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<span class="news-title">嘿设汇创始人高辉成为洪山区首批“城市合伙人”嘿设汇创始人高辉成为洪山区首批“城市合伙人”嘿设汇创始人高辉成为洪山区首批“城市合伙人”嘿设汇创始人高辉成为洪山区首批“城市合伙人”</span>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<span class="news-time">2016-12-11</span>&ndash;&gt;-->
-                    <!--&lt;!&ndash;</a>&ndash;&gt;-->
+                    <a ui-sref="news" title="{{item.title}}">
+                        <span class="news-img"><img src="{{item.url}}"></span>
+                        <span class="news-title">{{item.title}}</span>
+                        <span class="news-time">{{item.created_at | mydate}}</span>
+                    </a>
                 </li>
             </ul>
         </div>
