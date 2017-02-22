@@ -1,6 +1,12 @@
 img {
   border: 0;
 }
+body,
+div,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
 .c {
   cursor: pointer;
 }
@@ -231,7 +237,7 @@ html {
   margin-right: 0px;
 }
 .footer-wrapper {
-  background-color: #fae63b;
+  background-color: #FFEB3E;
   height: auto;
   text-align: center;
   padding: 56px 250px 50px 250px;
@@ -582,10 +588,10 @@ html {
   color: #383837;
 }
 .home-wrapper .content.fifth {
+  font-size: 0;
   text-align: center;
 }
 .home-wrapper .content.fifth .fifth-pic {
   margin-top: 100px;
   margin-bottom: 100px;
-  display: inline-block;
 }

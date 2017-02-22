@@ -12,10 +12,7 @@ define(['app'],function(app){
                     url: window.globalObj.restUrl + 'reports',
                     type: 'get',
                     callback: function (result) {
-                        if (result.status = 'success') {
-                            var footerNavs = result.data.message.data.length;
-                            $scope.footerNavs = footerNavs;
-                        }
+                        $scope.footerNavs = result.data.message.data;
                     }
                 };
                 commonService.getData(allParas);
