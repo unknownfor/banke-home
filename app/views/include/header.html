@@ -6,27 +6,31 @@
 		</div>
 	</div>
 	<div class="banner-box">
-		<ul class="banner-items-container">
-			<li>
-				<a ui-sref="home" title="首页">
-					<span>首页</span>
+		<ul class="banner-items-container"ng-init="menus=[{url:'home',title:'首页'},{url:'org',title:'精选机构'},{url:'join',title:'机构入驻'},{url:'partner',title:'城市合伙人'}]">
+			<li
+				ng-repeat="item in menus" ng-class="{selected:headerMenuSelectedIndex==$index}">
+				<a ui-sref="{{item.url}}" title="{{item.title}}">
+					<span>{{item.title}}</span>
 				</a>
 			</li>
-			<li>
-				<a ui-sref="org" title="精选机构">
-					<span>精选机构</span>
-				</a>
-			</li>
-			<li>
-				<a ui-sref="join" title="机构入驻">
-					<span>机构入驻</span>
-				</a>
-			</li>
-			<li>
-				<a ui-sref="partner" title="城市合伙人">
-					<span>城市合伙人</span>
-				</a>
-			</li>
+			<!--<li>-->
+
+			<!--</li>-->
+			<!--<li>-->
+				<!--<a ui-sref="org" title="精选机构">-->
+					<!--<span>精选机构</span>-->
+				<!--</a>-->
+			<!--</li>-->
+			<!--<li>-->
+				<!--<a ui-sref="join" title="机构入驻">-->
+					<!--<span>机构入驻</span>-->
+				<!--</a>-->
+			<!--</li>-->
+			<!--<li>-->
+				<!--<a ui-sref="partner" title="城市合伙人">-->
+					<!--<span>城市合伙人</span>-->
+				<!--</a>-->
+			<!--</li>-->
 		</ul>
 	</div>
 </div>
