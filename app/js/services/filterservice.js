@@ -14,7 +14,7 @@ define(['app'],function(app){
     //将unix时间戳转换成普通时间
     app.filter('mydate',function(){
         return function(item,formatStr) {
-            if(item && typeof item!="string") {
+            if(item) {
                 if(!formatStr){
                     formatStr='yyyy-MM-dd';
                 }
