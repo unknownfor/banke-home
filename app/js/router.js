@@ -138,10 +138,10 @@ define('router',[
                     '':{
                         templateUrl:'views/index.html'
                     },
-                    'headerView@join':{
+                    'headerView@partner':{
                         templateUrl:'views/include/header.html'
                     },
-                    'mainView@join':{
+                    'mainView@partner':{
                         templateUrl:'views/partner.html'
                     },
                 }
