@@ -152,6 +152,20 @@ define('router',[
                         templateUrl:'views/news.html'
                     },
                 }
+            })
+            .state('partner',{
+                url:'/partner',
+                views:{
+                    '':{
+                        templateUrl:'views/index.html'
+                    },
+                    'headerView@join':{
+                        templateUrl:'views/include/header.html'
+                    },
+                    'mainView@join':{
+                        templateUrl:'views/partner.html'
+                    },
+                }
             });
     });
 

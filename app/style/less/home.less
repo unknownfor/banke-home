@@ -25,12 +25,21 @@
         position: absolute;
         top: 60%;
         left: 20%;
-        .size(200px,60px);
+        .size(300px,80px);
         display: inline-block;
         .icon-li {
           .size(25%,100%);
-          .icon-img {
+          .icon-pic {
+            display: inline-block;
             background: url("../../app/img/home/sprite.png");
+            .size (40px,40px);
+            &.choice {
+              background-position: -36px 0px;
+            }
+          }
+          .icon-tip {
+            font-size: 12px;
+            color: #ffffff;
           }
         }
       }
