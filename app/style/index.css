@@ -66,36 +66,20 @@ html {
   height: 100%;
 }
 .main-body-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
   padding: 0;
   margin: 0;
 }
 .main-body-box .root-view {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 .main-body-box .root-view.bg {
   background-color: #F0F0F0;
 }
 .main-body-box .root-view .main-view {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   width: 100%;
 }
@@ -129,17 +113,10 @@ html {
   background: url('../img/header/logo.png') 0 0 no-repeat;
 }
 .banner-wrapper {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   height: 110px;
   width: 100%;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .banner-wrapper .logo {
@@ -176,30 +153,14 @@ html {
   display: inline-block;
 }
 .banner-wrapper .banner-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-right: 25px;
   color: #FFFFFF;
 }
 .banner-wrapper .banner-box .banner-items-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   height: 110px;
   padding-right: 120px;
@@ -207,15 +168,18 @@ html {
 .banner-wrapper .banner-box .banner-items-container li {
   margin-right: 40px;
   font-size: 12px;
-}
-.banner-wrapper .banner-box .banner-items-container li:hover {
-  color: #373d43;
-  text-align: center;
-  border-radius: 9px;
-  line-height: 20px;
-  background-color: #ffeb3b;
+  line-height: 22px;
   width: auto;
   height: 22px;
+}
+.banner-wrapper .banner-box .banner-items-container li:hover,
+.banner-wrapper .banner-box .banner-items-container li.selected {
+  border-radius: 11px;
+  background-color: #ffeb3b;
+}
+.banner-wrapper .banner-box .banner-items-container li:hover a > span,
+.banner-wrapper .banner-box .banner-items-container li.selected a > span {
+  color: #373d43;
 }
 .banner-wrapper .banner-box .banner-items-container li a > span {
   cursor: pointer;
@@ -232,20 +196,11 @@ html {
   padding: 56px 250px 50px 250px;
 }
 .footer-wrapper .footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   overflow: hidden;
 }
 .footer-wrapper .footer .footer-section {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 150px;
-  -ms-flex: 0 0 150px;
   flex: 0 0 150px;
   margin: 1.6%;
 }
@@ -268,9 +223,6 @@ html {
   line-height: 25px;
 }
 .footer-wrapper .footer .footer-section.news {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
 }
 .footer-wrapper .footer .footer-section.news .footer-navs > li {
@@ -279,20 +231,11 @@ html {
   line-height: 25px;
 }
 .footer-wrapper .footer .footer-section.news .footer-navs > li a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   overflow-x: hidden;
 }
 .footer-wrapper .footer .footer-section.news .footer-navs > li .news-img {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 24px;
-  -ms-flex: 0 0 24px;
   flex: 0 0 24px;
   padding-right: 10px;
 }
@@ -303,9 +246,6 @@ html {
   border: 2px solid rgba(188, 188, 188, 0.4);
 }
 .footer-wrapper .footer .footer-section.news .footer-navs > li .news-title {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
   flex: 1;
   color: #717171;
   text-align: left;
@@ -317,9 +257,6 @@ html {
   height: 25px;
 }
 .footer-wrapper .footer .footer-section.news .footer-navs > li .news-time {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 70px;
-  -ms-flex: 0 0 70px;
   flex: 0 0 70px;
   color: #aaa;
 }

@@ -54,13 +54,18 @@
 		li {
 		  margin-right: 40px;
 		  font-size: 12px;
-		  &:hover {
-			color: #373d43;
-			text-align: center;
-			border-radius: 9px;
-			line-height: 20px;
+		  line-height: 22px;
+		  .size(auto,22px);
+		  &:hover,
+		  &.selected{
+			a {
+			  > span {
+				color: #373d43;
+			  }
+			}
+			border-radius: 11px;
 			background-color: @mColor;
-			.size(auto,22px);
+
 		  }
 		  a {
 			> span {
