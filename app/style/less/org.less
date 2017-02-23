@@ -1,0 +1,63 @@
+.org-head {
+  text-align: center;
+  position: relative;
+  #org-head-bg {
+    max-height: 426px;
+    width: 100%;
+  }
+  .org-head-title {
+    display: inline-block;
+    position: absolute;
+    top: 190px;
+    left: 35%;
+    .size(434px,100px);
+    border: 3px solid #ffeb3b;
+    font-size: 48px;
+    line-height: 100px;
+    #title-left {
+      color: @mColor;
+    }
+    #title-right {
+      color: #FFFFFF;
+    }
+  }
+}
+  .org-ul {
+    margin: 116px auto;
+    display: table;
+    width: 800px;
+    height: auto;
+    .org-li {
+      width:  160px;
+      display: table-cell;
+      text-align: center;
+      > a {
+        .org-logo {
+          @h: 76px;
+          display: inline-block;
+          > img {
+            .size(@h,@h);
+            border-radius: @h;
+            box-shadow: 0 0 4px 4px rgba(221, 221, 221, 0.8);
+          }
+        }
+        .org-name:before {
+          content: "";
+          margin-right: 10px;
+          text-align: center;
+          background: @mColor;
+          border-radius: 8px;
+          height: 8px;
+          width: 8px;
+          vertical-align: 1px;
+          display: inline-block;
+        }
+        .org-name {
+          margin-top: 28px;
+          color: #9b9b9b;
+          font-size:18px;
+        }
+      }
+
+    }
+  }

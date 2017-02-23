@@ -7,6 +7,9 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+.bg {
+  z-index: -10;
+}
 .c {
   cursor: pointer;
 }
@@ -389,9 +392,6 @@ html {
 .home-wrapper .content {
   position: relative;
 }
-.home-wrapper .content .bg {
-  z-index: -10;
-}
 .home-wrapper .content.top {
   color: #FFFFFF;
 }
@@ -463,7 +463,7 @@ html {
   -webkit-flex: 0 0 50%;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
-  background-color: #fae63b;
+  background-color: #ffeb3b;
 }
 .home-wrapper .content.third .third-left .third-title-img {
   position: absolute;
@@ -594,4 +594,66 @@ html {
 .home-wrapper .content.fifth .fifth-pic {
   margin-top: 100px;
   margin-bottom: 100px;
+}
+.org-head {
+  text-align: center;
+  position: relative;
+}
+.org-head #org-head-bg {
+  max-height: 426px;
+  width: 100%;
+}
+.org-head .org-head-title {
+  display: inline-block;
+  position: absolute;
+  top: 190px;
+  left: 35%;
+  width: 434px;
+  height: 100px;
+  border: 3px solid #ffeb3b;
+  font-size: 48px;
+  line-height: 100px;
+}
+.org-head .org-head-title #title-left {
+  color: #ffeb3b;
+}
+.org-head .org-head-title #title-right {
+  color: #FFFFFF;
+}
+.org-ul {
+  margin: 116px auto;
+  display: table;
+  width: 800px;
+  height: auto;
+}
+.org-ul .org-li {
+  width: 160px;
+  display: table-cell;
+  text-align: center;
+}
+.org-ul .org-li > a .org-logo {
+  display: inline-block;
+}
+.org-ul .org-li > a .org-logo > img {
+  width: 76px;
+  height: 76px;
+  border-radius: 76px;
+  -webkit-box-shadow: 0 0 4px 4px rgba(221, 221, 221, 0.8);
+  box-shadow: 0 0 4px 4px rgba(221, 221, 221, 0.8);
+}
+.org-ul .org-li > a .org-name:before {
+  content: "";
+  margin-right: 10px;
+  text-align: center;
+  background: #ffeb3b;
+  border-radius: 8px;
+  height: 8px;
+  width: 8px;
+  vertical-align: 1px;
+  display: inline-block;
+}
+.org-ul .org-li > a .org-name {
+  margin-top: 28px;
+  color: #9b9b9b;
+  font-size: 18px;
 }
