@@ -4,7 +4,7 @@ define('router',[
     'httpinterceptor',
     'commonService',
     'cookies',
-    'filterService',
+
     'footer',
 
     'homeCtrl',

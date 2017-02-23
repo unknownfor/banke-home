@@ -8,6 +8,7 @@ define(['app'],function(app){
             restrict: 'A',
             replace:true,
             link:function($scope,$element,$attrs){
+                $scope.year=new Date();
                 var allParas = {
                     url: window.globalObj.restUrl + 'reports',
                     type: 'get',

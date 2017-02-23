@@ -5,6 +5,6 @@ define([
     'app'
 ], function(app) {
     app.controller('orgCtrl', ['$scope',function($scope) {
-            $scope.tips='org';
+            $scope.tips='2017-02-21 18:32:13';
     }]);
 });

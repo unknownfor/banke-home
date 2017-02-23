@@ -3,7 +3,8 @@ define([
 	'angular',
 	'app',
 	'ui-router',
-	'router'
+	'router',
+	'filterService'
 ],function(require,ng) {
 	'use strict';
 	require(['domReady!'],function(document){
