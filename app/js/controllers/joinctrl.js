@@ -5,6 +5,6 @@ define([
     'app'
 ], function(app) {
     app.controller('joinCtrl', ['$scope',function($scope) {
-            $scope.tips='join';
+            // $scope.tips='join';
     }]);
 });
