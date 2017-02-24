@@ -240,10 +240,9 @@ html {
   margin-right: 0px;
 }
 .footer-wrapper {
-  background-color: #FFEB3E;
   height: auto;
+  background-color: #FFEB3E;
   text-align: center;
-  padding: 56px 250px 50px 250px;
 }
 .footer-wrapper .footer {
   display: -webkit-box;
@@ -255,6 +254,8 @@ html {
   -ms-flex: 1;
   flex: 1;
   overflow: hidden;
+  width: 980px;
+  margin: 0 auto;
 }
 .footer-wrapper .footer .footer-section {
   -webkit-box-flex: 0;
@@ -745,7 +746,8 @@ html {
   vertical-align: 5px;
 }
 .join-content.join-second {
-  margin: 0px 200px;
+  width: 980px;
+  margin: 0px auto;
 }
 .join-content.join-second #second-pic {
   background-position: -306px -69px;
@@ -807,9 +809,6 @@ html {
 }
 .join-fourth {
   position: relative;
-}
-.join-fourth #join-fourth-bg {
-  max-height: 600px;
 }
 .join-fourth .fourth-info {
   position: absolute;
