@@ -10,6 +10,9 @@ ul {
 .bg {
   z-index: -10;
 }
+.clear {
+  clear: both;
+}
 .c {
   cursor: pointer;
 }
@@ -254,7 +257,7 @@ html {
   -ms-flex: 1;
   flex: 1;
   overflow: hidden;
-  width: 980px;
+  width: 900px;
   margin: 0 auto;
 }
 .footer-wrapper .footer .footer-section {
@@ -281,6 +284,7 @@ html {
   font-size: 10px;
   color: #5b6065;
   line-height: 25px;
+  text-align: left;
 }
 .footer-wrapper .footer .footer-section.news {
   -webkit-box-flex: 1;
@@ -623,15 +627,16 @@ html {
   color: #FFFFFF;
 }
 .org-ul {
-  margin: 116px auto;
-  display: table;
+  margin: 0 auto;
+  padding-bottom: 100px;
   width: 800px;
   height: auto;
 }
 .org-ul .org-li {
   width: 160px;
-  display: table-cell;
+  float: left;
   text-align: center;
+  margin-top: 90px;
 }
 .org-ul .org-li > a .org-logo {
   display: inline-block;
@@ -745,55 +750,6 @@ html {
   margin-left: 8px;
   vertical-align: 5px;
 }
-.join-content.join-second {
-  width: 980px;
-  margin: 0px auto;
-}
-.join-content.join-second #second-pic {
-  background-position: -306px -69px;
-}
-.join-content.join-second .join-second-box {
-  display: table-cell;
-  width: 225px;
-}
-.join-content.join-second .join-second-box .box-pic {
-  display: inline-block;
-  background: url('../../app/img/join/sprite.png') no-repeat;
-}
-.join-content.join-second .join-second-box .box-pic.service {
-  width: 60px;
-  height: 60px;
-  background-position: -151px -3px;
-}
-.join-content.join-second .join-second-box .box-pic.management {
-  width: 65px;
-  height: 65px;
-  background-position: -292px -3px;
-}
-.join-content.join-second .join-second-box .box-pic.brand {
-  width: 64px;
-  height: 62px;
-  background-position: -73px 1px;
-}
-.join-content.join-second .join-second-box .box-pic.spread {
-  width: 64px;
-  height: 60px;
-  background-position: -225px -3px;
-}
-.join-content.join-second .join-second-box .box-pic.admissions {
-  width: 64px;
-  height: 64px;
-  background-position: -3px -4px;
-}
-.join-content.join-second .join-second-box .box-title {
-  font-size: 16px;
-  color: #383d43;
-  margin-bottom: 14px;
-}
-.join-content.join-second .join-second-box .box-detail {
-  font-size: 12px;
-  color: #9b9b9b;
-}
 .join-third {
   height: 150px;
   background-color: #ffeb3b;
@@ -843,4 +799,166 @@ html {
   line-height: 22px;
   font-size: 14px;
   color: #383d43;
+}
+.join-second {
+  width: 980px;
+  margin: 0px auto;
+}
+.join-second #second-pic {
+  background-position: -306px -69px;
+}
+.join-second .join-second-box {
+  display: table-cell;
+  width: 225px;
+}
+.join-second .join-second-box .box-pic {
+  display: inline-block;
+  background: url('../../app/img/join/sprite.png') no-repeat;
+}
+.join-second .join-second-box .box-pic.service {
+  width: 60px;
+  height: 60px;
+  background-position: -151px -3px;
+}
+.join-second .join-second-box .box-pic.management {
+  width: 65px;
+  height: 65px;
+  background-position: -292px -3px;
+}
+.join-second .join-second-box .box-pic.brand {
+  width: 64px;
+  height: 62px;
+  background-position: -73px 1px;
+}
+.join-second .join-second-box .box-pic.spread {
+  width: 64px;
+  height: 60px;
+  background-position: -225px -3px;
+}
+.join-second .join-second-box .box-pic.admissions {
+  width: 64px;
+  height: 64px;
+  background-position: -3px -4px;
+}
+.join-second .join-second-box .box-title {
+  font-size: 16px;
+  color: #383d43;
+  margin-bottom: 14px;
+}
+.join-second .join-second-box .box-detail {
+  font-size: 12px;
+  color: #9b9b9b;
+}
+.join-fifth #fifth-pic {
+  background-position: -306px -69px;
+}
+.join-fifth .fifth-p {
+  text-align: center;
+  font-size: 18px;
+  color: #a9a9a9;
+}
+.join-fifth .fifth-ul {
+  width: 1047px;
+  margin: 0 auto;
+}
+.join-fifth .fifth-ul .fifth-li-org {
+  float: left;
+  margin-left: 30px;
+  margin-top: 55px;
+  max-height: 450px;
+  border-radius: 2px;
+  border: 1px solid rgba(188, 188, 188, 0.5);
+}
+.join-fifth .fifth-ul .fifth-li-org .org-logo {
+  text-align: center;
+  font-size: 0;
+  height: 88px;
+  width: 186px;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-logo > img {
+  display: inline-block;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-box {
+  text-align: left;
+  background-color: #ffeb3b;
+  width: 186px;
+  padding: 30px 22px 12px 22px;
+  color: #383d43;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-box .org-name {
+  font-size: 14px;
+  padding-bottom: 12px;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-box .org-info {
+  line-height: 22px;
+  font-size: 10px;
+  padding-bottom: 12px;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-box .org-bottom {
+  font-size: 10px;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-box .org-bottom .visit {
+  margin-left: 122px;
+  font-weight: bold;
+  color: #383d43;
+}
+.join-fifth .fifth-btn {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 106px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 11px;
+  border: 1px solid #a9a9a9;
+  text-align: center;
+  font-size: 16px;
+  color: #a9a9a9;
+}
+.partner-first {
+  position: relative;
+}
+.partner-first .partner-txt {
+  position: absolute;
+  top: 60%;
+  right: 25%;
+  color: #383d43;
+  text-align: center;
+}
+.partner-first .partner-txt .first-p {
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+.partner-first .partner-txt .first-btn {
+  display: inline-block;
+  width: 144px;
+  height: 48px;
+  font-size: 23px;
+  line-height: 48px;
+  background-color: #ffeb3b;
+  border-radius: 9px;
+  border: 2px solid #FBC02D;
+  -webkit-box-shadow: 0px 4px 10px #fbc02d;
+  box-shadow: 0px 4px 10px #fbc02d;
+}
+.partner-second {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #383d43;
+}
+.partner-second #partner-second-pic {
+  width: 30px;
+  height: 30px;
+  background: url('../../app/img/partner/sprite.png');
+  background-position: -137px -201px;
+  display: inline-block;
+}
+.partner-second #second-p-one {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.partner-second #second-p-two {
+  font-size: 14px;
+  letter-spacing: 1px;
 }
