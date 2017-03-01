@@ -686,6 +686,7 @@ html {
   margin-bottom: 10px;
 }
 .join-head .join-info .join-head-btn {
+  cursor: pointer;
   margin-top: 16px;
   text-align: center;
   line-height: 45px;
@@ -716,6 +717,7 @@ html {
   vertical-align: 5px;
 }
 .join-third {
+  margin-top: 48px;
   height: 150px;
   background-color: #ffeb3b;
   text-align: center;
@@ -838,9 +840,10 @@ html {
   text-align: center;
   font-size: 0;
   height: 88px;
-  width: 186px;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-logo > img {
+  height: 88px;
+  width: 186px;
   display: inline-block;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-box {
@@ -863,11 +866,13 @@ html {
   font-size: 10px;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-box .org-bottom .visit {
+  cursor: pointer;
   margin-left: 122px;
   font-weight: bold;
   color: #383d43;
 }
 .join-fifth .fifth-btn {
+  cursor: pointer;
   display: inline-block;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -879,6 +884,33 @@ html {
   text-align: center;
   font-size: 16px;
   color: #a9a9a9;
+}
+.registered {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  min-width: 1024px;
+  height: 100%;
+  background-color: rgba(234, 237, 236, 0.8);
+}
+.registered .registered-box {
+  position: absolute;
+  top: 110px;
+  left: 30%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 720px;
+  height: 620px;
+  background-color: #ffeb3b;
+  border-radius: 25px;
+}
+.registered .registered-box #close {
+  text-align: right;
+  width: 26px;
+  height: 35px;
+  background-color: #ffc045;
 }
 .info-box {
   text-align: center;
@@ -896,6 +928,7 @@ html {
   font-size: 14px;
 }
 .btn {
+  cursor: pointer;
   display: inline-block;
   width: 144px;
   height: 48px;
@@ -1259,9 +1292,10 @@ html {
   margin-left: 10px;
 }
 .org-content.org-album {
-  margin-top: 170px;
+  margin-top: 120px;
 }
 .org-content.org-album > ul .album-li {
+  cursor: pointer;
   float: left;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -1274,6 +1308,7 @@ html {
   margin: 0 250px;
 }
 .org-content.class-list .class-box {
+  cursor: pointer;
   padding: 35px 0px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1371,7 +1406,12 @@ html {
   position: relative;
   top: -6px;
 }
+.middle-banner > img {
+  display: inline-block;
+  margin-top: 46px;
+}
 .org-btn {
+  cursor: pointer;
   margin: 20px auto 50px auto;
   width: 106px;
   height: 34px;
@@ -1393,6 +1433,11 @@ html {
   font-size: 30px;
   color: #383d43;
   margin-bottom: 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 .new .new-info {
   color: #a9a9a9;

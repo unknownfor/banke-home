@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1486047078004'); /* IE9*/
-  src: url('iconfont.eot?t=1486047078004#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1486047078004') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1486047078004') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1486047078004#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1488355527632'); /* IE9*/
+  src: url('iconfont.eot?t=1488355527632#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1488355527632') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1488355527632') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1488355527632#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -15,59 +15,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-pc:before { content: "\e674"; }
+.icon-contact:before { content: "\e605"; }
 
-.icon-search:before { content: "\e60f"; }
+.icon-city1:before { content: "\e600"; }
 
-.icon-add:before { content: "\e601"; }
+.icon-yidiandiantubiao03:before { content: "\e606"; }
 
-.icon-user1:before { content: "\e6aa"; }
+.icon-people:before { content: "\e617"; }
 
-.icon-word:before { content: "\e64c"; }
+.icon-write:before { content: "\e61f"; }
 
-.icon-tools:before { content: "\e607"; }
-
-.icon-img:before { content: "\e609"; }
-
-.icon-lock:before { content: "\e77b"; }
-
-.icon-ok:before { content: "\e600"; }
-
-.icon-star:before { content: "\e66a"; }
-
-.icon-arrow-copy:before { content: "\e660"; }
-
-.icon-tag:before { content: "\e655"; }
-
-.icon-conowstamp:before { content: "\e7ac"; }
-
-.icon-email:before { content: "\e606"; }
-
-.icon-lock1:before { content: "\e628"; }
-
-.icon-back:before { content: "\e6d8"; }
-
-.icon-set:before { content: "\e627"; }
-
-.icon-tag3:before { content: "\e6ea"; }
-
-.icon-document:before { content: "\e608"; }
-
-.icon-calendar:before { content: "\e61d"; }
-
-.icon-user:before { content: "\e62f"; }
-
-.icon-check_code:before { content: "\e65a"; }
-
-.icon-card:before { content: "\e691"; }
-
-.icon-card1:before { content: "\e879"; }
-
-.icon-shouji_cellphone:before { content: "\e6b7"; }
-
-.icon-pic_smile:before { content: "\e646"; }
-
-.icon-icon_key:before { content: "\e626"; }
-
-.icon-icon-life-electric:before { content: "\e690"; }
+.icon-house:before { content: "\e626"; }
 
