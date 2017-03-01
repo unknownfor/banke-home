@@ -1,3 +1,29 @@
+input {
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: auto;
+  padding: 1px;
+  -webkit-border-image: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em 0em 0em 0em;
+  font: 13.3333px Arial;
+  outline: none;
+}
 img {
   border: 0;
 }
@@ -907,10 +933,56 @@ html {
   border-radius: 25px;
 }
 .registered .registered-box #close {
-  text-align: right;
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  text-align: center;
   width: 26px;
   height: 35px;
   background-color: #ffc045;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #ffeb3b;
+  font-size: 16px;
+  line-height: 35px;
+}
+.registered .registered-box .registered-form {
+  margin: 56px 70px 10px 70px;
+}
+.registered .registered-box .registered-form .box-slogen {
+  display: inline-block;
+  margin-bottom: 28px;
+  width: 190px;
+  height: 40px;
+  background: url('../../app/img/join/sprite.png');
+  background-position: -86px -90px;
+}
+.registered .registered-box .registered-form .box {
+  margin-right: 36px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px #ffc045;
+  box-shadow: 0 0 10px #ffc045;
+  margin-bottom: 12px;
+}
+.registered .registered-box .registered-form .box > i {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #969696;
+  margin-top: 9px;
+  margin-left: 12px;
+}
+.registered .registered-box .registered-form .box > input {
+  height: 38px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid #eee;
+  padding-left: 40px;
+}
+.registered .registered-box .registered-form .box > input.city {
+  padding-right: 40px;
 }
 .info-box {
   text-align: center;

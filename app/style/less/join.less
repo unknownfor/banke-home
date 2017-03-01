@@ -265,9 +265,53 @@
     background-color: @mColor;
     border-radius: 25px;
     #close {
-      text-align: right;
+      position: absolute;
+      top: 0px;
+      right: 25px;
+      text-align: center;
       .size(26px,35px);
       background-color: @bColor;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      color: @mColor;
+      font-size: 16px;
+      line-height: 35px;
+    }
+    .registered-form {
+      margin: 56px 70px 10px 70px;
+      .box-slogen {
+        display: inline-block;
+        margin-bottom: 28px;
+        .size(190px,40px);
+        background: @jAddress;
+        background-position: -86px -90px;
+      }
+      .box {
+        margin-right: 36px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px @bColor;
+        margin-bottom: 12px;
+        > i {
+          display: block;
+          position: absolute;
+          font-size: 20px;
+          color: #969696;
+          margin-top: 9px;
+          margin-left: 12px;
+        }
+        > input {
+          height: 38px;
+          font-size: 14px;
+          background-color: #FFFFFF;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border: 1px solid #eee;
+          padding-left: 40px;
+          &.city {
+            padding-right:40px;
+          }
+        }
+      }
     }
   }
 }
