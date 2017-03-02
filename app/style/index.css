@@ -955,7 +955,7 @@ html {
   height: 48px;
   font-size: 23px;
   line-height: 48px;
-  border-radius: 9px;
+  border-radius: 50px;
   border: 2px solid #FBC02D;
   box-shadow: 0px 4px 10px #fbc02d;
 }
@@ -1198,7 +1198,6 @@ html {
 }
 .partner-eighth {
   padding-top: 100px;
-  background-color: #ffeb3b;
 }
 .partner-eighth .eight-tips-box {
   margin-top: 60px;
@@ -1209,12 +1208,12 @@ html {
   margin-right: 110px;
   display: inline-block;
   line-height: 110px;
-  background-color: #FBC02D;
+  background-color: #FFEB3E;
   width: 110px;
   height: 110px;
   border-radius: 110px;
   text-align: center;
-  box-shadow: 0px 7px 7px rgba(251, 192, 45, 0.6);
+  box-shadow: 0px 4px 10px rgba(251, 192, 45, 0.6);
 }
 .partner-eighth .eight-tips-box .eight-tips-bg:last-child {
   margin-right: 0px;
@@ -1224,23 +1223,23 @@ html {
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon .box1 {
   width: 0;
-  border-left: 34px solid transparent;
-  border-right: 34px solid transparent;
-  border-bottom: 20px solid #ffffff;
+  border-left: 27.712px solid transparent;
+  border-right: 27.712px solid transparent;
+  border-bottom: 16px solid #ffffff;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon .box2 {
-  width: 68px;
-  height: 40px;
+  width: 55.424px;
+  height: 32px;
   background-color: #fff;
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 32px;
+  font-size: 16px;
   color: #000000;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon .box3 {
   width: 0;
-  border-top: 20px solid #ffffff;
-  border-left: 34px solid transparent;
-  border-right: 34px solid transparent;
+  border-top: 16px solid #ffffff;
+  border-left: 27.712px solid transparent;
+  border-right: 27.712px solid transparent;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .more-info {
   text-align: center;
@@ -1253,7 +1252,7 @@ html {
   border-bottom: 1px solid #fff;
 }
 .partner-eighth .eighth-bottom #eight {
-  background-color: #fff;
+  background-color: #FFEB3E;
   margin-bottom: 74px;
 }
 .head {
@@ -1265,11 +1264,18 @@ html {
   width: 196px;
   height: 196px;
 }
-.org-detail-box {
+.org-box {
+  position: relative;
+  margin: 0 auto;
+}
+.org-box .org-detail-box {
   position: absolute;
-  top: 370px;
-  left: 250px;
-  right: 250px;
+  top: 10px;
+  width: 100%;
+}
+.org-box .org-detail-box .org-box-box {
+  width: 1020px;
+  margin: 0 auto;
 }
 .org-content.org-detail {
   margin-top: 50px;
@@ -1308,14 +1314,18 @@ html {
 }
 .org-content.org-album {
   margin-top: 120px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-.org-content.org-album > ul .album-li {
+.org-content.org-album .album-li {
+  flex: 0 0 334px;
   cursor: pointer;
-  float: left;
   margin-right: 6px;
   margin-bottom: 6px;
 }
-.org-content.org-album > ul .album-li > img {
+.org-content.org-album .album-li > img {
   width: 333px;
   height: 200px;
 }
