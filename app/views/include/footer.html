@@ -18,12 +18,12 @@
                     <a ng-if="item.type==0" target="_blank" href="{{item.url}}" title="{{item.title}}">
                         <span class="news-img"><img src="{{item.logo_url}}"></span>
                         <span class="news-title">{{item.title}}</span>
-                        <span class="news-time">{{item.created_at | mydate}}</span>
+                        <span class="news-time">{{item.updated_at | mydate}}</span>
                     </a>
                     <a ng-if="item.type==1" ui-sref="news" title="{{item.title}}">
                         <span class="news-img"><img src="{{item.logo_url}}"></span>
                         <span class="news-title">{{item.title}}</span>
-                        <span class="news-time">{{item.created_at | mydate}}</span>
+                        <span class="news-time">{{item.updated_at | mydate}}</span>
                     </a>
                 </li>
             </ul>
