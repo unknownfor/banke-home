@@ -3,18 +3,19 @@
         <div class="org-head">
             <img  class="bg" id="org-head-bg" src="../app/img/org/bg_1.png" />
             <div class="org-head-title">
-                <span id="title-left">精&nbsp选</span>
-                <span id="title-right">机&nbsp构</span>
+                <div class="org-title-box">
+                    <span id="title-left">精&nbsp选</span>
+                    <span id="title-right">机&nbsp构</span>
+                </div>
             </div>
         </div>
-        <ul class="org-ul">
-            <li class="org-li">
+        <div class="org-ul">
+            <div class="org-li" ng-repeat="item in orgUl">
                 <a ui-sref="org" title="机构">
-                    <div class="org-logo"><img src="../app/img/footer/head.jpg"/></div>
-                    <div class="org-name">插画人</div>
+                    <div class="org-logo"><img src="{{item.logo}}"/></div>
+                    <div class="org-name">{{item.name}}</div>
                 </a>
-            </li>
-            <div class="clear"></div>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>

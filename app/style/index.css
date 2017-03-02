@@ -355,6 +355,7 @@ html {
 }
 .footer-wrapper .footer-contact .contact .footer-contact-img {
   display: inline-block;
+  cursor: pointer;
   width: 30px;
   height: 30px;
   background: url(../../app/img/footer/sprite.png);
@@ -612,33 +613,45 @@ html {
   width: 100%;
 }
 .org-head .org-head-title {
-  display: inline-block;
   position: absolute;
-  top: 190px;
-  left: 35%;
+  top: 140px;
+  width: 100%;
+}
+.org-head .org-head-title .org-title-box {
+  margin: 0 auto;
   width: 434px;
   height: 100px;
   border: 3px solid #ffeb3b;
   font-size: 48px;
   line-height: 100px;
 }
-.org-head .org-head-title #title-left {
+.org-head .org-head-title .org-title-box #title-left {
   color: #ffeb3b;
 }
-.org-head .org-head-title #title-right {
+.org-head .org-head-title .org-title-box #title-right {
   color: #FFFFFF;
 }
 .org-ul {
+  width: 1100px;
+  height: 100%;
   margin: 0 auto;
   padding-bottom: 100px;
-  width: 900px;
-  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .org-ul .org-li {
-  width: 160px;
-  float: left;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 210px;
+  -ms-flex: 0 0 210px;
+  flex: 0 0 210px;
   text-align: center;
   margin-top: 90px;
+  padding-right: 10px;
 }
 .org-ul .org-li > a .org-logo {
   display: inline-block;
@@ -647,8 +660,8 @@ html {
   width: 76px;
   height: 76px;
   border-radius: 76px;
-  -webkit-box-shadow: 0 0 4px 4px rgba(221, 221, 221, 0.8);
-  box-shadow: 0 0 4px 4px rgba(221, 221, 221, 0.8);
+  -webkit-box-shadow: 0 0 3px 3px rgba(221, 221, 221, 0.6);
+  box-shadow: 0 0 3px 3px rgba(221, 221, 221, 0.6);
 }
 .org-ul .org-li > a .org-name:before {
   content: "";
@@ -664,7 +677,9 @@ html {
 .org-ul .org-li > a .org-name {
   margin-top: 28px;
   color: #9b9b9b;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 2px;
 }
 .join-head {
   position: relative;
@@ -1290,6 +1305,8 @@ html {
   height: 110px;
   border-radius: 110px;
   text-align: center;
+  -webkit-box-shadow: 0px 7px 7px rgba(251, 192, 45, 0.6);
+  box-shadow: 0px 7px 7px rgba(251, 192, 45, 0.6);
 }
 .partner-eighth .eight-tips-box .eight-tips-bg:last-child {
   margin-right: 0px;
