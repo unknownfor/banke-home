@@ -238,7 +238,7 @@ html {
   height: auto;
   background-color: #ffeb3b;
   text-align: center;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 .footer-wrapper .footer {
   display: -webkit-box;
@@ -636,6 +636,7 @@ html {
 }
 .org-ul {
   width: 1100px;
+  min-height: 640px;
   height: 100%;
   margin: 0 auto;
   padding-bottom: 100px;
@@ -879,16 +880,31 @@ html {
   color: #a9a9a9;
 }
 .join-fifth .fifth-ul {
-  width: 1047px;
+  width: 1100px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .join-fifth .fifth-ul .fifth-li-org {
-  float: left;
-  margin-left: 30px;
+  width: 230px;
+  height: 412px;
+  margin-left: 57px;
   margin-top: 55px;
   max-height: 450px;
   border-radius: 2px;
   border: 1px solid rgba(188, 188, 188, 0.5);
+  background-color: #ffeb3b;
+}
+.join-fifth .fifth-ul .fifth-li-org:nth-of-type(5n) {
+  margin-left: 0;
+}
+.join-fifth .fifth-ul .fifth-li-org:first-child {
+  margin-left: 0;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-logo {
   text-align: center;
@@ -897,24 +913,29 @@ html {
 }
 .join-fifth .fifth-ul .fifth-li-org .org-logo > img {
   height: 88px;
-  width: 186px;
+  width: 100%;
   display: inline-block;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-box {
   text-align: left;
-  background-color: #ffeb3b;
   width: 186px;
   padding: 30px 22px 12px 22px;
   color: #383d43;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-box .org-name {
-  font-size: 14px;
+  font-size: 15px;
   padding-bottom: 12px;
+  color: #000;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-box .org-info {
   line-height: 22px;
   font-size: 10px;
-  padding-bottom: 12px;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-box .org-bottom {
   font-size: 10px;
