@@ -268,8 +268,9 @@
   }
 }
 .registered {
-  display: none;
-  position: absolute;
+  display: block;
+  z-index: 10000;
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -311,6 +312,7 @@
         border-radius: 20px;
         box-shadow: 0 0 10px @bColor;
         margin-bottom: 12px;
+
         > i {
           display: block;
           position: absolute;
@@ -321,6 +323,7 @@
         }
         > input {
           height: 38px;
+          width:100%;
           font-size: 14px;
           background-color: #FFFFFF;
           border-top-left-radius: 20px;
@@ -328,7 +331,7 @@
           border: 1px solid #eee;
           padding-left: 40px;
           &.city {
-            padding-right:40px;
+            margin-right:40px;
           }
         }
       }

@@ -978,8 +978,9 @@ html {
   color: #a9a9a9;
 }
 .registered {
-  display: none;
-  position: absolute;
+  display: block;
+  z-index: 10000;
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -1040,6 +1041,7 @@ html {
 }
 .registered .registered-box .registered-form .box > input {
   height: 38px;
+  width: 100%;
   font-size: 14px;
   background-color: #FFFFFF;
   border-top-left-radius: 20px;
@@ -1048,7 +1050,7 @@ html {
   padding-left: 40px;
 }
 .registered .registered-box .registered-form .box > input.city {
-  padding-right: 40px;
+  margin-right: 40px;
 }
 .info-box {
   text-align: center;
