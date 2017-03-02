@@ -4,7 +4,7 @@
 define(['app'],function(app){
     app.directive('footer',['commonService',function(commonService){
         return {
-            templateUrl: '../app/views/include/footer.html',
+            templateUrl: 'views/include/footer.html',
             restrict: 'A',
             replace:true,
             link:function($scope,$element,$attrs){

@@ -7,7 +7,7 @@
  		'use strict';
 		 //定义全局变量
 		 window.globalObj={
-			 restUrl:'http://www.91banke.com/bankehome/'
+			 restUrl:'http://cms.91banke.com/bankehome/'
 		 };
 	 	 var app = ng.module('app',['ui.router','angularFileUpload','ngCookies']);
 
