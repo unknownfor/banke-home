@@ -554,14 +554,14 @@ html {
   min-height: 640px;
   height: 100%;
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding: 116px 0 100px 0;
   display: flex;
   flex-wrap: wrap;
 }
 .org-ul .org-li {
   flex: 0 0 210px;
   text-align: center;
-  margin-top: 90px;
+  margin-bottom: 90px;
   padding-right: 10px;
 }
 .org-ul .org-li > a .org-logo {
@@ -832,12 +832,19 @@ html {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 8;
 }
-.join-fifth .fifth-ul .fifth-li-org .org-box .org-bottom {
+.join-fifth .fifth-ul .fifth-li-org .org-bottom {
   font-size: 10px;
+  padding: 0 22px;
 }
-.join-fifth .fifth-ul .fifth-li-org .org-box .org-bottom .visit {
+.join-fifth .fifth-ul .fifth-li-org .org-bottom .org-contactor {
+  text-align: left;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-bottom .org-bottom-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-bottom .org-bottom-btn .visit {
   cursor: pointer;
-  margin-left: 122px;
   font-weight: bold;
   color: #383d43;
 }
