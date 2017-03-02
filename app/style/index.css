@@ -112,12 +112,16 @@ html {
   background: url('../img/header/logo.png') 0 0 no-repeat;
 }
 .banner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
   height: 110px;
   width: 100%;
   justify-content: space-between;
+  z-index: 8888;
 }
 .banner-wrapper .logo {
   padding-left: 168px;
@@ -532,7 +536,7 @@ html {
 }
 .org-head .org-head-title {
   position: absolute;
-  top: 140px;
+  top: 170px;
   width: 100%;
 }
 .org-head .org-head-title .org-title-box {
