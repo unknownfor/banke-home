@@ -1,3 +1,29 @@
+input {
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: auto;
+  padding: 1px;
+  -webkit-border-image: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em 0em 0em 0em;
+  font: 13.3333px Arial;
+  outline: none;
+}
 img {
   border: 0;
 }
@@ -608,6 +634,7 @@ html {
   margin-bottom: 10px;
 }
 .join-head .join-info .join-head-btn {
+  cursor: pointer;
   margin-top: 16px;
   text-align: center;
   line-height: 45px;
@@ -638,6 +665,7 @@ html {
   vertical-align: 5px;
 }
 .join-third {
+  margin-top: 48px;
   height: 150px;
   background-color: #ffeb3b;
   text-align: center;
@@ -754,9 +782,10 @@ html {
   text-align: center;
   font-size: 0;
   height: 88px;
-  width: 186px;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-logo > img {
+  height: 88px;
+  width: 186px;
   display: inline-block;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-box {
@@ -779,11 +808,13 @@ html {
   font-size: 10px;
 }
 .join-fifth .fifth-ul .fifth-li-org .org-box .org-bottom .visit {
+  cursor: pointer;
   margin-left: 122px;
   font-weight: bold;
   color: #383d43;
 }
 .join-fifth .fifth-btn {
+  cursor: pointer;
   display: inline-block;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -795,6 +826,79 @@ html {
   text-align: center;
   font-size: 16px;
   color: #a9a9a9;
+}
+.registered {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  min-width: 1024px;
+  height: 100%;
+  background-color: rgba(234, 237, 236, 0.8);
+}
+.registered .registered-box {
+  position: absolute;
+  top: 110px;
+  left: 30%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 720px;
+  height: 620px;
+  background-color: #ffeb3b;
+  border-radius: 25px;
+}
+.registered .registered-box #close {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  text-align: center;
+  width: 26px;
+  height: 35px;
+  background-color: #ffc045;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #ffeb3b;
+  font-size: 16px;
+  line-height: 35px;
+}
+.registered .registered-box .registered-form {
+  margin: 56px 70px 10px 70px;
+}
+.registered .registered-box .registered-form .box-slogen {
+  display: inline-block;
+  margin-bottom: 28px;
+  width: 190px;
+  height: 40px;
+  background: url('../../app/img/join/sprite.png');
+  background-position: -86px -90px;
+}
+.registered .registered-box .registered-form .box {
+  margin-right: 36px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px #ffc045;
+  box-shadow: 0 0 10px #ffc045;
+  margin-bottom: 12px;
+}
+.registered .registered-box .registered-form .box > i {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #969696;
+  margin-top: 9px;
+  margin-left: 12px;
+}
+.registered .registered-box .registered-form .box > input {
+  height: 38px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid #eee;
+  padding-left: 40px;
+}
+.registered .registered-box .registered-form .box > input.city {
+  padding-right: 40px;
 }
 .info-box {
   text-align: center;
@@ -812,6 +916,7 @@ html {
   font-size: 14px;
 }
 .btn {
+  cursor: pointer;
   display: inline-block;
   width: 144px;
   height: 48px;
@@ -1158,9 +1263,10 @@ html {
   margin-left: 10px;
 }
 .org-content.org-album {
-  margin-top: 170px;
+  margin-top: 120px;
 }
 .org-content.org-album > ul .album-li {
+  cursor: pointer;
   float: left;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -1173,6 +1279,7 @@ html {
   margin: 0 250px;
 }
 .org-content.class-list .class-box {
+  cursor: pointer;
   padding: 35px 0px;
   display: flex;
   width: 100%;
@@ -1254,7 +1361,12 @@ html {
   position: relative;
   top: -6px;
 }
+.middle-banner > img {
+  display: inline-block;
+  margin-top: 46px;
+}
 .org-btn {
+  cursor: pointer;
   margin: 20px auto 50px auto;
   width: 106px;
   height: 34px;
@@ -1276,6 +1388,11 @@ html {
   font-size: 30px;
   color: #383d43;
   margin-bottom: 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 .new .new-info {
   color: #a9a9a9;

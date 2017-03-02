@@ -52,6 +52,7 @@
       margin-bottom: 10px;
     }
     .join-head-btn {
+      cursor: pointer;
       margin-top: 16px;
       @jh: 45px;
       text-align: center;
@@ -84,6 +85,7 @@
   }
 }
 .join-third {
+  margin-top: 48px;
   height: 150px;
   background-color: @mColor;
   text-align: center;
@@ -198,8 +200,9 @@
         text-align: center;
         font-size: 0;
         height: 88px;
-        width: @lw;
         >img {
+          height: 88px;
+          width: @lw;
           display: inline-block;
         }
       }
@@ -221,6 +224,7 @@
         .org-bottom {
           font-size: 10px;
           .visit {
+            cursor: pointer;
             margin-left: 122px;
             font-weight: bold;
             color: #383d43;
@@ -230,6 +234,7 @@
     }
   }
   .fifth-btn {
+    cursor: pointer;
     display: inline-block;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -240,5 +245,73 @@
     text-align: center;
     font-size: 16px;
     color: #a9a9a9;
+  }
+}
+.registered {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  min-width: 1024px;
+  height: 100%;
+  background-color: rgba(234,237,236,0.8);
+  .registered-box {
+    position: absolute;
+    top: 110px;
+    left: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    .size(720px,620px);
+    background-color: @mColor;
+    border-radius: 25px;
+    #close {
+      position: absolute;
+      top: 0px;
+      right: 25px;
+      text-align: center;
+      .size(26px,35px);
+      background-color: @bColor;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      color: @mColor;
+      font-size: 16px;
+      line-height: 35px;
+    }
+    .registered-form {
+      margin: 56px 70px 10px 70px;
+      .box-slogen {
+        display: inline-block;
+        margin-bottom: 28px;
+        .size(190px,40px);
+        background: @jAddress;
+        background-position: -86px -90px;
+      }
+      .box {
+        margin-right: 36px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px @bColor;
+        margin-bottom: 12px;
+        > i {
+          display: block;
+          position: absolute;
+          font-size: 20px;
+          color: #969696;
+          margin-top: 9px;
+          margin-left: 12px;
+        }
+        > input {
+          height: 38px;
+          font-size: 14px;
+          background-color: #FFFFFF;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border: 1px solid #eee;
+          padding-left: 40px;
+          &.city {
+            padding-right:40px;
+          }
+        }
+      }
+    }
   }
 }
