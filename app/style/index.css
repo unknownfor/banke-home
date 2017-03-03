@@ -24,6 +24,10 @@ input {
   font: 13.3333px Arial;
   outline: none;
 }
+textarea {
+  outline: none;
+  resize: none;
+}
 img {
   border: 0;
 }
@@ -713,6 +717,55 @@ html {
   margin-left: 8px;
   vertical-align: 5px;
 }
+.join-second {
+  width: 980px;
+  margin: 0px auto;
+}
+.join-second #second-pic {
+  background-position: -233px -147px;
+}
+.join-second .join-second-box {
+  display: table-cell;
+  width: 225px;
+}
+.join-second .join-second-box .box-pic {
+  display: inline-block;
+  background: url('../../app/img/join/sprite.png') no-repeat;
+}
+.join-second .join-second-box .box-pic.service {
+  width: 60px;
+  height: 63px;
+  background-position: -171px -15px;
+}
+.join-second .join-second-box .box-pic.management {
+  width: 65px;
+  height: 65px;
+  background-position: -334px -17px;
+}
+.join-second .join-second-box .box-pic.brand {
+  width: 64px;
+  height: 62px;
+  background-position: -86px -13px;
+}
+.join-second .join-second-box .box-pic.spread {
+  width: 64px;
+  height: 60px;
+  background-position: -254px -21px;
+}
+.join-second .join-second-box .box-pic.admissions {
+  width: 64px;
+  height: 64px;
+  background-position: -9px -12px;
+}
+.join-second .join-second-box .box-title {
+  font-size: 16px;
+  color: #383d43;
+  margin-bottom: 14px;
+}
+.join-second .join-second-box .box-detail {
+  font-size: 12px;
+  color: #9b9b9b;
+}
 .join-third {
   margin-top: 48px;
   height: 150px;
@@ -763,55 +816,6 @@ html {
   line-height: 22px;
   font-size: 14px;
   color: #383d43;
-}
-.join-second {
-  width: 980px;
-  margin: 0px auto;
-}
-.join-second #second-pic {
-  background-position: -233px -147px;
-}
-.join-second .join-second-box {
-  display: table-cell;
-  width: 225px;
-}
-.join-second .join-second-box .box-pic {
-  display: inline-block;
-  background: url('../../app/img/join/sprite.png') no-repeat;
-}
-.join-second .join-second-box .box-pic.service {
-  width: 60px;
-  height: 63px;
-  background-position: -171px -15px;
-}
-.join-second .join-second-box .box-pic.management {
-  width: 65px;
-  height: 65px;
-  background-position: -334px -17px;
-}
-.join-second .join-second-box .box-pic.brand {
-  width: 64px;
-  height: 62px;
-  background-position: -86px -13px;
-}
-.join-second .join-second-box .box-pic.spread {
-  width: 64px;
-  height: 60px;
-  background-position: -254px -21px;
-}
-.join-second .join-second-box .box-pic.admissions {
-  width: 64px;
-  height: 64px;
-  background-position: -9px -12px;
-}
-.join-second .join-second-box .box-title {
-  font-size: 16px;
-  color: #383d43;
-  margin-bottom: 14px;
-}
-.join-second .join-second-box .box-detail {
-  font-size: 12px;
-  color: #9b9b9b;
 }
 .join-fifth #fifth-pic {
   background-position: -193px -147px;
@@ -916,7 +920,7 @@ html {
   color: #a9a9a9;
 }
 .registered {
-  display: none;
+  display: block;
   z-index: 10000;
   position: fixed;
   top: 0px;
@@ -928,12 +932,14 @@ html {
 }
 .registered .registered-box {
   position: absolute;
-  top: 110px;
-  left: 30%;
+  top: 50%;
+  left: 50%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 720px;
   height: 620px;
+  margin-top: -310px;
+  margin-left: -360px;
   background-color: #ffeb3b;
   border-radius: 25px;
 }
@@ -954,13 +960,65 @@ html {
 .registered .registered-box .registered-form {
   margin: 56px 70px 10px 70px;
 }
-.registered .registered-box .registered-form .box-slogen {
+.registered .registered-box .registered-form .registered-head {
   display: inline-block;
+  color: #383d43;
+  font-size: 14px;
   margin-bottom: 28px;
-  width: 190px;
+}
+.registered .registered-box .registered-form .registered-head .box-slogen {
+  display: inline-block;
+  width: 77px;
   height: 40px;
   background: url('../../app/img/join/sprite.png');
-  background-position: -86px -90px;
+  background-position: -99px -132px;
+}
+.registered .registered-box .registered-form .registered-head #dot {
+  border-radius: 4px;
+  height: 4px;
+  width: 4px;
+  background-color: #383d43;
+  margin: 0 8px 0 5px;
+  display: inline-block;
+  vertical-align: 3px;
+}
+.registered .registered-box .registered-form .registered-head .head-txt {
+  display: inline-block;
+  vertical-align: 14px;
+  letter-spacing: 1px;
+}
+.registered .registered-box .registered-form .regbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+.registered .registered-box .registered-form .instruction {
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 10px #ffc045;
+  box-shadow: 0 0 10px #ffc045;
+  margin-bottom: 12px;
+  width: 580px;
+  height: 99px;
+}
+.registered .registered-box .registered-form .instruction > i {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #969696;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.registered .registered-box .registered-form .instruction > textarea {
+  border-radius: 25px;
+  height: 85px;
+  width: 537px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #eee;
+  padding-left: 40px;
+  padding-top: 10px;
 }
 .registered .registered-box .registered-form .box {
   margin-right: 36px;
@@ -969,18 +1027,23 @@ html {
   box-shadow: 0 0 10px #ffc045;
   margin-bottom: 12px;
 }
+.registered .registered-box .registered-form .box.box-info {
+  width: 270px;
+}
+.registered .registered-box .registered-form .box.box-info > input {
+  width: 228px;
+}
 .registered .registered-box .registered-form .box > i {
   display: block;
   position: absolute;
   font-size: 20px;
   color: #969696;
-  margin-top: 9px;
+  margin-top: 6px;
   margin-left: 12px;
 }
 .registered .registered-box .registered-form .box > input {
-  width: 501px;
   border-radius: 25px;
-  height: 38px;
+  height: 32px;
   font-size: 14px;
   background-color: #FFFFFF;
   border: 1px solid #eee;
@@ -988,6 +1051,24 @@ html {
 }
 .registered .registered-box .registered-form .box > input.city {
   margin-right: 40px;
+}
+.registered .registered-box .registered-btn {
+  margin: 0 auto;
+  width: 270px;
+  height: 36px;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 50px;
+  background-color: #ffc045;
+}
+.registered .registered-box .registered-bottom {
+  margin-top: 20px;
+  max-width: 720px;
+  display: inline-block;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 .info-box {
   text-align: center;
