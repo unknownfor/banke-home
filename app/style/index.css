@@ -995,7 +995,7 @@ html {
   letter-spacing: 1px;
 }
 .info-box .box-img {
-  background: url('../../img/partner/sprite.png');
+  background: url('../../app/img/partner/sprite.png');
   display: inline-block;
 }
 .info-box .title {
@@ -1038,9 +1038,9 @@ html {
   margin-bottom: 100px;
 }
 .partner-second #partner-second-pic {
-  width: 30px;
-  height: 30px;
-  background-position: -286px -184px;
+  width: 33px;
+  height: 32px;
+  background-position: -550px -9px;
 }
 .partner-third {
   position: relative;
@@ -1095,13 +1095,13 @@ html {
   font-size: 20px;
 }
 .partner-third .third-box .third-box-main .third-box-info .first-p {
-  margin-top: 25px;
+  margin-top: 50px;
 }
 .partner-fourth {
   position: relative;
   width: 800px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .partner-fourth .partner-fourth-box {
   float: left;
@@ -1112,9 +1112,11 @@ html {
   padding-bottom: 60px;
 }
 .partner-fourth .partner-fourth-box #fourth-pic-one {
-  width: 32px;
-  height: 30px;
-  background-position: -433px -176px;
+  display: inline-block;
+  background: url('../../app/img/partner/sprite.png');
+  width: 33px;
+  height: 32px;
+  background-position: -506px -71px;
 }
 .partner-fourth .partner-fourth-box #fourth-p-one {
   margin-top: 30px;
@@ -1131,7 +1133,7 @@ html {
   margin-top: 70px;
   width: 252px;
   height: 118px;
-  background: url('../../img/partner/sprite.png');
+  background: url('../../app/img/partner/sprite.png');
   background-position: 0px -167px;
   display: inline-block;
   vertical-align: 20px;
@@ -1171,13 +1173,14 @@ html {
 }
 .partner-sixth {
   text-align: center;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
-.partner-sixth #partner-fifth-pic {
-  width: 32px;
-  height: 34px;
-  background: url('../../img/partner/sprite.png');
-  background-position: -383px -176px;
+.partner-sixth #partner-sixth-pic {
+  background: url('../../app/img/partner/sprite.png');
+  width: 35px;
+  height: 35px;
+  background-position: -550px -69px;
   display: inline-block;
 }
 .partner-sixth .sixth-ul {
@@ -1196,7 +1199,7 @@ html {
 .partner-sixth .sixth-ul .sixth-li .li-img {
   width: 170px;
   height: 164px;
-  background: url('../../img/partner/sprite.png');
+  background: url('../../app/img/partner/sprite.png');
 }
 .partner-sixth .sixth-ul .sixth-li .li-img.design {
   background-position: 0px 0px;
@@ -1238,10 +1241,11 @@ html {
   font-size: 24px;
 }
 .partner-seventh .seventh-box #seventh-pic {
-  width: 32px;
-  height: 35px;
-  background-position: -334px -176px;
-  margin-bottom: 20px;
+  display: inline-block;
+  background: url('../../app/img/partner/sprite.png');
+  width: 33px;
+  height: 32px;
+  background-position: -503px -8px;
 }
 .partner-seventh .seventh-box .seventh-ul {
   display: -webkit-box;
