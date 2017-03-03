@@ -643,8 +643,8 @@ html {
   display: inline-block;
   width: 66px;
   height: 39px;
-  background: url('../../img/join/sprite.png') no-repeat;
-  background-position: -3px -90px;
+  background: url('../../app/img/join/sprite.png') no-repeat;
+  background-position: -7px -131px;
 }
 .join-head .join-info .join-one-slogen .slogen-txt:before {
   content: "";
@@ -707,7 +707,7 @@ html {
   width: 23px;
   height: 23px;
   display: inline-block;
-  background: url('../../img/join/sprite.png');
+  background: url('../../app/img/join/sprite.png');
 }
 .join-content .join-content-title .title-txt {
   margin-left: 8px;
@@ -724,8 +724,8 @@ html {
   display: inline-block;
   width: 570px;
   height: 60px;
-  background: url('../../img/join/sprite.png') no-repeat;
-  background-position: -2px -143px;
+  background: url('../../app/img/join/sprite.png') no-repeat;
+  background-position: -9px -184px;
 }
 .join-fourth {
   position: relative;
@@ -769,7 +769,7 @@ html {
   margin: 0px auto;
 }
 .join-second #second-pic {
-  background-position: -306px -69px;
+  background-position: -233px -147px;
 }
 .join-second .join-second-box {
   display: table-cell;
@@ -777,32 +777,32 @@ html {
 }
 .join-second .join-second-box .box-pic {
   display: inline-block;
-  background: url('../../img/join/sprite.png') no-repeat;
+  background: url('../../app/img/join/sprite.png') no-repeat;
 }
 .join-second .join-second-box .box-pic.service {
   width: 60px;
-  height: 60px;
-  background-position: -151px -3px;
+  height: 63px;
+  background-position: -171px -15px;
 }
 .join-second .join-second-box .box-pic.management {
   width: 65px;
   height: 65px;
-  background-position: -292px -3px;
+  background-position: -334px -17px;
 }
 .join-second .join-second-box .box-pic.brand {
   width: 64px;
   height: 62px;
-  background-position: -73px 1px;
+  background-position: -86px -13px;
 }
 .join-second .join-second-box .box-pic.spread {
   width: 64px;
   height: 60px;
-  background-position: -225px -3px;
+  background-position: -254px -21px;
 }
 .join-second .join-second-box .box-pic.admissions {
   width: 64px;
   height: 64px;
-  background-position: -3px -4px;
+  background-position: -9px -12px;
 }
 .join-second .join-second-box .box-title {
   font-size: 16px;
@@ -814,7 +814,7 @@ html {
   color: #9b9b9b;
 }
 .join-fifth #fifth-pic {
-  background-position: -306px -69px;
+  background-position: -193px -147px;
 }
 .join-fifth .fifth-p {
   text-align: center;
@@ -916,7 +916,7 @@ html {
   color: #a9a9a9;
 }
 .registered {
-  display: block;
+  display: none;
   z-index: 10000;
   position: fixed;
   top: 0px;
@@ -959,7 +959,7 @@ html {
   margin-bottom: 28px;
   width: 190px;
   height: 40px;
-  background: url('../../img/join/sprite.png');
+  background: url('../../app/img/join/sprite.png');
   background-position: -86px -90px;
 }
 .registered .registered-box .registered-form .box {
