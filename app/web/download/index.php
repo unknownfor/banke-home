@@ -6,4 +6,5 @@
  * Time: 16:06
  */
 
-phpinfo();
+header("location: http://cms.91banke.com/web/download");
+exit;
