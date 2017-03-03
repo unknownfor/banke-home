@@ -1019,9 +1019,16 @@ html {
 .partner-first {
   position: relative;
 }
+.partner-first #partner-first-pic {
+  background: url('../../img/partner/sprite.png');
+  width: 251px;
+  height: 108px;
+  background-position: -283px -177px;
+  display: inline-block;
+}
 .partner-first .partner-txt {
   position: absolute;
-  top: 60%;
+  bottom: 35px;
   right: 25%;
   color: #383d43;
   text-align: center;
