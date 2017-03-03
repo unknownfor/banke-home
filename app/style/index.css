@@ -995,7 +995,7 @@ html {
   letter-spacing: 1px;
 }
 .info-box .box-img {
-  background: url('../../app/img/partner/sprite.png');
+  background: url('../../img/partner/sprite.png');
   display: inline-block;
 }
 .info-box .title {
@@ -1113,7 +1113,7 @@ html {
 }
 .partner-fourth .partner-fourth-box #fourth-pic-one {
   display: inline-block;
-  background: url('../../app/img/partner/sprite.png');
+  background: url('../../img/partner/sprite.png');
   width: 33px;
   height: 32px;
   background-position: -506px -71px;
@@ -1133,7 +1133,7 @@ html {
   margin-top: 70px;
   width: 252px;
   height: 118px;
-  background: url('../../app/img/partner/sprite.png');
+  background: url('../../img/partner/sprite.png');
   background-position: 0px -167px;
   display: inline-block;
   vertical-align: 20px;
@@ -1177,7 +1177,7 @@ html {
   margin-bottom: 40px;
 }
 .partner-sixth #partner-sixth-pic {
-  background: url('../../app/img/partner/sprite.png');
+  background: url('../../img/partner/sprite.png');
   width: 35px;
   height: 35px;
   background-position: -550px -69px;
@@ -1199,7 +1199,7 @@ html {
 .partner-sixth .sixth-ul .sixth-li .li-img {
   width: 170px;
   height: 164px;
-  background: url('../../app/img/partner/sprite.png');
+  background: url('../../img/partner/sprite.png');
 }
 .partner-sixth .sixth-ul .sixth-li .li-img.design {
   background-position: 0px 0px;
@@ -1242,7 +1242,7 @@ html {
 }
 .partner-seventh .seventh-box #seventh-pic {
   display: inline-block;
-  background: url('../../app/img/partner/sprite.png');
+  background: url('../../img/partner/sprite.png');
   width: 33px;
   height: 32px;
   background-position: -503px -8px;
