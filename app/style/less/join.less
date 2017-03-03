@@ -268,6 +268,7 @@
   }
 }
 .registered {
+  @bRadius: 25px;
   display: block;
   z-index: 10000;
   position: fixed;
@@ -284,7 +285,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     .size(720px,620px);
     background-color: @mColor;
-    border-radius: 25px;
+    border-radius: @bRadius;
     #close {
       position: absolute;
       top: 0px;
@@ -322,12 +323,11 @@
           margin-left: 12px;
         }
         > input {
+          width: 501px;
+          border-radius: @bRadius;
           height: 38px;
-          width:100%;
           font-size: 14px;
           background-color: #FFFFFF;
-          border-top-left-radius: 20px;
-          border-bottom-left-radius: 20px;
           border: 1px solid #eee;
           padding-left: 40px;
           &.city {
