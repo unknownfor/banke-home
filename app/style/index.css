@@ -555,7 +555,6 @@ html {
   position: relative;
 }
 .org-head #org-head-bg {
-  max-height: 426px;
   width: 100%;
 }
 .org-head .org-head-title {
@@ -910,7 +909,7 @@ html {
   width: 106px;
   height: 34px;
   line-height: 34px;
-  border-radius: 11px;
+  border-radius: 50px;
   border: 1px solid #a9a9a9;
   text-align: center;
   font-size: 16px;
