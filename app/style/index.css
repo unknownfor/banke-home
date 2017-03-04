@@ -647,7 +647,7 @@ html {
   display: inline-block;
   width: 66px;
   height: 39px;
-  background: url('../../app/img/join/sprite.png') no-repeat;
+  background: url('../../img/join/sprite.png') no-repeat;
   background-position: -7px -131px;
 }
 .join-head .join-info .join-one-slogen .slogen-txt:before {
@@ -711,7 +711,7 @@ html {
   width: 23px;
   height: 23px;
   display: inline-block;
-  background: url('../../app/img/join/sprite.png');
+  background: url('../../img/join/sprite.png');
 }
 .join-content .join-content-title .title-txt {
   margin-left: 8px;
@@ -730,7 +730,7 @@ html {
 }
 .join-second .join-second-box .box-pic {
   display: inline-block;
-  background: url('../../app/img/join/sprite.png') no-repeat;
+  background: url('../../img/join/sprite.png') no-repeat;
 }
 .join-second .join-second-box .box-pic.service {
   width: 60px;
@@ -777,7 +777,7 @@ html {
   display: inline-block;
   width: 570px;
   height: 60px;
-  background: url('../../app/img/join/sprite.png') no-repeat;
+  background: url('../../img/join/sprite.png') no-repeat;
   background-position: -9px -184px;
 }
 .join-fourth {
@@ -971,7 +971,7 @@ html {
   display: inline-block;
   width: 77px;
   height: 40px;
-  background: url('../../app/img/join/sprite.png');
+  background: url('../../img/join/sprite.png');
   background-position: -99px -132px;
 }
 .registered .registered-box .registered-form .registered-head #dot {
