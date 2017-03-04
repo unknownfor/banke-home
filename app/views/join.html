@@ -45,8 +45,8 @@
             </div>
             <div class="join-second-box">
                 <div class="box-pic admissions"></div>
-                <p class="box-title">招生服务</p>
-                <div class="box-detail">半课模式帮助机构提<br />高转化率和知名度</div>
+                <p class="box-title">广告展示</p>
+                <div class="box-detail">嘿设汇App广告位展示<br />百万用户曝光</div>
             </div>
         </div>
         <div class="join-third" >
@@ -103,35 +103,54 @@
             </div>
         </div>
         <!--登陆-->
-        <div class="registered">
+        <div class="registered" ng-model="registeredBox" ng-show="visible">
             <div class="registered-box">
-                <div id="close">X</div>
+                <div ng-click="closeBox()" id="close">X</div>
                 <div class="registered-form">
-                    <div class="box-slogen"></div>
-                    <form class="box">
-                        <i class="iconfont icon-city1 city-icon"></i>
-                        <input class="city" type="text" placeholder="选择城市">
-                        <span class="down-section"></span>
+                    <div class="registered-head">
+                        <div class="box-slogen"></div>
+                        <div class="head-txt"><span id="dot"></span>一半学费上好课</div>
+                    </div>
+
+                    <div class="regbox">
+                        <form class="box box-info">
+                            <i class="iconfont icon-city1 city-icon"></i>
+                            <input class="city" type="text" placeholder="选择城市" required ng-model=‘user.city'>
+                            <span class="down-section"></span>'
+                        </form>
+                        <form class="box box-info">
+                            <i class="iconfont icon-house org-icon"></i>
+                            <input type="text" placeholder="机构名称" required ng-model='user.name' />
+                        </form>
+                    </div>
+
+                    <div class="regbox">
+                        <form class="box box-info">
+                            <i class="iconfont icon-people test-icon"></i>
+                            <input type="text" placeholder="联系人" required ng-model='user.contact'/>
+                        </form>
+                        <form class="box box-info">
+                            <i class="iconfont icon-contact test-icon"></i>
+                            <input type="text" placeholder="联系电话" required ng-model='user.phone'/>
+                        </form>
+                    </div>
+
+                    <div class="regbox">
+                        <form class="box box-info">
+                            <i class="iconfont icon-yidiandiantubiao03 test-icon"></i>
+                            <input type="text" placeholder="机构地址" required ng-model='user.address' />
+                        </form>
+                    </div>
+
+                    <form class="instruction">
+                        <i class="iconfont icon-write test-icon"></i>
+                        <textarea type="text" placeholder="机构简介" required max-lenght="200" ng-model='user.instruction'></textarea>
                     </form>
-                    <form class="box">
-                        <i class="iconfont icon-house org-icon"></i>
-                        <input class="org" type="text" placeholder="机构名称" />
-                    </form>
-                    <!--<div class="box contact">-->
-                        <!--<span class="iconfont icon-contact test-icon"></span>-->
-                        <!--<input type="text" placeholder="联系人" />-->
-                    <!--</div>-->
-                    <!--<div class="box telephone">-->
-                        <!--<span class="iconfont icon-contact test-icon"></span>-->
-                        <!--<input type="text" placeholder="联系电话" />-->
-                    <!--</div>-->
-                    <!--<div class="instruction">-->
-                        <!--<span class="iconfont icon-contact test-icon"></span>-->
-                        <!--<input type="text" placeholder="联系电话" />-->
-                    <!--</div>-->
                 </div>
-                <div class="registered-btn">提交</div>
-                <div class="registered-bottom"></div>
+                <input type="submit" class="registered-btn" name="提交" ng-click="submit()">
+                    <span>提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</span>
+                </input>
+                <img class="registered-bottom" src="../app/img/join/bg_3.png">
             </div>
         </div>
     </div>

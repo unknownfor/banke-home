@@ -21,5 +21,34 @@ define([
             }
         };
         cService.getData(allParas);
+
+
+        //隐藏注册框
+        $scope.visible=true;
+        $scope.closeBox=function(){
+            $scope.visible=false;
+        }
+
+        //提交
+        //$scope.user={city:'',name:'',contact:'',phone:'',address:'',instruction:''};
+        //$scope.submit=function () {
+        //    app.submit($scope.user).then(function (data) {
+        //            $http({
+        //                method  : 'POST',
+        //                url     : 'XX',
+        //                data    : $.param($scope.user),  // pass in data as strings
+        //            })
+        //                .success(function(data) {
+        //                    console.log(data);
+        //                    if (!data.success) {
+        //                    } else {
+        //
+        //                    }
+        //                });
+        //    });
+        //};
+
+
+
     }]);
 });
