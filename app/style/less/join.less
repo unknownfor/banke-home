@@ -293,6 +293,7 @@
     background-color: @mColor;
     border-radius: @bRadius;
     #close {
+      cursor: pointer;
       position: absolute;
       top: 0px;
       right: 25px;
@@ -391,6 +392,9 @@
           border: 1px solid #eee;
           padding-left: 40px;
           &.city {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            width: 185px;
             margin-right:40px;
           }
         }
@@ -398,15 +402,13 @@
     }
     .registered-btn {
       margin: 0 auto;
+      text-align: center;
       .size(270px,36px);
       color: #FFFFFF;
       font-size: 16px;
-      text-align: center;
       line-height: 36px;
       border-radius: 50px;
       background-color: @bColor;
-      > span {
-      }
     }
     .registered-bottom {
       margin-top: 20px;
