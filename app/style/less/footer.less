@@ -10,6 +10,7 @@
     overflow: hidden;
     width: 1100px;
     margin: 0 auto;
+    position: relative;
     .footer-section {
       //两边固定宽度，中间自适应宽度
       flex: 0 0 180px;
@@ -85,6 +86,7 @@
     }
     }
   .footer-contact {
+    position: relative;
     margin-top: 60px;
     text-align: center;
     .contact {
@@ -122,5 +124,15 @@
       font-size: 12px;
       color: #8a8b8c;
     }
+  }
+
+  #weibo:hover:before {
+    position: relative;
+    top:0px;
+    right: 0px;
+    content:url(../../img/footer/weibo.png);
+    .size(45px,45px);
+    vertical-align:middle;
+    display:inline-block;
   }
 }

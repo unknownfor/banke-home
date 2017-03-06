@@ -22,16 +22,10 @@ define([
         };
         cService.getData(allParas);
 
-        //点击弹出注册框
-        $scope.visibled=true;
-        $scope.showBox=function(){
-            $scope.visibled=false;
-        }
-
-        //隐藏注册框
-        $scope.visible=true;
-        $scope.closeBox=function(){
-            $scope.visible=false;
+        //弹出注册框&隐藏注册框
+        $scope.visible=false;
+        $scope.controlJoinBox=function(flag){
+            $scope.visible=flag;
         }
 
         //提交表单数据

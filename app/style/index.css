@@ -264,6 +264,7 @@ html {
   overflow: hidden;
   width: 1100px;
   margin: 0 auto;
+  position: relative;
 }
 .footer-wrapper .footer .footer-section {
   -webkit-box-flex: 0;
@@ -357,6 +358,7 @@ html {
   height: 113px;
 }
 .footer-wrapper .footer-contact {
+  position: relative;
   margin-top: 60px;
   text-align: center;
 }
@@ -395,6 +397,16 @@ html {
 .footer-wrapper .footer-contact .license {
   font-size: 12px;
   color: #8a8b8c;
+}
+.footer-wrapper #weibo:hover:before {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  content: url(../../img/footer/weibo.png);
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  display: inline-block;
 }
 .home-wrapper {
   margin: 0px;
@@ -920,7 +932,6 @@ html {
   color: #a9a9a9;
 }
 .registered {
-  display: none;
   z-index: 10000;
   position: fixed;
   top: 0px;
