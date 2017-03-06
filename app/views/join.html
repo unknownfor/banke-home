@@ -15,7 +15,7 @@
                 <p class="join-three-slogen">帮助机构扩大招生</p>
                 <p class="join-three-slogen">帮助机构学员找到好工作</p>
                 <p class="join-three-slogen">助力机构提高学员学习质量</p>
-                <div class="join-head-btn" ng-show="visibled" ng-click="showBox()"><span>立即申请</span></div>
+                <div class="join-head-btn" ng-click="contrlJoinInBox(true)"><span>立即申请</span></div>
             </div>
         </div>
         <div class="join-content join-second">
@@ -103,53 +103,57 @@
             </div>
         </div>
         <!--登陆-->
-        <div class="registered" ng-model="registeredBox" ng-show="visible">
+        <div class="registered" ng-show="visible">
             <div class="registered-box">
-                <div ng-click="closeBox()" id="close">X</div>
+                <div ng-click="contrlJoinInBox(false)" id="close">X</div>
                 <div class="registered-form">
                     <div class="registered-head">
                         <div class="box-slogen"></div>
                         <div class="head-txt"><span id="dot"></span>一半学费上好课</div>
                     </div>
+                    <form ng-submit="submitForm()">
+                        <div class="regbox">
+                            <div class="box box-info">
+                                <i class="iconfont icon-city1 city-icon"></i>
+                                <input class="city" type="text" placeholder="选择城市" name="city" required ng-model="formData.city">
+                                <span class="down-section"></span>
+                            </div>
+                            <div class="box box-info">
+                                <i class="iconfont icon-house org-icon"></i>
+                                <input type="text" placeholder="机构名称" required ng-model="formData.name"  name="name" />
+                            </div>
+                        </div>
 
-                    <div class="regbox">
-                        <form class="box box-info">
-                            <i class="iconfont icon-city1 city-icon"></i>
-                            <input class="city" type="text" placeholder="选择城市" required ng-model='user.city'>
-                            <span class="down-section"></span>
-                        </form>
-                        <form class="box box-info">
-                            <i class="iconfont icon-house org-icon"></i>
-                            <input type="text" placeholder="机构名称" required ng-model='user.name' />
-                        </form>
-                    </div>
+                        <div class="regbox">
+                            <div class="box box-info">
+                                <i class="iconfont icon-people test-icon"></i>
+                                <input type="text" placeholder="联系人" required ng-model='formData.contact' name="contact"/>
+                            </div>
+                            <div class="box box-info">
+                                <i class="iconfont icon-contact test-icon"></i>
+                                <input type="text" placeholder="联系电话" required ng-model='formData.tel_phone' name="tel_phone"/>
+                            </div>
+                        </div>
 
-                    <div class="regbox">
-                        <form class="box box-info">
-                            <i class="iconfont icon-people test-icon"></i>
-                            <input type="text" placeholder="联系人" required ng-model='user.contact'/>
-                        </form>
-                        <form class="box box-info">
-                            <i class="iconfont icon-contact test-icon"></i>
-                            <input type="text" placeholder="联系电话" required ng-model='user.phone'/>
-                        </form>
-                    </div>
+                        <div class="regbox">
+                            <div class="box box-info">
+                                <i class="iconfont icon-yidiandiantubiao03 test-icon"></i>
+                                <input type="text" placeholder="机构地址" required ng-model="formData.address" name="address" />
+                            </div>
+                        </div>
 
-                    <div class="regbox">
-                        <form class="box box-info">
-                            <i class="iconfont icon-yidiandiantubiao03 test-icon"></i>
-                            <input type="text" placeholder="机构地址" required ng-model='user.address' />
-                        </form>
-                    </div>
-
-                    <form class="instruction">
-                        <i class="iconfont icon-write test-icon"></i>
-                        <textarea type="text" placeholder="机构简介" required max-lenght="200" ng-model='user.instruction'></textarea>
+                        <div class="instruction">
+                            <i class="iconfont icon-write test-icon"></i>
+                            <textarea type="text" placeholder="机构简介" required max-lenght="200" ng-model="formData.introduce" name="introduce">{{formData.introduce}}</textarea>
+                        </div>
+                        <input type="submit" class="registered-btn" name="提交">
                     </form>
                 </div>
-                <div  class="registered-btn" name="提交" ng-click="submit()">
-                    <span>提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</span>
-                </div>
+                    <!--<div  class="registered-btn" name="提交" ng-click="submit()">-->
+                        <!--<span>提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</span>-->
+                    <!--</div>-->
+                    <!--<span>提&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;交</span>-->
+                <!--</input>-->
                 <img class="registered-bottom" src="../img/join/bg_3.png">
             </div>
         </div>
