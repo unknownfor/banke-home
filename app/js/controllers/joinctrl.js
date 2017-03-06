@@ -22,6 +22,11 @@ define([
         };
         cService.getData(allParas);
 
+        //点击弹出注册框
+        $scope.visibled=true;
+        $scope.showBox=function(){
+            $scope.visibled=false;
+        }
 
         //隐藏注册框
         $scope.visible=true;
