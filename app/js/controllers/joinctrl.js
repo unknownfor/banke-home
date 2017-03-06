@@ -22,6 +22,12 @@ define([
         };
         cService.getData(allParas);
 
+        //注册框
+        $scope.visible=false;
+        $scope.controlJoinBox=function(flag){
+            $scope.visible=flag;
+        }
+
         //提交表单数据
         $scope.formData={
             name:'测试机构',
