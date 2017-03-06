@@ -264,7 +264,6 @@ html {
   overflow: hidden;
   width: 1100px;
   margin: 0 auto;
-  position: relative;
 }
 .footer-wrapper .footer .footer-section {
   -webkit-box-flex: 0;
@@ -398,14 +397,11 @@ html {
   font-size: 12px;
   color: #8a8b8c;
 }
-.footer-wrapper #weibo:hover:before {
-  position: relative;
-  top: 0px;
-  right: 0px;
+.footer-wrapper #weibo:hover:after {
+  position: absolute;
+  top: -280px;
+  right: 480px;
   content: url(../../img/footer/weibo.png);
-  width: 45px;
-  height: 45px;
-  vertical-align: middle;
   display: inline-block;
 }
 .home-wrapper {
