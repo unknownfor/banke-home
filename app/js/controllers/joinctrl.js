@@ -22,25 +22,28 @@ define([
         };
         cService.getData(allParas);
 
+
+
         //注册框
         $scope.visible=false;
         $scope.controlJoinBox=function(flag){
             $scope.visible=flag;
         }
 
+
         //提交表单数据
         $scope.formData={
-            name:'测试机构',
-            city:'武汉',
-            contact:'李先生',
-            address:'武汉某个街道',
-            introduce:'吧啦吧啦吧啦吧啦',
-            tel_phone:'18140662282'
+            name:'',
+            city:'',
+            contact:'',
+            address:'',
+            tel_phone:'',
+            instruction:''
         }
         $scope.submitForm=function(){
             var allParas = {
-                //url: window.globalObj.restUrl + 'addorgapplyfor',
-                url: 'http://b.cn/bankehome/addorgapplyfor',
+                url: window.globalObj.restUrl + 'addorgapplyfor',
+                // url: 'http://b.cn/bankehome/addorgapplyfor',
                 type: 'post',
                 data:$scope.formData,
                 callback: function (result) {
@@ -49,23 +52,7 @@ define([
             };
             cService.getData(allParas);
         }
-        // $scope.user={city:'',name:'',contact:'',phone:'',address:'',instruction:''};
-        // $scope.submit=function () {
-        //    app.submit($scope.user).then(function (data) {
-        //            $http({
-        //                method  : 'POST',
-        //                url     : 'XX',
-        //                // data    ://
-        //            })
-        //                .success(function(data) {
-        //                    console.log(data);
-        //                    if (!data.success) {
-        //
-        //                    } else {
-        //
-        //                    }
-        //                });
-        //    });
-        // };
+
+
     }]);
 });
