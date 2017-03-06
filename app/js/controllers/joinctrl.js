@@ -29,24 +29,25 @@ define([
             $scope.visible=false;
         }
 
-        //提交
-        //$scope.user={city:'',name:'',contact:'',phone:'',address:'',instruction:''};
-        //$scope.submit=function () {
+        //提交表单数据
+        // $scope.user={city:'',name:'',contact:'',phone:'',address:'',instruction:''};
+        // $scope.submit=function () {
         //    app.submit($scope.user).then(function (data) {
         //            $http({
         //                method  : 'POST',
         //                url     : 'XX',
-        //                data    : $.param($scope.user),  // pass in data as strings
+        //                // data    ://
         //            })
         //                .success(function(data) {
         //                    console.log(data);
         //                    if (!data.success) {
+        //
         //                    } else {
         //
         //                    }
         //                });
         //    });
-        //};
+        // };
 
 
 

@@ -19,5 +19,7 @@ define(['app'],function(app){
                 commonService.getData(allParas);
             }
         }
+
+
     }]);
 });
