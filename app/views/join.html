@@ -115,7 +115,14 @@
                         <div class="regbox">
                             <div class="box box-info">
                                 <i class="iconfont icon-city1 city-icon"></i>
-                                <input class="city" type="text" placeholder="选择城市" name="city" required="required" ng-model="formData.city">
+                                <!--<input class="city" type="text" placeholder="选择城市" name="city" required="required" ng-model="formData.city">-->
+                                <select class="city">
+                                    <option value="wuhan">武汉</option>
+                                    <option value="beijing">北京</option>
+                                    <option value="shanghai">上海</option>
+                                    <option value="hangzhou">杭州</option>
+                                    <option value="shenzhen">深圳</option>
+                                </select>
                                 <span class="down-section"></span>
                             </div>
                             <div class="box box-info">
@@ -131,7 +138,7 @@
                             </div>
                             <div class="box box-info">
                                 <i class="iconfont icon-contact test-icon"></i>
-                                <input type="text" placeholder="联系电话" required="required" ng-pattern="^1[0-9]{10}$" ng-maxlength="11" ng-model='formData.tel_phone' name="tel_phone"/>
+                                <input type="text" placeholder="联系电话" required="required" ng-pattern="" ng-maxlength="11" ng-model='formData.tel_phone' name="tel_phone"/>
                             </div>
                         </div>
 
@@ -146,7 +153,7 @@
                             <i class="iconfont icon-write test-icon"></i>
                             <textarea type="text" placeholder="机构简介" required="required" max-lenght="200" ng-model="formData.introduce" name="introduce">{{formData.introduce}}</textarea>
                         </div>
-                        <input type="submit" class="registered-btn" name="提交">
+                        <div class="submit-box"><input type="submit" class="registered-btn" name="提交"></div>
                     </form>
                 </div>
                 <img class="registered-bottom" src="../img/join/bg_3.png">

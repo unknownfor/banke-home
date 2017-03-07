@@ -1065,14 +1065,11 @@ html {
   border: 1px solid #eee;
   padding-left: 40px;
 }
-.registered .registered-box .registered-form .box > input.city {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  width: 185px;
-  margin-right: 40px;
+.registered .registered-box .submit-box {
+  text-align: center;
 }
 .registered .registered-box .registered-btn {
-  margin: 0 auto;
+  display: inline-block;
   text-align: center;
   width: 270px;
   height: 36px;
@@ -1088,6 +1085,16 @@ html {
   display: inline-block;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+.city {
+  padding-left: 40px;
+  outline: none;
+  height: 35px;
+  width: 268px;
+  border-radius: 50px;
+  border: #bfccdc 1px solid;
+  display: inline-block;
+  -webkit-appearance: none ;
 }
 .info-box {
   text-align: center;
