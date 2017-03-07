@@ -357,7 +357,6 @@ html {
   height: 113px;
 }
 .footer-wrapper .footer-contact {
-  position: relative;
   margin-top: 60px;
   text-align: center;
 }
@@ -377,10 +376,12 @@ html {
   margin-right: 14px;
 }
 .footer-wrapper .footer-contact .contact #weibo {
+  position: relative;
   background-position: -80px 4px;
   margin-left: 24px;
 }
 .footer-wrapper .footer-contact .contact #wechat {
+  position: relative;
   background-position: -42px 5px;
   margin-left: 20px;
 }
@@ -400,14 +401,14 @@ html {
 .footer-wrapper #weibo:hover:after {
   position: absolute;
   top: -170px;
-  right: 38%;
+  left: -62px;
   content: url(../../img/footer/weibo.png);
   display: inline-block;
 }
 .footer-wrapper #wechat:hover:after {
   position: absolute;
   top: -170px;
-  right: 34%;
+  left: -62px;
   content: url(../../img/footer/wechat.png);
   display: inline-block;
 }
