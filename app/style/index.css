@@ -399,9 +399,16 @@ html {
 }
 .footer-wrapper #weibo:hover:after {
   position: absolute;
-  top: -280px;
-  right: 300px;
+  top: -170px;
+  right: 38%;
   content: url(../../img/footer/weibo.png);
+  display: inline-block;
+}
+.footer-wrapper #wechat:hover:after {
+  position: absolute;
+  top: -170px;
+  right: 34%;
+  content: url(../../img/footer/wechat.png);
   display: inline-block;
 }
 .home-wrapper {
