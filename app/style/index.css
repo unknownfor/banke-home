@@ -243,6 +243,7 @@ html {
   margin-right: 0px;
 }
 .footer-wrapper {
+  display: none;
   height: auto;
   background-color: #ffeb3b;
   text-align: center;
