@@ -243,6 +243,7 @@ html {
   margin-right: 0px;
 }
 .footer-wrapper {
+  display: none;
   height: auto;
   background-color: #ffeb3b;
   text-align: center;
@@ -1065,14 +1066,11 @@ html {
   border: 1px solid #eee;
   padding-left: 40px;
 }
-.registered .registered-box .registered-form .box > input.city {
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  width: 185px;
-  margin-right: 40px;
+.registered .registered-box .submit-box {
+  text-align: center;
 }
 .registered .registered-box .registered-btn {
-  margin: 0 auto;
+  display: inline-block;
   text-align: center;
   width: 270px;
   height: 36px;
@@ -1088,6 +1086,24 @@ html {
   display: inline-block;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+.city {
+  padding-left: 40px;
+  outline: none;
+  height: 36px;
+  width: 268px;
+  border-radius: 50px;
+  border: #bfccdc 1px solid;
+  display: inline-block;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 36px;
+  /*在选择框的最右侧中间显示小箭头图片
+   取消center transparent 属性*/
+  background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right;
+  background-color: #FFFFFF;
 }
 .info-box {
   text-align: center;
@@ -1661,7 +1677,7 @@ html {
 .new {
   width: 640px;
   margin: 0 auto;
-  padding-top: 58px;
+  padding-top: 140px;
   padding-bottom: 80px;
   word-wrap: break-word;
 }

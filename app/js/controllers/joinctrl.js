@@ -33,12 +33,12 @@ define([
 
         //提交表单数据
         $scope.formData={
-            name:'',
-            city:'',
-            contact:'',
-            address:'',
-            tel_phone:'',
-            instruction:''
+            name:'23333',
+            city:'455555',
+            contact:'67777',
+            address:'890',
+            tel_phone:'18140662282',
+            introduce:'12345'
         }
         $scope.submitForm=function(){
             var allParas = {

@@ -389,17 +389,20 @@
           background-color: #FFFFFF;
           border: 1px solid #eee;
           padding-left: 40px;
-          &.city {
-            border-top-right-radius: 0px;
-            border-bottom-right-radius: 0px;
-            width: 185px;
-            margin-right:40px;
-          }
+          //&.city {
+          //  border-top-right-radius: 0px;
+          //  border-bottom-right-radius: 0px;
+          //  width: 185px;
+          //  margin-right:40px;
+          //}
         }
       }
     }
+    .submit-box {
+      text-align: center;
+    }
     .registered-btn {
-      margin: 0 auto;
+      display: inline-block;
       text-align: center;
       .size(270px,36px);
       color: #FFFFFF;
@@ -407,6 +410,7 @@
       line-height: 36px;
       border-radius: 50px;
       background-color: @bColor;
+      //border: 1px solid rgba(238,238,238,0);
     }
     .registered-bottom {
       margin-top: 20px;
@@ -417,3 +421,21 @@
     }
   }
 }
+.city {
+   padding-left: 40px;
+   outline: none;
+   height: 36px;
+   width: 268px;
+   border-radius: 50px;
+   border: rgb(191, 204, 220) 1px solid;
+   display: inline-block;
+   /*很关键：将默认的select选择框样式清除*/
+   appearance:none;
+   -moz-appearance:none;
+   -webkit-appearance:none;
+   padding-right: 36px;
+   /*在选择框的最右侧中间显示小箭头图片
+   取消center transparent 属性*/
+   background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right ;
+   background-color: #FFFFFF;
+ }
