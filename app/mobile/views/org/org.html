@@ -1,0 +1,21 @@
+<div class="org-view">
+    <div class="home-wrapper" ng-controller="orgCtrl">
+        <div class="org-head">
+            <img  class="bg" id="org-head-bg" src="img/org/bg_1.png" />
+            <div class="org-head-title">
+                <div class="org-title-box">
+                    <span id="title-left">精&nbsp选</span>
+                    <span id="title-right">机&nbsp构</span>
+                </div>
+            </div>
+        </div>
+        <div class="org-ul">
+            <div class="org-li" ng-repeat="item in orgUl">
+                <a ui-sref="org" title="机构">
+                    <div class="org-logo"><img src="{{item.logo}}"/></div>
+                    <div class="org-name">{{item.name}}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

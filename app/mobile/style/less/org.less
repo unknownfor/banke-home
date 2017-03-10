@@ -1,0 +1,70 @@
+.org-head {
+  text-align: center;
+  position: relative;
+  #org-head-bg {
+    width: 100%;
+  }
+  .org-head-title {
+    position: absolute;
+    top: 170px;
+    width: 100%;
+    .org-title-box {
+      margin: 0 auto;
+      .size(434px,100px);
+      border: 3px solid #ffeb3b;
+      font-size: 48px;
+      line-height: 100px;
+      #title-left {
+        color: @mColor;
+      }
+      #title-right {
+        color: #FFFFFF;
+      }
+    }
+
+  }
+}
+.org-ul {
+    width:1100px;
+    min-height: 640px;
+    height: 100%;
+    margin: 0 auto;
+    padding:116px 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    .org-li {
+      flex: 0 0 210px;
+      text-align: center;
+      margin-bottom: 90px;
+      padding-right: 10px;
+      > a {
+        .org-logo {
+          @h: 76px;
+          display: inline-block;
+          > img {
+            .size(@h,@h);
+            border-radius: @h;
+            box-shadow: 0 0 3px 3px rgba(221, 221, 221, 0.6);
+          }
+        }
+        .org-name:before {
+          content: "";
+          margin-right: 10px;
+          text-align: center;
+          background: @mColor;
+          border-radius: 8px;
+          height: 8px;
+          width: 8px;
+          vertical-align: 1px;
+          display: inline-block;
+        }
+        .org-name {
+          margin-top: 28px;
+          color: #9b9b9b;
+          font-size:16px;
+          line-height: 27px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
