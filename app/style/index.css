@@ -1089,12 +1089,20 @@ html {
 .city {
   padding-left: 40px;
   outline: none;
-  height: 35px;
+  height: 36px;
   width: 268px;
   border-radius: 50px;
   border: #bfccdc 1px solid;
   display: inline-block;
-  -webkit-appearance: none ;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 36px;
+  /*在选择框的最右侧中间显示小箭头图片
+   取消center transparent 属性*/
+  background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right;
+  background-color: #FFFFFF;
 }
 .info-box {
   text-align: center;

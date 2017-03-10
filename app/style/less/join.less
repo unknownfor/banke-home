@@ -422,12 +422,20 @@
   }
 }
 .city {
-  padding-left: 40px;
-  outline: none;
-  height: 35px;
-  width: 268px;
-  border-radius: 50px;
-  border: rgb(191, 204, 220) 1px solid;
-  display: inline-block;
-  -webkit-appearance: none ;
-}
+   padding-left: 40px;
+   outline: none;
+   height: 36px;
+   width: 268px;
+   border-radius: 50px;
+   border: rgb(191, 204, 220) 1px solid;
+   display: inline-block;
+   /*很关键：将默认的select选择框样式清除*/
+   appearance:none;
+   -moz-appearance:none;
+   -webkit-appearance:none;
+   padding-right: 36px;
+   /*在选择框的最右侧中间显示小箭头图片
+   取消center transparent 属性*/
+   background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right ;
+   background-color: #FFFFFF;
+ }
