@@ -1,3 +1,58 @@
 <div class="footer-wrapper">
-   footer
+
+   <div class="footer">
+      <!--about us-->
+      <div class="footer-section about">
+         <p class="footer-index"><span>关于我们</span></p>
+         <div class="footer-about">
+            半课是武汉迅牛科技联合武汉一批优质设计培训机构重磅推出的学习保障激励平台，
+            学员在半课上选择机构学习不仅可得到品质保障、七天退款和就业服务，还可获得最高学费50%的奖励。
+         </div>
+      </div>
+
+      <!--about news-->
+      <div class="footer-section news">
+         <p class="footer-index"><span>新闻动态</span></p>
+         <ul class="footer-navs">
+            <li ng-repeat="item in footerNavs">
+               <a ng-if="item.type==0" target="_blank" href="{{item.url}}" title="{{item.title}}">
+                  <img  class="news-img" src="{{item.logo_url}}">
+                  <span class="news-title">{{item.title}}</span>
+                  <span class="news-time">{{item.updated_at | mydate}}</span>
+               </a>
+               <a ng-if="item.type==1" ui-sref="news" title="{{item.title}}">
+                  <img  class="news-img" src="{{item.logo_url}}">
+                  <span class="news-title">{{item.title}}</span>
+                  <span class="news-time">{{item.updated_at | mydate}}</span>
+               </a>
+            </li>
+         </ul>
+      </div>
+
+      <!--about download-->
+      <div class="footer-section download">
+         <p class="footer-index"><span>下载半课App</span></p>
+         <img id="downloadQRcode" src="img/footer/QRcode.png" />
+      </div>
+   </div>
+
+   <!--about company-->
+   <div class="footer-contact">
+      <div class="contact">
+         <span class="footer-contact-img" id="call-img"></span>
+         <span class="call-num">联系电话：400-034-0033</span>
+         <span class="footer-contact-img" id="weibo"></span>
+         <span class="footer-contact-img" id="wechat"></span>
+      </div>
+
+      <p class="address">
+         <span>公司地址：&nbsp武汉市&nbsp洪山区&nbsp野芷湖西路16号创意天地2#高层601</span>
+      </p>
+      <p class="license">
+         <span>Copyright&copy;2014-{{year| mydate:'yyyy'}}</span>
+         <span> www.91banke.com All Rights Reserved.</span>
+         <span>武汉迅牛科技有限公司</span>
+         <span>鄂ICP备15003238号</span>
+      </p>
+   </div>
 </div>
