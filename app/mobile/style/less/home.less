@@ -5,4 +5,100 @@
   img {
     max-width: 100%;
   }
+  .home-first {
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    .home-p {
+      position: absolute;
+      top: 45%;
+      left: 15px;
+      right: 15px;
+      .first-p {
+        font-size: 18px;
+      }
+      .second-p {
+        font-size: 13px;
+      }
+    }
+  }
+  .home-second {
+    margin-top: 150px;
+    position: relative;
+    text-align: center;
+    .second-box-info {
+      position: absolute;
+      top: -60%;
+      left: 0px;
+      right: 0px;
+      .box-phone {
+        display: inline-block;
+        .size(148px,290px);
+        background: url("../../mobile/img/home/second-phone.png") 0 0 no-repeat;
+        background-size: 300px*0.5 583px*0.5;
+        margin-bottom: 45px;
+      }
+      .box-info {
+        display: flex;
+        padding: 0px 25px;
+        .box-info-li {
+          flex: 1;
+          color: #FBC02D;
+          font-size: 16px;
+          .box-img{
+            display: inline-block;
+            background: url("../../mobile/img/home/sprite.png");
+            background-size: 483px*0.8 340px*0.8;
+            .size(67px,67px);
+            &.org {
+              background-position: -7px -5px;
+            }
+            &.price {
+              background-position: -76px -5px;
+            }
+            &.service {
+              background-position: -149px -5px;
+            }
+            &.guarantee {
+              background-position: -223px -4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .home-third {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: center;
+    > span {
+      .size(290px,315px);
+      display: inline-block;
+      background: url("../../mobile/img/home/bg_3.png") no-repeat;
+      background-size: 478px*0.6 530px*0.6;
+    }
+  }
+  .home-fourth {
+    position: relative;
+    .fourth-info-box {
+      position: absolute;
+      top: 20px;
+      left: 25px;
+      right: 25px;
+      .fourth-box {
+
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 375px){
+  .home-first {
+    .home-p {
+      .second-p {
+        font-size: 11px;
+      }
+    }
+  }
 }

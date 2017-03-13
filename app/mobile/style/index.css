@@ -107,7 +107,7 @@ html {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 95px;
+  height: 70px;
   width: 100%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -128,13 +128,13 @@ html {
   background-size: 75.6px 37.8px;
   width: 77px;
   height: 35px;
-  top: 33px;
+  top: 20px;
 }
 .banner-wrapper .logo .logo-word {
   font-size: 14px;
   margin-left: 74px;
   display: inline-block;
-  vertical-align: -40px;
+  vertical-align: -29px;
 }
 .banner-wrapper .logo .logo-word .slogen {
   color: #fff;
@@ -151,7 +151,7 @@ html {
   display: inline-block;
 }
 .banner-wrapper .menu-btn {
-  margin-top: 40px;
+  margin-top: 28px;
   padding-right: 30px;
 }
 .banner-wrapper .menu-btn > span {
@@ -337,6 +337,105 @@ html {
 }
 .home-wrapper img {
   max-width: 100%;
+}
+.home-wrapper .home-first {
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+}
+.home-wrapper .home-first .home-p {
+  position: absolute;
+  top: 45%;
+  left: 15px;
+  right: 15px;
+}
+.home-wrapper .home-first .home-p .first-p {
+  font-size: 18px;
+}
+.home-wrapper .home-first .home-p .second-p {
+  font-size: 13px;
+}
+.home-wrapper .home-second {
+  margin-top: 150px;
+  position: relative;
+  text-align: center;
+}
+.home-wrapper .home-second .second-box-info {
+  position: absolute;
+  top: -60%;
+  left: 0px;
+  right: 0px;
+}
+.home-wrapper .home-second .second-box-info .box-phone {
+  display: inline-block;
+  width: 148px;
+  height: 290px;
+  background: url("../../mobile/img/home/second-phone.png") 0 0 no-repeat;
+  -webkit-background-size: 150px 291.5px;
+  background-size: 150px 291.5px;
+  margin-bottom: 45px;
+}
+.home-wrapper .home-second .second-box-info .box-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 25px;
+}
+.home-wrapper .home-second .second-box-info .box-info .box-info-li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  color: #FBC02D;
+  font-size: 16px;
+}
+.home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img {
+  display: inline-block;
+  background: url("../../mobile/img/home/sprite.png");
+  -webkit-background-size: 386.4px 272px;
+  background-size: 386.4px 272px;
+  width: 67px;
+  height: 67px;
+}
+.home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img.org {
+  background-position: -7px -5px;
+}
+.home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img.price {
+  background-position: -76px -5px;
+}
+.home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img.service {
+  background-position: -149px -5px;
+}
+.home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img.guarantee {
+  background-position: -223px -4px;
+}
+.home-wrapper .home-third {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.home-wrapper .home-third > span {
+  width: 290px;
+  height: 315px;
+  display: inline-block;
+  background: url("../../mobile/img/home/bg_3.png") no-repeat;
+  -webkit-background-size: 286.8px 318px;
+  background-size: 286.8px 318px;
+}
+.home-wrapper .home-fourth {
+  position: relative;
+}
+.home-wrapper .home-fourth .fourth-info-box {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+  right: 25px;
+}
+@media screen and (max-width: 375px) {
+  .home-first .home-p .second-p {
+    font-size: 11px;
+  }
 }
 .new {
   width: 640px;
