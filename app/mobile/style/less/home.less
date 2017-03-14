@@ -1,10 +1,11 @@
+@hAddress:url("../../mobile/img/home/sprite.png") no-repeat;
+img {
+  max-width: 100%;
+}
 .home-wrapper {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  img {
-    max-width: 100%;
-  }
   .home-first {
     position: relative;
     text-align: center;
@@ -47,7 +48,7 @@
           font-size: 16px;
           .box-img{
             display: inline-block;
-            background: url("../../mobile/img/home/sprite.png");
+            background: @hAddress;
             background-size: 483px*0.8 340px*0.8;
             .size(67px,67px);
             &.org {
@@ -80,14 +81,151 @@
   }
   .home-fourth {
     position: relative;
-    .fourth-info-box {
+      font-size: 0px;
+    .fourth-box-info {
       position: absolute;
       top: 20px;
-      left: 25px;
-      right: 25px;
       .fourth-box {
-
+        text-align: left;
+        padding: 0px 25px 20px 25px;
+        .fourth-title {
+          font-size: 16px;
+          color: @fColor;
+        }
+        .fourth-title:before {
+          content: "";
+          margin:  0px 12px;
+          text-align: center;
+          background: #ff3b40;
+          border-radius: 8px;
+          height: 8px;
+          width: 8px;
+          vertical-align: 2px;
+          display: inline-block;
+        }
+        .fourth-info {
+          padding-top: 10px;
+          font-size: 14px;
+          color: #2f2f2f;
+          letter-spacing: 1px;
+          line-height: 22px;
+        }
+        &:last-child {
+          padding-bottom: 0px;
+        }
       }
+    }
+  }
+  .home-fifth {
+    background-color: @mColor;
+    height: 760px;
+    line-height: 22px;
+    .fifth-icon{
+      margin: 70px 0px 30px 45px;
+      .size(47px,27px);
+      display: inline-block;
+      background: @hAddress -376px -24px;
+    }
+    .fifth-img {
+      padding-bottom: 30px;
+      margin: 0 auto;
+      .size(275px,145px);
+      background: @hAddress -13px -60px;
+      background-size: 483px*0.6 340px*0.6;
+    }
+    > h2 {
+      text-align: center;
+      color: @fColor;
+    }
+    .fifth-box {
+      margin: 40px 25px 0px 25px;
+      .fifth-title {
+        text-align: center;
+        .size(110px,32px);
+        border-radius: 50px;
+        line-height: 32px;
+        color: #FFFFFF;
+        font-size: 18px;
+        background-color: #f7ab00;
+        margin-bottom: 10px;
+      }
+      .fifth-info {
+        line-height: 22px;
+        font-size: 14px;
+      }
+    }
+
+  }
+  .home-sixth {
+    position: relative;
+    margin-top: 550px;
+    .sixth-box{
+      position: absolute;
+      top: -500px;
+      left: 0px;
+      right: 0px;
+      .sixth-box-info {
+        display: flex;
+        padding: 0 20px;
+        .fourth-tips {
+          flex: 1;
+          text-align: center;
+          .fourth-tips-num {
+            font-size: 24px;
+            color: #fbc02d;
+            margin-bottom: 30px;
+          }
+          .fourth-tips-bg {
+            @bsize: 75px;
+            display: inline-block;
+            line-height: @bsize;
+            background-color: #e5e5e5;
+            .size(@bsize,@bsize);
+            border-radius: @bsize;
+            text-align: center;
+            .hexagon {
+              display: inline-block;
+              @hheight:  28px;
+              @hao:1.732;
+              .box1 {
+                width:0;
+                border-left: @hheight*@hao/2 solid transparent;
+                border-right: @hheight*@hao/2 solid transparent;
+                border-bottom: @hheight*0.5 solid #fff;
+              }
+              .box2 {
+                text-align: center;
+                width: @hheight*@hao;
+                height: @hheight;
+                background-color: #fff;
+                line-height: @hheight;
+                font-size: 16px;
+                color: #000000;
+              }
+              .box3 {
+                width:0;
+                border-top:  @hheight*0.5 solid #fff;
+                border-left: @hheight*@hao/2 solid transparent;
+                border-right: @hheight*@hao/2 solid transparent;
+              }
+            }
+          }
+          .fourth-tips-tip {
+            line-height: 20px;
+            font-size: 12px;
+            color: #383837;
+            letter-spacing: 2px;
+          }
+        }
+      }
+    }
+  }
+  .home-img-box {
+    margin-top: 45px;
+    font-size: 0;
+    .home-img {
+      margin-left:15px;
+      margin-right: 15px;
     }
   }
 }

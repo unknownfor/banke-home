@@ -204,7 +204,7 @@ html {
   margin-right: 0px;
 }
 .footer-wrapper {
-  background-color: #ffeb3b;
+  background-color: #FFE712;
 }
 .footer-section {
   padding: 0px 30px 40px 30px;
@@ -330,13 +330,13 @@ html {
   font-size: 10px;
   color: #8a8b8c;
 }
+img {
+  max-width: 100%;
+}
 .home-wrapper {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-}
-.home-wrapper img {
-  max-width: 100%;
 }
 .home-wrapper .home-first {
   position: relative;
@@ -392,7 +392,7 @@ html {
 }
 .home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img {
   display: inline-block;
-  background: url("../../mobile/img/home/sprite.png");
+  background: url("../../mobile/img/home/sprite.png") no-repeat;
   -webkit-background-size: 386.4px 272px;
   background-size: 386.4px 272px;
   width: 67px;
@@ -425,12 +425,159 @@ html {
 }
 .home-wrapper .home-fourth {
   position: relative;
+  font-size: 0px;
 }
-.home-wrapper .home-fourth .fourth-info-box {
+.home-wrapper .home-fourth .fourth-box-info {
   position: absolute;
   top: 20px;
-  left: 25px;
-  right: 25px;
+}
+.home-wrapper .home-fourth .fourth-box-info .fourth-box {
+  text-align: left;
+  padding: 0px 25px 20px 25px;
+}
+.home-wrapper .home-fourth .fourth-box-info .fourth-box .fourth-title {
+  font-size: 16px;
+  color: #383d43;
+}
+.home-wrapper .home-fourth .fourth-box-info .fourth-box .fourth-title:before {
+  content: "";
+  margin: 0px 12px;
+  text-align: center;
+  background: #ff3b40;
+  border-radius: 8px;
+  height: 8px;
+  width: 8px;
+  vertical-align: 2px;
+  display: inline-block;
+}
+.home-wrapper .home-fourth .fourth-box-info .fourth-box .fourth-info {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #2f2f2f;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+.home-wrapper .home-fourth .fourth-box-info .fourth-box:last-child {
+  padding-bottom: 0px;
+}
+.home-wrapper .home-fifth {
+  background-color: #ffeb3b;
+  height: 760px;
+  line-height: 22px;
+}
+.home-wrapper .home-fifth .fifth-icon {
+  margin: 70px 0px 30px 45px;
+  width: 47px;
+  height: 27px;
+  display: inline-block;
+  background: url("../../mobile/img/home/sprite.png") no-repeat -376px -24px;
+}
+.home-wrapper .home-fifth .fifth-img {
+  padding-bottom: 30px;
+  margin: 0 auto;
+  width: 275px;
+  height: 145px;
+  background: url("../../mobile/img/home/sprite.png") no-repeat -13px -60px;
+  -webkit-background-size: 289.8px 204px;
+  background-size: 289.8px 204px;
+}
+.home-wrapper .home-fifth > h2 {
+  text-align: center;
+  color: #383d43;
+}
+.home-wrapper .home-fifth .fifth-box {
+  margin: 40px 25px 0px 25px;
+}
+.home-wrapper .home-fifth .fifth-box .fifth-title {
+  text-align: center;
+  width: 110px;
+  height: 32px;
+  border-radius: 50px;
+  line-height: 32px;
+  color: #FFFFFF;
+  font-size: 18px;
+  background-color: #f7ab00;
+  margin-bottom: 10px;
+}
+.home-wrapper .home-fifth .fifth-box .fifth-info {
+  line-height: 22px;
+  font-size: 14px;
+}
+.home-wrapper .home-sixth {
+  position: relative;
+  margin-top: 550px;
+}
+.home-wrapper .home-sixth .sixth-box {
+  position: absolute;
+  top: -500px;
+  left: 0px;
+  right: 0px;
+}
+.home-wrapper .home-sixth .sixth-box .sixth-box-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+}
+.home-wrapper .home-sixth .sixth-box .sixth-box-info .fourth-tips {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: center;
+}
+.home-wrapper .home-sixth .sixth-box .sixth-box-info .fourth-tips .fourth-tips-num {
+  font-size: 24px;
+  color: #fbc02d;
+  margin-bottom: 30px;
+}
+.home-wrapper .home-sixth .sixth-box .sixth-box-info .fourth-tips .fourth-tips-bg {
+  display: inline-block;
+  line-height: 75px;
+  background-color: #e5e5e5;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  text-align: center;
+}
+.home-wrapper .home-sixth .sixth-box .sixth-box-info .fourth-tips .fourth-tips-bg .hexagon {
+  display: inline-block;
+}
+.home-wrapper .home-sixth .sixth-box .sixth-box-info .fourth-tips .fourth-tips-bg .hexagon .box1 {
+  width: 0;
+  border-left: 24.248px solid transparent;
+  border-right: 24.248px solid transparent;
+  border-bottom: 14px solid #ffffff;
+}
+.home-wrapper .home-sixth .sixth-box .sixth-box-info .fourth-tips .fourth-tips-bg .hexagon .box2 {
+  text-align: center;
+  width: 48.496px;
+  height: 28px;
+  background-color: #fff;
+  line-height: 28px;
+  font-size: 16px;
+  color: #000000;
+}
+.home-wrapper .home-sixth .sixth-box .sixth-box-info .fourth-tips .fourth-tips-bg .hexagon .box3 {
+  width: 0;
+  border-top: 14px solid #ffffff;
+  border-left: 24.248px solid transparent;
+  border-right: 24.248px solid transparent;
+}
+.home-wrapper .home-sixth .sixth-box .sixth-box-info .fourth-tips .fourth-tips-tip {
+  line-height: 20px;
+  font-size: 12px;
+  color: #383837;
+  letter-spacing: 2px;
+}
+.home-wrapper .home-img-box {
+  margin-top: 45px;
+  font-size: 0;
+}
+.home-wrapper .home-img-box .home-img {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 @media screen and (max-width: 375px) {
   .home-first .home-p .second-p {
