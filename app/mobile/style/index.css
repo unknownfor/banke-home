@@ -163,12 +163,13 @@ html {
   background-size: 24px 18.4px;
 }
 .banner-wrapper .banner-items-container {
+  border-radius: 8px;
   position: absolute;
-  right: 0px;
-  top: 95px;
-  background-color: #fa4535;
-  width: 200px;
-  height: 300px;
+  right: 30px;
+  top: 70px;
+  background-color: #fde512;
+  width: 184px;
+  height: 336px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -178,27 +179,19 @@ html {
   -webkit-align-items: left;
   -ms-flex-align: left;
   align-items: left;
+  text-align: center;
 }
 .banner-wrapper .banner-items-container li {
-  margin-right: 40px;
-  font-size: 12px;
-  line-height: 22px;
-  width: auto;
-  height: 22px;
-}
-.banner-wrapper .banner-items-container li:hover,
-.banner-wrapper .banner-items-container li.selected {
-  border-radius: 11px;
-  background-color: #fae63b;
-}
-.banner-wrapper .banner-items-container li:hover a > span,
-.banner-wrapper .banner-items-container li.selected a > span {
-  color: #373d43;
+  height: 84px;
+  line-height: 84px;
+  padding: 0 5px;
+  border-bottom: 1px solid #fff;
 }
 .banner-wrapper .banner-items-container li a > span {
   cursor: pointer;
   padding: 2px 10px;
-  color: #FFFFFF;
+  color: #383d43;
+  font-size: 26px;
 }
 .banner-wrapper .banner-items-container li:last-child {
   margin-right: 0px;
