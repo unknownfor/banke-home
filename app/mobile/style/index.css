@@ -169,7 +169,7 @@ html {
   top: 70px;
   background-color: #fde512;
   width: 184px;
-  height: 336px;
+  height: 280px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -182,8 +182,8 @@ html {
   text-align: center;
 }
 .banner-wrapper .banner-items-container li {
-  height: 84px;
-  line-height: 84px;
+  height: 70px;
+  line-height: 70px;
   padding: 0 5px;
   border-bottom: 1px solid #fff;
 }
@@ -191,10 +191,23 @@ html {
   cursor: pointer;
   padding: 2px 10px;
   color: #383d43;
-  font-size: 26px;
+  font-size: 22px;
 }
 .banner-wrapper .banner-items-container li:last-child {
   margin-right: 0px;
+}
+.banner-wrapper .banner-items-container:before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fde512;
+  position: absolute;
+  top: -15px;
+  right: 7px;
+  font-size: 0px;
 }
 .footer-wrapper {
   background-color: #FFE712;
