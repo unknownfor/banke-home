@@ -872,6 +872,9 @@ html {
 .join-fifth .fifth-ul .fifth-li-org:nth-of-type(9n) {
   margin-left: 0;
 }
+.join-fifth .fifth-ul .fifth-li-org:nth-of-type(13n) {
+  margin-left: 0;
+}
 .join-fifth .fifth-ul .fifth-li-org .org-logo {
   text-align: center;
   font-size: 0;
