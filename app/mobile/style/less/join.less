@@ -50,6 +50,7 @@
       margin-left: 5px;
       font-size: 20px;
       vertical-align: 8px;
+      color: #4b4e4d;
     }
   }
   .second-box {
@@ -103,11 +104,69 @@
   height: 150px;
   background-color: #FFE712;
   text-align: center;
-  line-height: 190px;
+  line-height: 210px;
   .join-third-pic {
     display: inline-block;
-    .size(400px,44px);
-    background: url("../../img/join/sprite.png") -6px -128px;
-    background-size: 590px*0.7 416px*0.7;
+    .size(408px*0.7,99px*0.7);
+    background: url("../../mobile/img/join/advantage.png") no-repeat;
+    background-size: 408px*0.7 99px*0.7;
+  }
+}
+.join-fourth {
+  position: relative;
+  text-align: left;
+  .fourth-info-box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0 25px;
+    .fourth-box {
+      color: @fColor;
+      margin-top: 14%;
+      .fourth-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .fourth-title:before {
+        content: "";
+        margin-right:10px;
+        text-align: center;
+        background: #ff8712;
+        border-radius: 8px;
+        height: 8px;
+        width: 8px;
+        vertical-align: 2px;
+        display: inline-block;
+      }
+      .fourth-info {
+        font-size: 16px;
+      }
+    }
+  }
+}
+.join-fifth {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding: 0 25px;
+  text-align: center;
+  .fifth-title {
+    .title-img{
+      .size(22px,25px);
+      display: inline-block;
+      background: @jAddress -344px -44px;
+      background-size: 537px*0.7 102px*0.7;
+    }
+    .title-txt {
+      margin-left: 5px;
+      font-size: 20px;
+
+      vertical-align: 4px;
+      color: #4b4e4d;
+    }
+  }
+  .fifth-p {
+    color: #767676;
+    font-size: 14px;
   }
 }

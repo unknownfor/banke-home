@@ -646,6 +646,7 @@ img {
   margin-left: 5px;
   font-size: 20px;
   vertical-align: 8px;
+  color: #4b4e4d;
 }
 .join-second .second-box {
   display: -webkit-box;
@@ -708,15 +709,72 @@ img {
   height: 150px;
   background-color: #FFE712;
   text-align: center;
-  line-height: 190px;
+  line-height: 210px;
 }
 .join-third .join-third-pic {
   display: inline-block;
-  width: 400px;
-  height: 44px;
-  background: url("../../img/join/sprite.png") -6px -128px;
-  -webkit-background-size: 413px 291.2px;
-  background-size: 413px 291.2px;
+  width: 285.6px;
+  height: 69.3px;
+  background: url("../../mobile/img/join/advantage.png") no-repeat;
+  -webkit-background-size: 285.6px 69.3px;
+  background-size: 285.6px 69.3px;
+}
+.join-fourth {
+  position: relative;
+  text-align: left;
+}
+.join-fourth .fourth-info-box {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0 25px;
+}
+.join-fourth .fourth-info-box .fourth-box {
+  color: #383d43;
+  margin-top: 14%;
+}
+.join-fourth .fourth-info-box .fourth-box .fourth-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.join-fourth .fourth-info-box .fourth-box .fourth-title:before {
+  content: "";
+  margin-right: 10px;
+  text-align: center;
+  background: #ff8712;
+  border-radius: 8px;
+  height: 8px;
+  width: 8px;
+  vertical-align: 2px;
+  display: inline-block;
+}
+.join-fourth .fourth-info-box .fourth-box .fourth-info {
+  font-size: 16px;
+}
+.join-fifth {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding: 0 25px;
+  text-align: center;
+}
+.join-fifth .fifth-title .title-img {
+  width: 22px;
+  height: 25px;
+  display: inline-block;
+  background: url("../../mobile/img/join/sprite.png") no-repeat -344px -44px;
+  -webkit-background-size: 375.9px 71.4px;
+  background-size: 375.9px 71.4px;
+}
+.join-fifth .fifth-title .title-txt {
+  margin-left: 5px;
+  font-size: 20px;
+  vertical-align: 4px;
+  color: #4b4e4d;
+}
+.join-fifth .fifth-p {
+  color: #767676;
+  font-size: 14px;
 }
 .new {
   width: 640px;
