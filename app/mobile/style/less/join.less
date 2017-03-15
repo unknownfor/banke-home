@@ -1,0 +1,113 @@
+@jAddress: url("../../mobile/img/join/sprite.png") no-repeat;
+.join-first {
+  position: relative;
+  text-align: center;
+  .first-info {
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    right: 0px;
+    >h2 {
+      color: #FFE712;
+    }
+    .second-p{
+      font-size: 16px;
+      color: #FFFFFF;
+      margin-bottom: 30px;
+      >span {
+        color: #ffae00;
+      }
+    }
+    > p {
+      font-size: 14px;
+      color: #fbfbfb;
+    }
+    .first-btn {
+      margin-top: 20px;
+      @btnH:40px;
+      font-size: 18px;
+      color: #FFFFFF;
+      display: inline-block;
+      .size(120px,@btnH);
+      border-radius: 50px;
+      background-color: #FF8519;
+      line-height: @btnH;
+    }
+  }
+}
+.join-second {
+  text-align: center;
+  margin-top: 45px;
+  .second-title {
+    display: inline-block;
+    .title-img {
+      .size(32px,32px);
+      display: inline-block;
+      background: @jAddress -344px -6px;
+      background-size: 537px*0.7 102px*0.7;
+    }
+    .title-txt {
+      margin-left: 5px;
+      font-size: 20px;
+      vertical-align: 8px;
+    }
+  }
+  .second-box {
+    display: flex;
+    margin-top: 40px;
+    .join-second-box {
+      flex: 1;
+      width: 225px;
+      .box-pic {
+        display: inline-block;
+        background: @jAddress;
+        background-size: 537px*0.6 102px*0.6;
+        &.service {
+          .size(52px,54px);
+          background-position: -119px -4px;
+        }
+        &.management {
+          .size(59px,54px);
+          background-position: -229px 0px;
+        }
+        &.brand {
+          .size(55px,54px);
+          background-position: -63px -5px;
+        }
+        &.spread {
+          .size(53px,54px);
+          background-position: -174px -0px;
+        }
+        &.admissions {
+          .size(62px,60px);
+          background-position: 0px -3px;
+        }
+      }
+      .box-title {
+        font-size: 16px;
+        color: #383d43;
+        margin-bottom: 14px;
+      }
+      .box-detail {
+        font-size: 12px;
+        color: #9b9b9b;
+      }
+    }
+    &.second-box {
+      margin-bottom: 40px;
+    }
+  }
+
+}
+.join-third {
+  height: 150px;
+  background-color: #FFE712;
+  text-align: center;
+  line-height: 190px;
+  .join-third-pic {
+    display: inline-block;
+    .size(400px,44px);
+    background: url("../../img/join/sprite.png") -6px -128px;
+    background-size: 590px*0.7 416px*0.7;
+  }
+}
