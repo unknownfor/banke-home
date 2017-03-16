@@ -2,33 +2,36 @@
 .join-first {
   position: relative;
   text-align: center;
+  letter-spacing: 1px;
   .first-info {
     position: absolute;
-    top: 90px;
+    top: 70px;
     left: 0px;
     right: 0px;
     >h2 {
       color: #FFE712;
     }
     .second-p{
-      font-size: 16px;
+      font-size: 14px;
       color: #FFFFFF;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       >span {
         color: #ffae00;
       }
     }
-    > p {
-      font-size: 14px;
+    .txt {
+      font-size: 12px;
       color: #fbfbfb;
+      padding-bottom: 5px;
+      letter-spacing: 0px;
     }
     .first-btn {
-      margin-top: 20px;
-      @btnH:40px;
-      font-size: 18px;
+      margin-top: 15px;
+      @btnH:32px;
+      font-size: 16px;
       color: #FFFFFF;
       display: inline-block;
-      .size(120px,@btnH);
+      .size(108px,@btnH);
       border-radius: 50px;
       background-color: #FF8519;
       line-height: @btnH;
@@ -125,7 +128,7 @@
       color: @fColor;
       margin-top: 14%;
       .fourth-title {
-        font-size: 18px;
+        font-size: 14px;
         margin-bottom: 10px;
       }
       .fourth-title:before {
@@ -140,7 +143,7 @@
         display: inline-block;
       }
       .fourth-info {
-        font-size: 16px;
+        font-size: 12px;
       }
     }
   }
@@ -168,5 +171,73 @@
   .fifth-p {
     color: #767676;
     font-size: 14px;
+  }
+  .fifth-ul {
+    margin: 0 auto;
+    .fifth-li-org {
+      display: inline-block;
+      padding: 4px;
+      .size(250px,225px);
+      //.size(300px,280px);
+      margin-top: 55px;
+      max-height: 450px;
+      border-radius: 2px;
+      border: 1px solid rgba(188,188,188,0.5);
+      background-color: @mColor;
+      .org-logo {
+        text-align: center;
+        font-size: 0;
+        height: 88px;
+        >img {
+          height: 88px;
+          width: 100%;
+          display: inline-block;
+        }
+      }
+      .org-box {
+        text-align: left;
+        color: #383d43;
+        margin: 10px;
+        .org-name {
+          .txt-ellipsis-p(1);
+          font-size:15px;
+          padding-bottom: 12px;
+          color: #000;
+        }
+        .org-info {
+          line-height: 22px;
+          font-size: 10px;
+          margin-bottom: 10px;
+          .txt-ellipsis-p(3);
+        }
+
+      }
+      .org-bottom {
+        margin: 0 10px;
+        font-size: 10px;
+        .org-contactor{
+          float: left;
+        }
+          .visit{
+            float: right;
+            cursor: pointer;
+            font-weight: bold;
+            color: #383d43;
+          }
+      }
+    }
+  }
+  .fifth-btn {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .size(106px,34px);
+    line-height: 34px;
+    border-radius: 50px;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    font-size: 16px;
+    color: #a9a9a9;
   }
 }

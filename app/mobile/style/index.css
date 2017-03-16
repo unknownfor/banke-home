@@ -594,10 +594,11 @@ img {
 .join-first {
   position: relative;
   text-align: center;
+  letter-spacing: 1px;
 }
 .join-first .first-info {
   position: absolute;
-  top: 90px;
+  top: 70px;
   left: 0px;
   right: 0px;
 }
@@ -605,27 +606,29 @@ img {
   color: #FFE712;
 }
 .join-first .first-info .second-p {
-  font-size: 16px;
+  font-size: 14px;
   color: #FFFFFF;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .join-first .first-info .second-p > span {
   color: #ffae00;
 }
-.join-first .first-info > p {
-  font-size: 14px;
+.join-first .first-info .txt {
+  font-size: 12px;
   color: #fbfbfb;
+  padding-bottom: 5px;
+  letter-spacing: 0px;
 }
 .join-first .first-info .first-btn {
-  margin-top: 20px;
-  font-size: 18px;
+  margin-top: 15px;
+  font-size: 16px;
   color: #FFFFFF;
   display: inline-block;
-  width: 120px;
-  height: 40px;
+  width: 108px;
+  height: 32px;
   border-radius: 50px;
   background-color: #FF8519;
-  line-height: 40px;
+  line-height: 32px;
 }
 .join-second {
   text-align: center;
@@ -735,7 +738,7 @@ img {
   margin-top: 14%;
 }
 .join-fourth .fourth-info-box .fourth-box .fourth-title {
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 .join-fourth .fourth-info-box .fourth-box .fourth-title:before {
@@ -750,7 +753,7 @@ img {
   display: inline-block;
 }
 .join-fourth .fourth-info-box .fourth-box .fourth-info {
-  font-size: 16px;
+  font-size: 12px;
 }
 .join-fifth {
   margin-top: 45px;
@@ -775,6 +778,82 @@ img {
 .join-fifth .fifth-p {
   color: #767676;
   font-size: 14px;
+}
+.join-fifth .fifth-ul {
+  margin: 0 auto;
+}
+.join-fifth .fifth-ul .fifth-li-org {
+  display: inline-block;
+  padding: 4px;
+  width: 250px;
+  height: 225px;
+  margin-top: 55px;
+  max-height: 450px;
+  border-radius: 2px;
+  border: 1px solid rgba(188, 188, 188, 0.5);
+  background-color: #ffeb3b;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-logo {
+  text-align: center;
+  font-size: 0;
+  height: 88px;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-logo > img {
+  height: 88px;
+  width: 100%;
+  display: inline-block;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-box {
+  text-align: left;
+  color: #383d43;
+  margin: 10px;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-box .org-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  font-size: 15px;
+  padding-bottom: 12px;
+  color: #000;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-box .org-info {
+  line-height: 22px;
+  font-size: 10px;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-bottom {
+  margin: 0 10px;
+  font-size: 10px;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-bottom .org-contactor {
+  float: left;
+}
+.join-fifth .fifth-ul .fifth-li-org .org-bottom .visit {
+  float: right;
+  cursor: pointer;
+  font-weight: bold;
+  color: #383d43;
+}
+.join-fifth .fifth-btn {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 106px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 50px;
+  border: 1px solid #a9a9a9;
+  text-align: center;
+  font-size: 16px;
+  color: #a9a9a9;
 }
 .new {
   width: 640px;
