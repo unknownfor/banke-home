@@ -196,6 +196,20 @@ define('router',[
                     },
                 }
             })
+            .state('mpartner',{
+                url:'/mpartner',
+                views:{
+                    '':{
+                        templateUrl:'mobile/views/index.html'
+                    },
+                    'headerView@mpartner':{
+                        templateUrl:'mobile/views/include/header.html'
+                    },
+                    'mainView@mpartner':{
+                        templateUrl:'mobile/views/partner.html'
+                    },
+                }
+            })
             .state('mnews',{
                 url:'/mnews',
                 views:{
