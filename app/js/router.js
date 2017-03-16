@@ -181,6 +181,34 @@ define('router',[
                         templateUrl:'mobile/views/join.html'
                     },
                 }
+            })
+            .state('morg',{
+                url:'/morg',
+                views:{
+                    '':{
+                        templateUrl:'mobile/views/index.html'
+                    },
+                    'headerView@morg':{
+                        templateUrl:'mobile/views/include/header.html'
+                    },
+                    'mainView@morg':{
+                        templateUrl:'mobile/views/org/org.html'
+                    },
+                }
+            })
+            .state('mnews',{
+                url:'/mnews',
+                views:{
+                    '':{
+                        templateUrl:'mobile/views/index.html'
+                    },
+                    'headerView@mnews':{
+                        templateUrl:'mobile/views/include/header.html'
+                    },
+                    'mainView@mnews':{
+                        templateUrl:'mobile/views/news.html'
+                    },
+                }
             });
     });
 

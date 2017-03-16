@@ -1,0 +1,63 @@
+.org-head {
+  text-align: center;
+  position: relative;
+  .org-head-title {
+    position: absolute;
+    top: 170px;
+    .org-title-box {
+      @boxh: 35px;
+      margin: 0 auto;
+      .size(150px,@boxh);
+      border: 3px solid #ffeb3b;
+      font-size: 22px;
+      line-height: @boxh;
+      #title-left {
+        color: @mColor;
+      }
+      #title-right {
+        color: #ff1c39;
+      }
+    }
+  }
+}
+.org-ul {
+  margin: 30px auto;
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  .org-li {
+    margin:0 10px;
+    flex: 0 0 80px;
+    text-align: center;
+    > a {
+      .org-logo {
+        @h: 45px;
+        display: inline-block;
+        > img {
+          .size(@h,@h);
+          border-radius: @h;
+          box-shadow: 0 0 3px 3px rgba(221, 221, 221, 0.6);
+        }
+      }
+      .org-name:before {
+        content: "";
+        margin-right: 10px;
+        text-align: center;
+        background: @mColor;
+        border-radius: 8px;
+        height: 8px;
+        width: 8px;
+        vertical-align: 1px;
+        display: inline-block;
+      }
+      .org-name {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        color: #9b9b9b;
+        font-size:12px;
+        line-height: 18px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
