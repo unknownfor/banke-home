@@ -1059,23 +1059,37 @@ img {
 .partner-fifth {
   background-color: #fae63b;
 }
+.partner-fifth .fifth-ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .partner-fifth .fifth-ul .fifth-li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.partner-fifth .fifth-ul .fifth-li > span {
   display: inline-block;
-  width: 50px;
-  height: 20px;
+  width: 135px;
+  height: 165px;
   background: url('../../mobile/img/partner/bg_sprite.png');
+  -webkit-background-size: 264px 336px;
+  background-size: 264px 336px;
 }
-.partner-fifth .fifth-ul .fifth-li.brand {
-  background-position: 0px 2px;
+.partner-fifth .fifth-ul .fifth-li > span.brand {
+  background-position: 0px 0px;
 }
-.partner-fifth .fifth-ul .fifth-li.manege {
-  background-position: -222px 2px;
+.partner-fifth .fifth-ul .fifth-li > span.manege {
+  background-position: -132px 0px;
 }
-.partner-fifth .fifth-ul .fifth-li.system {
-  background-position: -222px -278px;
+.partner-fifth .fifth-ul .fifth-li > span.system {
+  background-position: -129px -167px;
 }
-.partner-fifth .fifth-ul .fifth-li.model {
-  background-position: 0px -278px;
+.partner-fifth .fifth-ul .fifth-li > span.model {
+  background-position: 0px -167px;
 }
 .partner-bottom {
   width: 100%;

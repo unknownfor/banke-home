@@ -127,21 +127,26 @@
 .partner-fifth {
   background-color: @nColor;
   .fifth-ul {
+    display: flex;
     .fifth-li {
-      display: inline-block;
-      .size(50px,20px);
-      background: url('../../mobile/img/partner/bg_sprite.png');
-      &.brand {
-        background-position: 0px 2px;
-      }
-      &.manege {
-        background-position: -222px 2px;
-      }
-      &.system {
-        background-position: -222px -278px;
-      }
-      &.model {
-        background-position: 0px -278px;
+      flex: 1;
+      > span {
+        display: inline-block;
+        .size(135px,165px);
+        background: url('../../mobile/img/partner/bg_sprite.png');
+        background-size: 440px*0.6 560px*0.6;
+        &.brand {
+          background-position: 0px 0px;
+        }
+        &.manege {
+          background-position: -132px 0px;
+        }
+        &.system {
+          background-position: -129px -167px;
+        }
+        &.model {
+          background-position: 0px -167px;
+        }
       }
     }
   }
