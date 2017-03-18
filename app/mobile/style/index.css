@@ -943,8 +943,9 @@ img {
   height: 26px;
 }
 .info-box .title {
-  padding-top: 20px;
+  padding-top: 15px;
   font-size: 15px;
+  color: #000;
 }
 .info-box .info {
   line-height: 22px;
@@ -1041,6 +1042,7 @@ img {
 }
 .partner-fourth .partner-fourth-box #fourth-p-one {
   font-size: 15px;
+  color: #000;
 }
 .partner-fourth .partner-fourth-box #fourth-p-two {
   font-size: 12px;
@@ -1050,6 +1052,7 @@ img {
 .partner-fourth #fourth-pic-two {
   display: inline-block;
   margin-top: 25px;
+  margin-bottom: 25px;
   width: 98px;
   height: 46px;
   background: url('../../mobile/img/partner/sprite.png') -155px -86px;
@@ -1092,9 +1095,10 @@ img {
   background-position: 0px -167px;
 }
 .partner-bottom {
-  width: 100%;
-  height: 113px;
-  background: url("../../img/partner/bg_3.png");
+  height: 33px;
+  background: url("../../mobile/img/partner/bg_3.png");
+  -webkit-background-size: 450px 72.6px;
+  background-size: 450px 72.6px;
   background-color: #fae63b;
 }
 .partner-sixth {
@@ -1103,29 +1107,38 @@ img {
   margin-bottom: 40px;
 }
 .partner-sixth #partner-sixth-pic {
-  background: url('../../mobile/img/partner/sprite.png');
-  width: 35px;
-  height: 35px;
-  background-position: -550px -69px;
+  background: url('../../mobile/img/partner/sprite.png') -120px -88px;
+  -webkit-background-size: 250.5px 130px;
+  background-size: 250.5px 130px;
+  width: 24px;
+  height: 24px;
   display: inline-block;
 }
 .partner-sixth .sixth-ul {
-  display: inline-block;
-  margin-top: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
 }
 .partner-sixth .sixth-ul .sixth-li {
-  float: left;
-  margin-right: 100px;
-  font-size: 16px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 14px;
   color: #383d43;
 }
 .partner-sixth .sixth-ul .sixth-li:last-child {
   margin-right: 0px;
 }
 .partner-sixth .sixth-ul .sixth-li .li-img {
-  width: 170px;
-  height: 164px;
+  display: inline-block;
+  width: 77px;
+  height: 77px;
   background: url('../../mobile/img/partner/sprite.png');
+  -webkit-background-size: 250.5px 130px;
+  background-size: 250.5px 130px;
 }
 .partner-sixth .sixth-ul .sixth-li .li-img.design {
   background-position: 0px 0px;
@@ -1139,63 +1152,47 @@ img {
 .partner-seventh {
   position: relative;
   text-align: center;
-  font-size: 0;
+}
+.partner-seventh .seventh-bg {
+  margin-top: 350px;
 }
 .partner-seventh .seventh-box {
   position: absolute;
-  width: 100%;
   top: 0;
-  bottom: 0;
-}
-.partner-seventh .seventh-box > div {
-  height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.partner-seventh .seventh-box .seventh-box-main {
-  width: 860px;
-  height: 380px;
-  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 .partner-seventh .seventh-box .info-title {
-  font-size: 24px;
+  color: #000;
+  font-size: 15px;
 }
 .partner-seventh .seventh-box #seventh-pic {
+  background: url('../../mobile/img/partner/sprite.png') -105px -103px;
+  -webkit-background-size: 300.6px 156px;
+  background-size: 300.6px 156px;
+  width: 24px;
+  height: 26px;
   display: inline-block;
-  background: url('../../mobile/img/partner/sprite.png');
-  width: 33px;
-  height: 32px;
-  background-position: -503px -8px;
 }
 .partner-seventh .seventh-box .seventh-ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .partner-seventh .seventh-box .seventh-ul .seventh-li {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  font-size: 16px;
+  font-size: 14px;
   color: #383d43;
   text-align: center;
-  margin-right: 100px;
+  margin-bottom: 20px;
 }
 .partner-seventh .seventh-box .seventh-ul .seventh-li .seventh-info-title {
-  font-weight: bold;
+  color: #000;
   display: inline-block;
-  width: 130px;
-  height: 45px;
-  line-height: 45px;
+  width: 100px;
+  height: 32px;
+  line-height: 32px;
   border-radius: 70px;
   background-color: #fae63b;
   margin-bottom: 20px;
@@ -1203,56 +1200,52 @@ img {
   box-shadow: 0px 7px 10px rgba(251, 192, 45, 0.6);
 }
 .partner-seventh .seventh-box .seventh-ul .seventh-li .seventh-info-txt {
-  margin-bottom: 20px;
-}
-.partner-seventh .seventh-box .seventh-ul .seventh-li:last-child {
-  margin-right: 0px;
-}
-.partner-eighth {
-  padding-top: 100px;
+  margin-bottom: 2px;
 }
 .partner-eighth .eight-tips-box {
-  margin-top: 60px;
-  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   word-wrap: break-word;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg {
-  margin-right: 110px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: inline-block;
-  line-height: 110px;
+  line-height: 65px;
   background-color: #FFEB3E;
-  width: 110px;
-  height: 110px;
-  border-radius: 110px;
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
   text-align: center;
   -webkit-box-shadow: 0px 4px 10px rgba(251, 192, 45, 0.6);
   box-shadow: 0px 4px 10px rgba(251, 192, 45, 0.6);
-}
-.partner-eighth .eight-tips-box .eight-tips-bg:last-child {
-  margin-right: 0px;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon {
   display: inline-block;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon .box1 {
   width: 0;
-  border-left: 27.712px solid transparent;
-  border-right: 27.712px solid transparent;
-  border-bottom: 16px solid #ffffff;
+  border-left: 19.052px solid transparent;
+  border-right: 19.052px solid transparent;
+  border-bottom: 11px solid #ffffff;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon .box2 {
-  width: 55.424px;
-  height: 32px;
+  width: 38.104px;
+  height: 22px;
   background-color: #fff;
-  line-height: 32px;
-  font-size: 16px;
+  line-height: 22px;
+  font-size: 11px;
   color: #000000;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon .box3 {
   width: 0;
-  border-top: 16px solid #ffffff;
-  border-left: 27.712px solid transparent;
-  border-right: 27.712px solid transparent;
+  border-top: 11px solid #ffffff;
+  border-left: 19.052px solid transparent;
+  border-right: 19.052px solid transparent;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .more-info {
   text-align: center;
