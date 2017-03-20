@@ -1470,6 +1470,175 @@ html {
   background-color: #FFEB3E;
   margin-bottom: 74px;
 }
+.registered {
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  min-width: 1024px;
+  height: 100%;
+  background-color: rgba(234, 237, 236, 0.8);
+}
+.registered .registered-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 720px;
+  height: 620px;
+  margin-top: -310px;
+  margin-left: -360px;
+  background-color: #ffeb3b;
+  border-radius: 25px;
+}
+.registered .registered-box #close {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  text-align: center;
+  width: 26px;
+  height: 35px;
+  background-color: #ffc045;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #ffeb3b;
+  font-size: 16px;
+  line-height: 35px;
+}
+.registered .registered-box .registered-form {
+  margin: 56px 70px 10px 70px;
+}
+.registered .registered-box .registered-form .registered-head {
+  display: inline-block;
+  color: #383d43;
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+.registered .registered-box .registered-form .registered-head .box-slogen {
+  display: inline-block;
+  width: 77px;
+  height: 40px;
+  background: url('../../img/join/sprite.png');
+  background-position: -99px -132px;
+}
+.registered .registered-box .registered-form .registered-head #dot {
+  border-radius: 4px;
+  height: 4px;
+  width: 4px;
+  background-color: #383d43;
+  margin: 0 8px 0 5px;
+  display: inline-block;
+  vertical-align: 3px;
+}
+.registered .registered-box .registered-form .registered-head .head-txt {
+  display: inline-block;
+  vertical-align: 14px;
+  letter-spacing: 1px;
+}
+.registered .registered-box .registered-form .regbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+.registered .registered-box .registered-form .instruction {
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 10px #ffc045;
+  box-shadow: 0 0 10px #ffc045;
+  margin-bottom: 12px;
+  width: 580px;
+  height: 99px;
+}
+.registered .registered-box .registered-form .instruction > i {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #969696;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.registered .registered-box .registered-form .instruction > textarea {
+  border-radius: 25px;
+  height: 85px;
+  width: 537px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #eee;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.registered .registered-box .registered-form .box {
+  margin-right: 36px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px #ffc045;
+  box-shadow: 0 0 10px #ffc045;
+  margin-bottom: 12px;
+}
+.registered .registered-box .registered-form .box.box-info {
+  width: 270px;
+}
+.registered .registered-box .registered-form .box.box-info > input {
+  width: 228px;
+}
+.registered .registered-box .registered-form .box > i {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #969696;
+  margin-top: 6px;
+  margin-left: 12px;
+}
+.registered .registered-box .registered-form .box > input {
+  border-radius: 25px;
+  height: 32px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #eee;
+  padding-left: 40px;
+}
+.registered .registered-box .submit-box {
+  text-align: center;
+}
+.registered .registered-box .registered-btn {
+  display: inline-block;
+  text-align: center;
+  width: 270px;
+  height: 36px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 36px;
+  border-radius: 50px;
+  background-color: #ffc045;
+}
+.registered .registered-box .registered-bottom {
+  margin-top: 20px;
+  max-width: 720px;
+  display: inline-block;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.city {
+  padding-left: 40px;
+  outline: none;
+  height: 36px;
+  width: 268px;
+  border-radius: 50px;
+  border: #bfccdc 1px solid;
+  display: inline-block;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 36px;
+  /*在选择框的最右侧中间显示小箭头图片
+  取消center transparent 属性*/
+  background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right;
+  background-color: #FFFFFF;
+}
 .head {
   margin-top: 80px;
   text-align: center;

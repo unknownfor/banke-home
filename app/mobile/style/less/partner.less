@@ -30,7 +30,7 @@
   line-height: @bH;
   border-radius: 50px;
   border: 2px solid #FBC02D;
-  box-shadow: 0px 4px 10px #fbc02d;
+  box-shadow: 0px 2px 8px #fbc02d;
 }
 .partner-first {
   position: relative;
@@ -239,7 +239,7 @@
             box-shadow: 0px 7px 10px rgba(251,192,45,0.6);
           }
           .seventh-info-txt {
-            margin-bottom: 2px;
+            margin-bottom: 5px;
           }
         }
       }
@@ -247,21 +247,23 @@
 }
 .partner-eighth {
   .eight-tips-box {
-    display: flex;
-    word-wrap: break-word;
     .eight-tips-bg {
-      flex:1;
-      @bh: 65px;
+      display: table-cell;
+      @bh: 55px;
       display: inline-block;
-      line-height: @bh;
+      line-height: @bh - 3px;
       background-color: #FFEB3E;
       .size(@bh,@bh);
       border-radius: @bh;
       text-align: center;
       box-shadow: 0px 4px 10px rgba(251,192,45,0.6);
+      margin-left: 11px;
+      &:first-child {
+        margin-left: 0px;
+      }
       .hexagon {
         display: inline-block;
-        @hheight: 22px;
+        @hheight: 20px;
         @hao:1.732;
         .box1 {
           width:0;
@@ -293,11 +295,11 @@
   }
   .eighth-bottom {
     display: inline-block;
-    width: 900px;
     border-bottom: 1px solid #fff;
     #eight {
       background-color: #FFEB3E;
-      margin-bottom: 74px;
+      margin-top: 45px;
+      margin-bottom: 45px;
     }
   }
 

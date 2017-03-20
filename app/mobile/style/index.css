@@ -961,8 +961,8 @@ img {
   line-height: 25px;
   border-radius: 50px;
   border: 2px solid #FBC02D;
-  -webkit-box-shadow: 0px 4px 10px #fbc02d;
-  box-shadow: 0px 4px 10px #fbc02d;
+  -webkit-box-shadow: 0px 2px 8px #fbc02d;
+  box-shadow: 0px 2px 8px #fbc02d;
 }
 .partner-first {
   position: relative;
@@ -1200,52 +1200,46 @@ img {
   box-shadow: 0px 7px 10px rgba(251, 192, 45, 0.6);
 }
 .partner-seventh .seventh-box .seventh-ul .seventh-li .seventh-info-txt {
-  margin-bottom: 2px;
-}
-.partner-eighth .eight-tips-box {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  word-wrap: break-word;
+  margin-bottom: 5px;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  display: table-cell;
   display: inline-block;
-  line-height: 65px;
+  line-height: 52px;
   background-color: #FFEB3E;
-  width: 65px;
-  height: 65px;
-  border-radius: 65px;
+  width: 55px;
+  height: 55px;
+  border-radius: 55px;
   text-align: center;
   -webkit-box-shadow: 0px 4px 10px rgba(251, 192, 45, 0.6);
   box-shadow: 0px 4px 10px rgba(251, 192, 45, 0.6);
+  margin-left: 11px;
+}
+.partner-eighth .eight-tips-box .eight-tips-bg:first-child {
+  margin-left: 0px;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon {
   display: inline-block;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon .box1 {
   width: 0;
-  border-left: 19.052px solid transparent;
-  border-right: 19.052px solid transparent;
-  border-bottom: 11px solid #ffffff;
+  border-left: 17.32px solid transparent;
+  border-right: 17.32px solid transparent;
+  border-bottom: 10px solid #ffffff;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon .box2 {
-  width: 38.104px;
-  height: 22px;
+  width: 34.64px;
+  height: 20px;
   background-color: #fff;
-  line-height: 22px;
-  font-size: 11px;
+  line-height: 20px;
+  font-size: 10px;
   color: #000000;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .hexagon .box3 {
   width: 0;
-  border-top: 11px solid #ffffff;
-  border-left: 19.052px solid transparent;
-  border-right: 19.052px solid transparent;
+  border-top: 10px solid #ffffff;
+  border-left: 17.32px solid transparent;
+  border-right: 17.32px solid transparent;
 }
 .partner-eighth .eight-tips-box .eight-tips-bg .more-info {
   text-align: center;
@@ -1254,12 +1248,12 @@ img {
 }
 .partner-eighth .eighth-bottom {
   display: inline-block;
-  width: 900px;
   border-bottom: 1px solid #fff;
 }
 .partner-eighth .eighth-bottom #eight {
   background-color: #FFEB3E;
-  margin-bottom: 74px;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 .new {
   width: 640px;
