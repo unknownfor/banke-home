@@ -1476,8 +1476,7 @@ html {
   top: 0px;
   left: 0px;
   right: 0px;
-  min-width: 1024px;
-  height: 100%;
+  min-width: 480px;
   background-color: rgba(234, 237, 236, 0.8);
 }
 .registered .registered-box {
@@ -1486,10 +1485,10 @@ html {
   left: 50%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 720px;
-  height: 620px;
-  margin-top: -310px;
-  margin-left: -360px;
+  width: 480px;
+  height: 656px;
+  margin-top: -328px;
+  margin-left: -240px;
   background-color: #ffeb3b;
   border-radius: 25px;
 }
@@ -1572,7 +1571,6 @@ html {
   padding-top: 10px;
 }
 .registered .registered-box .registered-form .box {
-  margin-right: 36px;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 10px #ffc045;
   box-shadow: 0 0 10px #ffc045;
@@ -1582,23 +1580,13 @@ html {
   width: 270px;
 }
 .registered .registered-box .registered-form .box.box-info > input {
-  width: 228px;
-}
-.registered .registered-box .registered-form .box > i {
-  display: block;
-  position: absolute;
-  font-size: 20px;
-  color: #969696;
-  margin-top: 6px;
-  margin-left: 12px;
-}
-.registered .registered-box .registered-form .box > input {
+  width: 248px;
   border-radius: 25px;
   height: 32px;
   font-size: 14px;
   background-color: #FFFFFF;
   border: 1px solid #eee;
-  padding-left: 40px;
+  padding-left: 20px;
 }
 .registered .registered-box .submit-box {
   text-align: center;
@@ -1615,17 +1603,15 @@ html {
   background-color: #ffc045;
 }
 .registered .registered-box .registered-bottom {
-  margin-top: 20px;
-  max-width: 720px;
   display: inline-block;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
-.city {
-  padding-left: 40px;
+.education {
+  padding-left: 20px;
   outline: none;
   height: 36px;
-  width: 268px;
+  width: 271px;
   border-radius: 50px;
   border: #bfccdc 1px solid;
   display: inline-block;

@@ -12,6 +12,7 @@ define('router',[
     'courseCtrl',
     'orgCtrl',
     'orgDetailCtrl',
+    //'partnerCtrl',
     'newsCtrl',
     ],function (app) {
 
