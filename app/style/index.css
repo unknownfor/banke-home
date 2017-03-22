@@ -874,6 +874,9 @@ html {
 .join-fifth .fifth-ul .fifth-li-org:nth-of-type(13n) {
   margin-left: 0;
 }
+.join-fifth .fifth-ul .fifth-li-org:nth-of-type(17n) {
+  margin-left: 0;
+}
 .join-fifth .fifth-ul .fifth-li-org .org-logo {
   text-align: center;
   font-size: 0;
@@ -1606,6 +1609,11 @@ html {
   display: inline-block;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+.registered .advantage > div {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 10px;
 }
 .education {
   padding-left: 20px;

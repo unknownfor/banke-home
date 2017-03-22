@@ -30,29 +30,5 @@ define([
             $scope.visible=flag;
         }
 
-
-        //提交表单数据
-        /* $scope.formData={
-             name:'23333',
-             city:'455555',
-             contact:'67777',
-             address:'890',
-             tel_phone:'18140662282',
-             introduce:'12345'
-         }
-         $scope.submitForm=function(){
-             var allParas = {
-                 url: window.globalObj.restUrl + 'addorgapplyfor',
-                 // url: 'http://b.cn/bankehome/addorgapplyfor',
-                 type: 'post',
-                 data:$scope.formData,
-                 callback: function (result) {
-                     result;
-                 }
-             };
-             cService.getData(allParas);
-         }*/
-
-
     }]);
 });
