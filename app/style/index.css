@@ -1478,10 +1478,10 @@ html {
   left: 50%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 480px;
-  height: 656px;
-  margin-top: -328px;
-  margin-left: -240px;
+  width: 467px;
+  height: 652px;
+  margin-top: -326px;
+  margin-left: -233.5px;
   background-color: #ffeb3b;
   border-radius: 25px;
 }
@@ -1604,6 +1604,25 @@ html {
   font-size: 14px;
   color: #000000;
   margin-bottom: 10px;
+}
+.registered .advantage .advantage-box .advantage-tips {
+  padding: 5px 10px;
+  background-color: #FFFFFF;
+  color: #383d43;
+  border-radius: 50px;
+  margin: 5px;
+}
+.registered .advantage .advantage-box .advantage-tips:hover {
+  background-color: #ffc045;
+  color: #FFFFFF;
+}
+.registered-bottom {
+  display: inline-block;
+  width: 468px;
+  height: 93px;
+  background: url("../../img/partner/bg_5.png");
+  -webkit-background-size: 468px 93px;
+  background-size: 468px 93px;
 }
 .education {
   padding-left: 20px;
