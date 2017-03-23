@@ -25,10 +25,12 @@ define([
 
 
         //注册框
-        $scope.visible=false;
-        $scope.controlJoinBox=function(flag){
-            $scope.visible=flag;
+        $scope.show=false;
+        $scope.controlPartnerBox=function(flag){
+            $scope.show=flag;
         }
+
+
 
     }]);
 });

@@ -5,7 +5,7 @@
             <div class="partner-txt">
                 <span id="partner-first-pic"></span>
                 <p class="first-p">成为城市合伙人</p>
-                <div class="btn" id="first">
+                <div class="btn" id="first" ng-click="controlPartnerBox(true)">
                     <span>立即申请</span>
                 </div>
             </div>
@@ -161,9 +161,9 @@
             </div>
         </div>
         <!--登陆-->
-        <div class="registered-partner" ng-show="visible">
+        <div class="registered-partner" ng-show="show">
             <div class="registered-box">
-                <div ng-click="controlJoinBox(fasle)" id="close">X</div>
+                <div ng-click="controlPartnerBox(fasle)" id="close-partner">X</div>
                 <div class="registered-form">
                     <div class="registered-head">
                         <div class="box-slogen"></div>
@@ -222,7 +222,6 @@
                         <div class="submit-box"><input type="submit" class="registered-btn" name="提交"></div>
                     </form>
                 </div>
-                <!--<img class="registered-bottom" src="../img/join/bg_3.png">-->
                 <div class="registered-bottom-partner"></div>
             </div>
         </div>

@@ -335,22 +335,22 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  min-width: 480px;
+  min-width: 1024px;
+  height: 100%;
   background-color: rgba(234,237,236,0.8);
   .registered-box {
     position: absolute;
     @boxw:467px;
-    @boxh:652px;
-    top: -50%;
+    @boxh:615px;
+    top: 50%;
     left: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     .size(@boxw,@boxh);
     margin-top: -@boxh/2;
     margin-left: -@boxw/2;
-
     background-color: @mColor;
     border-radius: @bRadius;
-    #close {
+    #close-partner {
       cursor: pointer;
       position: absolute;
       top: 0px;
@@ -428,9 +428,8 @@
         box-shadow: 0 0 10px @bColor;
         margin-bottom: 12px;
         &.box-info {
-          width: 270px;
           > input {
-            width: 248px;
+            width: 304px;
             border-radius: @bRadius;
             height: 32px;
             font-size: 14px;
@@ -439,6 +438,47 @@
             padding-left: 20px;
           }
         }
+      }
+      .advantage {
+        >div {
+          font-size: 14px;
+          color: #000000;
+          margin-bottom: 10px;
+        }
+        .advantage-box {
+          .advantage-tips {
+            display: inline-block;
+            padding: 0 10px;
+            height: 24px;
+            line-height: 24px;
+            background-color: #FFFFFF;
+            color: #383d43;
+            border-radius: 50px;
+            margin: 5px;
+          }
+          .advantage-tips:hover {
+            background-color: #ffc045;
+            color: #FFFFFF;
+          }
+        }
+      }
+      .education {
+        padding-left: 20px;
+        outline: none;
+        height: 36px;
+        width: 327px;
+        border-radius: 50px;
+        border: rgb(191, 204, 220) 1px solid;
+        display: inline-block;
+        /*很关键：将默认的select选择框样式清除*/
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        padding-right: 36px;
+        /*在选择框的最右侧中间显示小箭头图片
+        取消center transparent 属性*/
+        background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right ;
+        background-color: #FFFFFF;
       }
     }
     .submit-box {
@@ -454,57 +494,15 @@
       border-radius: 50px;
       background-color: @bColor;
     }
-    .registered-bottom {
-      //background-size: 100px*0.6 100px*0.6;
+    .registered-bottom-partner {
       display: inline-block;
+      @rbw:780px*0.6;
+      @rbh:155px*0.6;
+      .size(@rbw,@rbh);
+      background: url("../../img/partner/bg_5.png");
+      background-size: @rbw @rbh;
       border-bottom-left-radius: @bRadius;
       border-bottom-right-radius: @bRadius;
     }
   }
-  .advantage {
-    >div {
-      font-size: 14px;
-      color: #000000;
-      margin-bottom: 10px;
-    }
-    .advantage-box {
-      .advantage-tips {
-        //padding: 5px 10px;
-        background-color: #FFFFFF;
-        color: #383d43;
-        border-radius: 50px;
-        margin: 5px;
-      }
-      .advantage-tips:hover {
-        background-color: #ffc045;
-        color: #FFFFFF;
-      }
-    }
-  }
-}
-.registered-bottom-partner {
-  display: inline-block;
-  @rbw:780px*0.6;
-  @rbh:155px*0.6;
-  .size(@rbw,@rbh);
-  background: url("../../img/partner/bg_5.png");
-  background-size: @rbw @rbh;
-}
-.education {
-  padding-left: 20px;
-  outline: none;
-  height: 36px;
-  width: 271px;
-  border-radius: 50px;
-  border: rgb(191, 204, 220) 1px solid;
-  display: inline-block;
-  /*很关键：将默认的select选择框样式清除*/
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  padding-right: 36px;
-  /*在选择框的最右侧中间显示小箭头图片
-  取消center transparent 属性*/
-  background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right ;
-  background-color: #FFFFFF;
 }

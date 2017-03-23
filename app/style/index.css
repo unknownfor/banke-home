@@ -1469,23 +1469,24 @@ html {
   top: 0px;
   left: 0px;
   right: 0px;
-  min-width: 480px;
+  min-width: 1024px;
+  height: 100%;
   background-color: rgba(234, 237, 236, 0.8);
 }
 .registered-partner .registered-box {
   position: absolute;
-  top: -50%;
+  top: 50%;
   left: 50%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 467px;
-  height: 652px;
-  margin-top: -326px;
+  height: 615px;
+  margin-top: -307.5px;
   margin-left: -233.5px;
   background-color: #ffeb3b;
   border-radius: 25px;
 }
-.registered-partner .registered-box #close {
+.registered-partner .registered-box #close-partner {
   cursor: pointer;
   position: absolute;
   top: 0px;
@@ -1569,17 +1570,51 @@ html {
   box-shadow: 0 0 10px #ffc045;
   margin-bottom: 12px;
 }
-.registered-partner .registered-box .registered-form .box.box-info {
-  width: 270px;
-}
 .registered-partner .registered-box .registered-form .box.box-info > input {
-  width: 248px;
+  width: 304px;
   border-radius: 25px;
   height: 32px;
   font-size: 14px;
   background-color: #FFFFFF;
   border: 1px solid #eee;
   padding-left: 20px;
+}
+.registered-partner .registered-box .registered-form .advantage > div {
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.registered-partner .registered-box .registered-form .advantage .advantage-box .advantage-tips {
+  display: inline-block;
+  padding: 0 10px;
+  height: 24px;
+  line-height: 24px;
+  background-color: #FFFFFF;
+  color: #383d43;
+  border-radius: 50px;
+  margin: 5px;
+}
+.registered-partner .registered-box .registered-form .advantage .advantage-box .advantage-tips:hover {
+  background-color: #ffc045;
+  color: #FFFFFF;
+}
+.registered-partner .registered-box .registered-form .education {
+  padding-left: 20px;
+  outline: none;
+  height: 36px;
+  width: 327px;
+  border-radius: 50px;
+  border: #bfccdc 1px solid;
+  display: inline-block;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 36px;
+  /*在选择框的最右侧中间显示小箭头图片
+        取消center transparent 属性*/
+  background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right;
+  background-color: #FFFFFF;
 }
 .registered-partner .registered-box .submit-box {
   text-align: center;
@@ -1595,51 +1630,15 @@ html {
   border-radius: 50px;
   background-color: #ffc045;
 }
-.registered-partner .registered-box .registered-bottom {
-  display: inline-block;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-}
-.registered-partner .advantage > div {
-  font-size: 14px;
-  color: #000000;
-  margin-bottom: 10px;
-}
-.registered-partner .advantage .advantage-box .advantage-tips {
-  background-color: #FFFFFF;
-  color: #383d43;
-  border-radius: 50px;
-  margin: 5px;
-}
-.registered-partner .advantage .advantage-box .advantage-tips:hover {
-  background-color: #ffc045;
-  color: #FFFFFF;
-}
-.registered-bottom-partner {
+.registered-partner .registered-box .registered-bottom-partner {
   display: inline-block;
   width: 468px;
   height: 93px;
   background: url("../../img/partner/bg_5.png");
   -webkit-background-size: 468px 93px;
   background-size: 468px 93px;
-}
-.education {
-  padding-left: 20px;
-  outline: none;
-  height: 36px;
-  width: 271px;
-  border-radius: 50px;
-  border: #bfccdc 1px solid;
-  display: inline-block;
-  /*很关键：将默认的select选择框样式清除*/
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  padding-right: 36px;
-  /*在选择框的最右侧中间显示小箭头图片
-  取消center transparent 属性*/
-  background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right;
-  background-color: #FFFFFF;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 .head {
   margin-top: 80px;

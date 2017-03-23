@@ -19,6 +19,7 @@ requirejs.config({
 
         homeCtrl:'controllers/homectrl',
         joinCtrl:'controllers/joinctrl',
+        partnerCtrl:'controllers/partnerctrl',
 
         courseCtrl:'controllers/coursectrl',
         orgCtrl:'controllers/orgctrl',
