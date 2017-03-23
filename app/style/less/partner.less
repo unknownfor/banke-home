@@ -328,7 +328,7 @@
   }
 
 }
-.registered {
+.registered-partner {
   @bRadius: 25px;
   z-index: 10000;
   position: fixed;
@@ -339,9 +339,9 @@
   background-color: rgba(234,237,236,0.8);
   .registered-box {
     position: absolute;
-    @boxw:480px;
-    @boxh:656px;
-    top: 50%;
+    @boxw:467px;
+    @boxh:652px;
+    top: -50%;
     left: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     .size(@boxw,@boxh);
@@ -467,8 +467,28 @@
       color: #000000;
       margin-bottom: 10px;
     }
-
+    .advantage-box {
+      .advantage-tips {
+        //padding: 5px 10px;
+        background-color: #FFFFFF;
+        color: #383d43;
+        border-radius: 50px;
+        margin: 5px;
+      }
+      .advantage-tips:hover {
+        background-color: #ffc045;
+        color: #FFFFFF;
+      }
+    }
   }
+}
+.registered-bottom-partner {
+  display: inline-block;
+  @rbw:780px*0.6;
+  @rbh:155px*0.6;
+  .size(@rbw,@rbh);
+  background: url("../../img/partner/bg_5.png");
+  background-size: @rbw @rbh;
 }
 .education {
   padding-left: 20px;

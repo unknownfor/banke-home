@@ -1463,7 +1463,7 @@ html {
   background-color: #FFEB3E;
   margin-bottom: 74px;
 }
-.registered {
+.registered-partner {
   z-index: 10000;
   position: fixed;
   top: 0px;
@@ -1472,20 +1472,20 @@ html {
   min-width: 480px;
   background-color: rgba(234, 237, 236, 0.8);
 }
-.registered .registered-box {
+.registered-partner .registered-box {
   position: absolute;
-  top: 50%;
+  top: -50%;
   left: 50%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 480px;
-  height: 656px;
-  margin-top: -328px;
-  margin-left: -240px;
+  width: 467px;
+  height: 652px;
+  margin-top: -326px;
+  margin-left: -233.5px;
   background-color: #ffeb3b;
   border-radius: 25px;
 }
-.registered .registered-box #close {
+.registered-partner .registered-box #close {
   cursor: pointer;
   position: absolute;
   top: 0px;
@@ -1500,23 +1500,23 @@ html {
   font-size: 16px;
   line-height: 35px;
 }
-.registered .registered-box .registered-form {
+.registered-partner .registered-box .registered-form {
   margin: 56px 70px 10px 70px;
 }
-.registered .registered-box .registered-form .registered-head {
+.registered-partner .registered-box .registered-form .registered-head {
   display: inline-block;
   color: #383d43;
   font-size: 14px;
   margin-bottom: 28px;
 }
-.registered .registered-box .registered-form .registered-head .box-slogen {
+.registered-partner .registered-box .registered-form .registered-head .box-slogen {
   display: inline-block;
   width: 77px;
   height: 40px;
   background: url('../../img/join/sprite.png');
   background-position: -99px -132px;
 }
-.registered .registered-box .registered-form .registered-head #dot {
+.registered-partner .registered-box .registered-form .registered-head #dot {
   border-radius: 4px;
   height: 4px;
   width: 4px;
@@ -1525,19 +1525,19 @@ html {
   display: inline-block;
   vertical-align: 3px;
 }
-.registered .registered-box .registered-form .registered-head .head-txt {
+.registered-partner .registered-box .registered-form .registered-head .head-txt {
   display: inline-block;
   vertical-align: 14px;
   letter-spacing: 1px;
 }
-.registered .registered-box .registered-form .regbox {
+.registered-partner .registered-box .registered-form .regbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
-.registered .registered-box .registered-form .instruction {
+.registered-partner .registered-box .registered-form .instruction {
   border-radius: 25px;
   -webkit-box-shadow: 0 0 10px #ffc045;
   box-shadow: 0 0 10px #ffc045;
@@ -1545,7 +1545,7 @@ html {
   width: 580px;
   height: 99px;
 }
-.registered .registered-box .registered-form .instruction > i {
+.registered-partner .registered-box .registered-form .instruction > i {
   display: block;
   position: absolute;
   font-size: 20px;
@@ -1553,7 +1553,7 @@ html {
   margin-top: 12px;
   margin-left: 12px;
 }
-.registered .registered-box .registered-form .instruction > textarea {
+.registered-partner .registered-box .registered-form .instruction > textarea {
   border-radius: 25px;
   height: 85px;
   width: 537px;
@@ -1563,16 +1563,16 @@ html {
   padding-left: 40px;
   padding-top: 10px;
 }
-.registered .registered-box .registered-form .box {
+.registered-partner .registered-box .registered-form .box {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 10px #ffc045;
   box-shadow: 0 0 10px #ffc045;
   margin-bottom: 12px;
 }
-.registered .registered-box .registered-form .box.box-info {
+.registered-partner .registered-box .registered-form .box.box-info {
   width: 270px;
 }
-.registered .registered-box .registered-form .box.box-info > input {
+.registered-partner .registered-box .registered-form .box.box-info > input {
   width: 248px;
   border-radius: 25px;
   height: 32px;
@@ -1581,10 +1581,10 @@ html {
   border: 1px solid #eee;
   padding-left: 20px;
 }
-.registered .registered-box .submit-box {
+.registered-partner .registered-box .submit-box {
   text-align: center;
 }
-.registered .registered-box .registered-btn {
+.registered-partner .registered-box .registered-btn {
   display: inline-block;
   text-align: center;
   width: 270px;
@@ -1595,15 +1595,33 @@ html {
   border-radius: 50px;
   background-color: #ffc045;
 }
-.registered .registered-box .registered-bottom {
+.registered-partner .registered-box .registered-bottom {
   display: inline-block;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
-.registered .advantage > div {
+.registered-partner .advantage > div {
   font-size: 14px;
   color: #000000;
   margin-bottom: 10px;
+}
+.registered-partner .advantage .advantage-box .advantage-tips {
+  background-color: #FFFFFF;
+  color: #383d43;
+  border-radius: 50px;
+  margin: 5px;
+}
+.registered-partner .advantage .advantage-box .advantage-tips:hover {
+  background-color: #ffc045;
+  color: #FFFFFF;
+}
+.registered-bottom-partner {
+  display: inline-block;
+  width: 468px;
+  height: 93px;
+  background: url("../../img/partner/bg_5.png");
+  -webkit-background-size: 468px 93px;
+  background-size: 468px 93px;
 }
 .education {
   padding-left: 20px;
