@@ -944,20 +944,20 @@ html {
   height: 100%;
   background-color: rgba(234, 237, 236, 0.8);
 }
-.registered .registered-box {
+.registered .registered-box-join {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 720px;
-  height: 620px;
-  margin-top: -310px;
+  height: 625px;
+  margin-top: -312.5px;
   margin-left: -360px;
   background-color: #ffeb3b;
   border-radius: 25px;
 }
-.registered .registered-box #close {
+.registered .registered-box-join #close {
   cursor: pointer;
   position: absolute;
   top: 0px;
@@ -972,23 +972,23 @@ html {
   font-size: 16px;
   line-height: 35px;
 }
-.registered .registered-box .registered-form {
+.registered .registered-box-join .registered-form {
   margin: 56px 70px 10px 70px;
 }
-.registered .registered-box .registered-form .registered-head {
+.registered .registered-box-join .registered-form .registered-head {
   display: inline-block;
   color: #383d43;
   font-size: 14px;
   margin-bottom: 28px;
 }
-.registered .registered-box .registered-form .registered-head .box-slogen {
+.registered .registered-box-join .registered-form .registered-head .box-slogen {
   display: inline-block;
   width: 77px;
   height: 40px;
   background: url('../../img/join/sprite.png');
   background-position: -99px -132px;
 }
-.registered .registered-box .registered-form .registered-head #dot {
+.registered .registered-box-join .registered-form .registered-head #dot {
   border-radius: 4px;
   height: 4px;
   width: 4px;
@@ -997,19 +997,19 @@ html {
   display: inline-block;
   vertical-align: 3px;
 }
-.registered .registered-box .registered-form .registered-head .head-txt {
+.registered .registered-box-join .registered-form .registered-head .head-txt {
   display: inline-block;
   vertical-align: 14px;
   letter-spacing: 1px;
 }
-.registered .registered-box .registered-form .regbox {
+.registered .registered-box-join .registered-form .regbox {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 12px;
 }
-.registered .registered-box .registered-form .instruction {
+.registered .registered-box-join .registered-form .instruction {
   border-radius: 25px;
   -webkit-box-shadow: 0 0 10px #ffc045;
   box-shadow: 0 0 10px #ffc045;
@@ -1017,7 +1017,7 @@ html {
   width: 580px;
   height: 99px;
 }
-.registered .registered-box .registered-form .instruction > i {
+.registered .registered-box-join .registered-form .instruction > i {
   display: block;
   position: absolute;
   font-size: 20px;
@@ -1025,7 +1025,7 @@ html {
   margin-top: 12px;
   margin-left: 12px;
 }
-.registered .registered-box .registered-form .instruction > textarea {
+.registered .registered-box-join .registered-form .instruction > textarea {
   border-radius: 25px;
   height: 85px;
   width: 537px;
@@ -1035,20 +1035,20 @@ html {
   padding-left: 40px;
   padding-top: 10px;
 }
-.registered .registered-box .registered-form .box {
+.registered .registered-box-join .registered-form .box {
   margin-right: 36px;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 10px #ffc045;
   box-shadow: 0 0 10px #ffc045;
   margin-bottom: 12px;
 }
-.registered .registered-box .registered-form .box.box-info {
+.registered .registered-box-join .registered-form .box.box-info {
   width: 270px;
 }
-.registered .registered-box .registered-form .box.box-info > input {
+.registered .registered-box-join .registered-form .box.box-info > input {
   width: 228px;
 }
-.registered .registered-box .registered-form .box > i {
+.registered .registered-box-join .registered-form .box > i {
   display: block;
   position: absolute;
   font-size: 20px;
@@ -1056,7 +1056,7 @@ html {
   margin-top: 6px;
   margin-left: 12px;
 }
-.registered .registered-box .registered-form .box > input {
+.registered .registered-box-join .registered-form .box > input {
   border-radius: 25px;
   height: 32px;
   font-size: 14px;
@@ -1064,10 +1064,10 @@ html {
   border: 1px solid #eee;
   padding-left: 40px;
 }
-.registered .registered-box .submit-box {
+.registered .registered-box-join .submit-box {
   text-align: center;
 }
-.registered .registered-box .registered-btn {
+.registered .registered-box-join .registered-btn {
   display: inline-block;
   text-align: center;
   width: 270px;
@@ -1078,7 +1078,7 @@ html {
   border-radius: 50px;
   background-color: #ffc045;
 }
-.registered .registered-box .registered-bottom {
+.registered .registered-box-join .registered-bottom {
   margin-top: 20px;
   max-width: 720px;
   display: inline-block;
@@ -1480,8 +1480,8 @@ html {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 467px;
-  height: 615px;
-  margin-top: -307.5px;
+  height: 663px;
+  margin-top: -331.5px;
   margin-left: -233.5px;
   background-color: #ffeb3b;
   border-radius: 25px;
@@ -1631,7 +1631,6 @@ html {
   background-color: #ffc045;
 }
 .registered-partner .registered-box .registered-bottom-partner {
-  display: inline-block;
   width: 468px;
   height: 93px;
   background: url("../../img/partner/bg_5.png");

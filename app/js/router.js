@@ -197,6 +197,20 @@ define('router',[
                     },
                 }
             })
+            .state('morgdetail',{
+                url:'/morgdetail/{id:.*}',
+                views:{
+                    '':{
+                        templateUrl:'mobile/views/index.html'
+                    },
+                    'headerView@morgdetail':{
+                        templateUrl:'mobile/views/include/header.html'
+                    },
+                    'mainView@morgdetail':{
+                        templateUrl:'mobile/views/org/orgdetail.html'
+                    },
+                }
+            })
             .state('mpartner',{
                 url:'/mpartner',
                 views:{
