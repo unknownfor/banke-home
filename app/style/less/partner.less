@@ -328,3 +328,180 @@
   }
 
 }
+.registered-partner {
+  @bRadius: 25px;
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  min-width: 1024px;
+  height: 100%;
+  background-color: rgba(234,237,236,0.8);
+  .registered-box {
+    position: absolute;
+    @boxw:467px;
+    @boxh:663px;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    .size(@boxw,@boxh);
+    margin-top: -@boxh/2;
+    margin-left: -@boxw/2;
+    background-color: @mColor;
+    border-radius: @bRadius;
+    #close-partner {
+      cursor: pointer;
+      position: absolute;
+      top: 0px;
+      right: 25px;
+      text-align: center;
+      .size(26px,35px);
+      background-color: @bColor;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      color: @mColor;
+      font-size: 16px;
+      line-height: 35px;
+    }
+    .registered-form {
+      margin: 56px 70px 10px 70px;
+      .registered-head {
+        display: inline-block;
+        color: @fColor;
+        font-size: 14px;
+        margin-bottom: 28px;
+        .box-slogen {
+          display: inline-block;
+          .size(77px,40px);
+          background: @jAddress;
+          background-position: -99px -132px;
+        }
+        #dot {
+          border-radius: 4px;
+          height: 4px;
+          width: 4px;
+          background-color: @fColor;
+          margin: 0 8px 0 5px;
+          display: inline-block;
+          vertical-align: 3px;
+        }
+        .head-txt {
+          display: inline-block;
+          vertical-align: 14px;
+          letter-spacing: 1px;
+        }
+      }
+      .regbox {
+        display: flex;
+        margin-bottom: 12px;
+      }
+      .instruction {
+        border-radius: @bRadius;
+        box-shadow: 0 0 10px @bColor;
+        margin-bottom: 12px;
+        width: 580px;
+        height: 99px;
+        > i {
+          display: block;
+          position: absolute;
+          font-size: 20px;
+          color: #969696;
+          margin-top: 12px;
+          margin-left: 12px;
+        }
+        > textarea {
+          border-radius: @bRadius;
+          height: 85px;
+          width: 537px;
+          font-size: 14px;
+          background-color: #FFFFFF;
+          border: 1px solid #eee;
+          padding-left: 40px;
+          padding-top: 10px;
+        }
+
+      }
+      //输入框统一样式
+      .box {
+        border-radius: 20px;
+        box-shadow: 0 0 10px @bColor;
+        margin-bottom: 12px;
+        &.box-info {
+          > input {
+            width: 304px;
+            border-radius: @bRadius;
+            height: 32px;
+            font-size: 14px;
+            background-color: #FFFFFF;
+            border: 1px solid #eee;
+            padding-left: 20px;
+          }
+        }
+      }
+      .advantage {
+        >div {
+          font-size: 14px;
+          color: #000000;
+          margin-bottom: 10px;
+        }
+        .advantage-box {
+          .advantage-tips {
+            display: inline-block;
+            padding: 0 10px;
+            height: 24px;
+            line-height: 24px;
+            background-color: #FFFFFF;
+            color: #383d43;
+            border-radius: 50px;
+            margin: 5px;
+          }
+          .advantage-tips:hover {
+            background-color: #ffc045;
+            color: #FFFFFF;
+          }
+        }
+      }
+      .education {
+        padding-left: 20px;
+        outline: none;
+        height: 36px;
+        width: 327px;
+        border-radius: 50px;
+        border: rgb(191, 204, 220) 1px solid;
+        display: inline-block;
+        /*很关键：将默认的select选择框样式清除*/
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        padding-right: 36px;
+        /*在选择框的最右侧中间显示小箭头图片
+        取消center transparent 属性*/
+        background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right ;
+        background-color: #FFFFFF;
+      }
+    }
+    .submit-box {
+      text-align: center;
+    }
+    .registered-btn {
+      display: inline-block;
+      text-align: center;
+      .size(270px,36px);
+      color: #FFFFFF;
+      font-size: 16px;
+      line-height: 36px;
+      border-radius: 50px;
+      background-color: @bColor;
+    }
+    .registered-bottom-partner {
+      @rbw:780px*0.6;
+      @rbh:155px*0.6;
+      .size(@rbw,@rbh);
+      background: url("../../img/partner/bg_5.png");
+      background-size: @rbw @rbh;
+      border-bottom-left-radius: @bRadius;
+      border-bottom-right-radius: @bRadius;
+    }
+  }
+}

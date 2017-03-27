@@ -1,0 +1,101 @@
+.bg-sprite{
+	background: url('../../img/header/logo.png') 0 0 no-repeat;
+}
+.banner-wrapper{
+  	position: fixed;
+  	top:0;
+  	left: 0;
+  	background-color: rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px rgba(0,0,0,.5);
+  	display: flex;
+  	height: 70px;
+  	width: 100%;
+  	justify-content: space-between;
+	//最高层级
+  	z-index: 8888;
+	.logo{
+		padding-left: 30px;
+		position: relative;
+	  	display: inline-block;
+		.logo-img{
+			display: inline-block;
+		  	position: absolute;
+		  	.bg-sprite;
+			background-size: 108px*0.7 54px*0.7;
+		  	.size(77px,35px);
+		  top: 20px;
+		}
+		.logo-word{
+		  font-size: 14px;
+		  margin-left: 74px;
+		  display: inline-block;
+		  vertical-align: -29px;
+		  .slogen {
+			color: #fff;
+		  }
+		  .slogen:before {
+			content: "";
+			margin:  0px 12px;
+			text-align: center;
+			background: #fff;
+			border-radius: 8px;
+			height: 8px;
+			width: 8px;
+			vertical-align: 2px;
+			display: inline-block;
+		  }
+		}
+	}
+	.menu-btn {
+      margin-top: 28px;
+	  padding-right: 30px;
+      > span {
+        display: inline-block;
+        .size(24px,19px);
+        background:url("../../mobile/img/header/nav.png") no-repeat;
+		  background-size: 30px*0.8 23px*0.8;
+      }
+	}
+  .banner-items-container {
+	  @bh:190px;
+	  border-radius: 8px;
+    position: absolute;
+    right: 22px;
+    top: 70px;
+    background-color: #fde512;
+    width: 120px;
+    height: @bh;
+    flex-direction: row;
+    align-items: left;
+	  text-align: center;
+    li {
+		height: @bh/4;
+		line-height: @bh/4;
+		border-bottom: 1px solid #fff;
+      a {
+        > span {
+          cursor: pointer;
+			color: @fColor;
+			font-size: 16px;
+        }
+      }
+		&:last-child {
+			border-bottom: none;
+		}
+    }
+  }
+	.banner-items-container:before {
+		//#triangle-top
+		content: "";
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-left: 11px solid transparent;
+		border-right: 11px solid transparent;
+		border-bottom: 11px solid #fde512;
+		position: absolute;
+		top: -9px;
+		right: 8px;
+		font-size: 0px;
+	}
+}

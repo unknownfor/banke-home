@@ -1,0 +1,243 @@
+@jAddress: url("../../mobile/img/join/sprite.png") no-repeat;
+.join-first {
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  .first-info {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    >h2 {
+      color: #FFE712;
+    }
+    .second-p{
+      font-size: 14px;
+      color: #FFFFFF;
+      margin-bottom: 15px;
+      >span {
+        color: #ffae00;
+      }
+    }
+    .txt {
+      font-size: 12px;
+      color: #fbfbfb;
+      padding-bottom: 5px;
+      letter-spacing: 0px;
+    }
+    .first-btn {
+      margin-top: 15px;
+      @btnH:32px;
+      font-size: 16px;
+      color: #FFFFFF;
+      display: inline-block;
+      .size(108px,@btnH);
+      border-radius: 50px;
+      background-color: #FF8519;
+      line-height: @btnH;
+    }
+  }
+}
+.join-second {
+  text-align: center;
+  margin-top: 45px;
+  .second-title {
+    display: inline-block;
+    .title-img {
+      .size(32px,32px);
+      display: inline-block;
+      background: @jAddress -344px -6px;
+      background-size: 537px*0.7 102px*0.7;
+    }
+    .title-txt {
+      margin-left: 5px;
+      font-size: 20px;
+      vertical-align: 8px;
+      color: #4b4e4d;
+    }
+  }
+  .second-box {
+    display: flex;
+    margin-top: 40px;
+    .join-second-box {
+      flex: 1;
+      width: 225px;
+      .box-pic {
+        display: inline-block;
+        background: @jAddress;
+        background-size: 537px*0.6 102px*0.6;
+        &.service {
+          .size(52px,54px);
+          background-position: -119px -4px;
+        }
+        &.management {
+          .size(59px,54px);
+          background-position: -229px 0px;
+        }
+        &.brand {
+          .size(55px,54px);
+          background-position: -63px -5px;
+        }
+        &.spread {
+          .size(53px,54px);
+          background-position: -174px -0px;
+        }
+        &.admissions {
+          .size(62px,60px);
+          background-position: 0px -3px;
+        }
+      }
+      .box-title {
+        font-size: 16px;
+        color: #383d43;
+        margin-bottom: 14px;
+      }
+      .box-detail {
+        font-size: 12px;
+        color: #9b9b9b;
+      }
+    }
+    &.second-box {
+      margin-bottom: 40px;
+    }
+  }
+
+}
+.join-third {
+  height: 150px;
+  background-color: #FFE712;
+  text-align: center;
+  line-height: 210px;
+  .join-third-pic {
+    display: inline-block;
+    .size(408px*0.7,99px*0.7);
+    background: url("../../mobile/img/join/advantage.png") no-repeat;
+    background-size: 408px*0.7 99px*0.7;
+  }
+}
+.join-fourth {
+  position: relative;
+  text-align: left;
+  .fourth-info-box {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0 25px;
+    .fourth-box {
+      color: @fColor;
+      margin-top: 14%;
+      .fourth-title {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .fourth-title:before {
+        content: "";
+        margin-right:10px;
+        text-align: center;
+        background: #ff8712;
+        border-radius: 8px;
+        height: 8px;
+        width: 8px;
+        vertical-align: 2px;
+        display: inline-block;
+      }
+      .fourth-info {
+        font-size: 12px;
+      }
+    }
+  }
+}
+.join-fifth {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  padding: 0 25px;
+  text-align: center;
+  .fifth-title {
+    .title-img{
+      .size(22px,25px);
+      display: inline-block;
+      background: @jAddress -344px -44px;
+      background-size: 537px*0.7 102px*0.7;
+    }
+    .title-txt {
+      margin-left: 5px;
+      font-size: 20px;
+
+      vertical-align: 4px;
+      color: #4b4e4d;
+    }
+  }
+  .fifth-p {
+    color: #767676;
+    font-size: 14px;
+  }
+  .fifth-ul {
+    margin: 0 auto;
+    .fifth-li-org {
+      display: inline-block;
+      padding: 4px;
+      .size(250px,225px);
+      //.size(300px,280px);
+      margin-top: 55px;
+      max-height: 450px;
+      border-radius: 2px;
+      border: 1px solid rgba(188,188,188,0.5);
+      background-color: @mColor;
+      .org-logo {
+        text-align: center;
+        font-size: 0;
+        height: 88px;
+        >img {
+          height: 88px;
+          width: 100%;
+          display: inline-block;
+        }
+      }
+      .org-box {
+        text-align: left;
+        color: #383d43;
+        margin: 10px;
+        .org-name {
+          .txt-ellipsis-p(1);
+          font-size:15px;
+          padding-bottom: 12px;
+          color: #000;
+        }
+        .org-info {
+          line-height: 22px;
+          font-size: 10px;
+          margin-bottom: 10px;
+          .txt-ellipsis-p(3);
+        }
+
+      }
+      .org-bottom {
+        margin: 0 10px;
+        font-size: 10px;
+        .org-contactor{
+          float: left;
+        }
+          .visit{
+            float: right;
+            cursor: pointer;
+            font-weight: bold;
+            color: #383d43;
+          }
+      }
+    }
+  }
+  .fifth-btn {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .size(106px,34px);
+    line-height: 34px;
+    border-radius: 50px;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    font-size: 16px;
+    color: #a9a9a9;
+  }
+}

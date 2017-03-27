@@ -1,11 +1,11 @@
 <div class="partner-view">
-    <div class="home-wrapper">
+    <div class="home-wrapper" ng-controller="partnerCtrl">
         <div class="partner-first">
             <img class="bg" src="img/partner/bg_1.png" />
             <div class="partner-txt">
                 <span id="partner-first-pic"></span>
                 <p class="first-p">成为城市合伙人</p>
-                <div class="btn" id="first">
+                <div class="btn" id="first" ng-click="controlPartnerBox(true)">
                     <span>立即申请</span>
                 </div>
             </div>
@@ -158,6 +158,71 @@
                 <div class="btn" id="eight">
                     <span>立即申请</span>
                 </div>
+            </div>
+        </div>
+        <!--登陆-->
+        <div class="registered-partner" ng-show="show">
+            <div class="registered-box">
+                <div ng-click="controlPartnerBox(fasle)" id="close-partner">X</div>
+                <div class="registered-form">
+                    <div class="registered-head">
+                        <div class="box-slogen"></div>
+                        <div class="head-txt"><span id="dot"></span>一半学费上好课</div>
+                    </div>
+                    <form ng-submit="submitForm()">
+                        <div class="box box-info">
+                            <input type="text" placeholder="姓名" ng-maxlength="5" required="required" ng-model='formData.contact' name="contact"/>
+                        </div>
+
+                        <div class="box box-info">
+                            <input type="text" placeholder="手机" ng-maxlength="5" required="required" ng-model='formData.contact' name="contact"/>
+                        </div>
+
+                        <div class="box box-info">
+                            <select class="education">
+                                <option value="小学">小学</option>
+                                <option value="初中">初中</option>f
+                                <option value="高中">高中</option>
+                                <option value="大学">大学</option>
+                                <option value="研究生">研究生</option>
+                            </select>
+                        </div>
+
+                        <div class="box box-info">
+                            <input type="text" placeholder="年龄" required="required" ng-model="formData.age"  name="name" />
+                        </div>
+
+                        <div class="box box-info">
+                            <input type="text" placeholder="邮箱" required="required" ng-model='formData.email' name="contact"/>
+                        </div>
+
+                        <div class="box box-info">
+                            <select class="education">
+                                <option value="wuhan">武汉</option>
+                                <option value="shenzhen">深圳</option>
+                                <option value="guangzhou">广州</option>
+                                <option value="beijing">北京</option>
+                                <option value="shanghai">上海</option>
+                            </select>
+                        </div>
+
+
+                        <!--标签-->
+                        <div class="advantage">
+                            <div>具备以下哪种优势？（可多选）</div>
+                            <div class="advantage-box">
+                                <span class="advantage-tips">互联网</span>
+                                <span class="advantage-tips">媒介</span>
+                                <span class="advantage-tips">教育培训行业</span>
+                                <span class="advantage-tips">渠道</span>
+                                <span class="advantage-tips">经营团队</span>
+                            </div>
+                        </div>
+
+                        <div class="submit-box"><input type="submit" class="registered-btn" name="提交"></div>
+                    </form>
+                </div>
+                <div class="registered-bottom-partner"></div>
             </div>
         </div>
     </div>

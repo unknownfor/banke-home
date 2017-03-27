@@ -1,0 +1,107 @@
+//半课主颜色
+@mColor:#ffeb3b;
+
+@nColor: #fae63b;
+
+@bColor: #ffc045;
+
+@fColor: #383d43;
+input {
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  user-select: text;
+  cursor: auto;
+  padding: 1px;
+  border-image: initial;
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em 0em 0em 0em;
+  font: 13.3333px Arial;
+  outline: none;
+}
+textarea {
+  outline: none;
+  resize: none;
+}
+img{
+  border:0;
+}
+
+body,div,ul{margin:0px;padding:0px;}
+
+.bg {
+  z-index: -10;
+}
+.clear {
+  clear: both;
+}
+
+.size(@width: 100%,@height: 100%){
+  width: @width;
+  height: @height;
+}
+.nodata{
+  font-size: 12px;
+  text-align: center;
+  margin: 5px 0;
+}
+* {
+  //-webkit-user-select: none;
+  /*禁用手机浏览器的用户选择功能 */
+  -moz-user-select: none;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+  -webkit-overflow-scrolling: touch;
+}
+a,
+a:hover,
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  word-break: break-all;
+}
+a:focus {
+  outline: none;
+  -moz-outline: none;
+}
+input[type="text"],input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+.font-icon {
+  display: inline-block;
+}
+.txt-ellipsis{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.txt-ellipsis-p(@line-num:10){
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @line-num;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+html{
+  height: 100%;
+}

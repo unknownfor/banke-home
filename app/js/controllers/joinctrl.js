@@ -23,31 +23,35 @@ define([
         cService.getData(allParas);
 
 
-        //隐藏注册框
-        $scope.visible=true;
-        $scope.closeBox=function(){
-            $scope.visible=false;
+
+        //注册框
+        $scope.visible=false;
+        $scope.controlJoinBox=function(flag){
+            $scope.visible=flag;
         }
 
-        //提交
-        //$scope.user={city:'',name:'',contact:'',phone:'',address:'',instruction:''};
-        //$scope.submit=function () {
-        //    app.submit($scope.user).then(function (data) {
-        //            $http({
-        //                method  : 'POST',
-        //                url     : 'XX',
-        //                data    : $.param($scope.user),  // pass in data as strings
-        //            })
-        //                .success(function(data) {
-        //                    console.log(data);
-        //                    if (!data.success) {
-        //                    } else {
-        //
-        //                    }
-        //                });
-        //    });
-        //};
 
+        //提交表单数据
+        $scope.formData={
+            name:'23333',
+            city:'455555',
+            contact:'67777',
+            address:'890',
+            tel_phone:'18140662282',
+            introduce:'12345'
+        }
+        $scope.submitForm=function(){
+            var allParas = {
+                url: window.globalObj.restUrl + 'addorgapplyfor',
+                // url: 'http://b.cn/bankehome/addorgapplyfor',
+                type: 'post',
+                data:$scope.formData,
+                callback: function (result) {
+                    result;
+                }
+            };
+            cService.getData(allParas);
+        }
 
 
     }]);

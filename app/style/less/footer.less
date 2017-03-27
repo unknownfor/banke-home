@@ -101,10 +101,12 @@
         margin-right: 14px;
       }
       #weibo {
+        position: relative;
         background-position: -80px 4px;
         margin-left: 24px;
       }
       #wechat {
+        position: relative;
         background-position: -42px 5px;
         margin-left: 20px;
       }
@@ -122,5 +124,19 @@
       font-size: 12px;
       color: #8a8b8c;
     }
+  }
+  #weibo:hover:after {
+    position: absolute;
+    top: -170px;
+    left:-62px;
+    content:url(../../img/footer/weibo.png);
+    display:inline-block;
+  }
+  #wechat:hover:after {
+    position: absolute;
+    top: -170px;
+    left:-62px;
+    content:url(../../img/footer/wechat.png);
+    display:inline-block;
   }
 }
