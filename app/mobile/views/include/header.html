@@ -8,10 +8,10 @@
 			</div>
 		</a>
 	</div>
-	<div class="menu-btn" ng-click="controlUlBox()">
+	<div class="menu-btn" ng-touchstart="controlUlBox()">
 		<span></span>
 	</div>
-	<ul class="banner-items-container"  ng-show="visible" ng-click="controlUlBox()">
+	<ul class="banner-items-container"  ng-show="visible" ng-touchstart="controlUlBox()">
 			<li ng-repeat="item in menus" ng-class="{'selected':headerMenuSelectedIndex==$index}" >
 				<a ui-sref="{{item.url}}" title="{{item.title}}">
 					<span>{{item.title}}</span>

@@ -5,6 +5,7 @@ define('router',[
     'commonService',
     'cookies',
 
+
     'footer',
     'header',
 
