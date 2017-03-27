@@ -7,6 +7,7 @@ requirejs.config({
     paths: {
         angular:'libs/angular.min',
         'ui-router':'libs/angular-ui-router.min',
+        ngTouch:'libs/ngTouch.min',
         domReady: 'libs/domReady',
         fileUploader: 'libs/angular-file-upload.min',
         cookies: 'libs/angular-cookies.min',
@@ -46,6 +47,11 @@ requirejs.config({
         cookies:{
             deps:['angular'],
             output:'cookies'
+        },
+
+        ngTouch:{
+            deps:['angular'],
+            output:'ngTouch'
         }
     },
     deps: ['js/bootstrap.js']
