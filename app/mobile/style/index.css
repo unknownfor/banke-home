@@ -935,7 +935,7 @@ img {
   padding: 0 25px;
 }
 .info-box .box-img {
-  background: url('../../mobile/img/partner/sprite.png');
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png');
   display: inline-block;
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
@@ -1033,7 +1033,7 @@ img {
   letter-spacing: 1px;
 }
 .partner-fourth .partner-fourth-box #fourth-pic-one {
-  background: url('../../mobile/img/partner/sprite.png') -7px -84px;
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png') -7px -84px;
   display: inline-block;
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
@@ -1055,7 +1055,7 @@ img {
   margin-bottom: 25px;
   width: 98px;
   height: 46px;
-  background: url('../../mobile/img/partner/sprite.png') -155px -86px;
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png') -155px -86px;
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
 }
@@ -1078,7 +1078,7 @@ img {
   display: inline-block;
   width: 135px;
   height: 165px;
-  background: url('../../mobile/img/partner/bg_sprite.png');
+  background: url('http://pic.hisihi.com/2017-03-27/1490607025225596.png');
   -webkit-background-size: 264px 336px;
   background-size: 264px 336px;
 }
@@ -1096,10 +1096,9 @@ img {
 }
 .partner-bottom {
   height: 33px;
-  background: url("../../mobile/img/partner/bg_3.png");
+  background: url("http://pic.hisihi.com/2017-03-27/1490607024578768.png") #fae63b;
   -webkit-background-size: 450px 72.6px;
   background-size: 450px 72.6px;
-  background-color: #fae63b;
 }
 .partner-sixth {
   text-align: center;
@@ -1107,7 +1106,7 @@ img {
   margin-bottom: 40px;
 }
 .partner-sixth #partner-sixth-pic {
-  background: url('../../mobile/img/partner/sprite.png') -120px -88px;
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png') -120px -88px;
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
   width: 24px;
@@ -1136,7 +1135,7 @@ img {
   display: inline-block;
   width: 77px;
   height: 77px;
-  background: url('../../mobile/img/partner/sprite.png');
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png');
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
 }
@@ -1167,7 +1166,7 @@ img {
   font-size: 15px;
 }
 .partner-seventh .seventh-box #seventh-pic {
-  background: url('../../mobile/img/partner/sprite.png') -105px -103px;
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png') -105px -103px;
   -webkit-background-size: 300.6px 156px;
   background-size: 300.6px 156px;
   width: 24px;
