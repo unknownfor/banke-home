@@ -168,8 +168,8 @@ html {
   right: 22px;
   top: 70px;
   background-color: #fde512;
-  width: 184px;
-  height: 280px;
+  width: 120px;
+  height: 190px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -182,8 +182,8 @@ html {
   text-align: center;
 }
 .banner-wrapper .banner-items-container li {
-  height: 70px;
-  line-height: 70px;
+  height: 47.5px;
+  line-height: 47.5px;
   padding: 0 5px;
   border-bottom: 1px solid #fff;
 }
@@ -191,7 +191,7 @@ html {
   cursor: pointer;
   padding: 2px 10px;
   color: #383d43;
-  font-size: 22px;
+  font-size: 16px;
 }
 .banner-wrapper .banner-items-container li:last-child {
   margin-right: 0px;
