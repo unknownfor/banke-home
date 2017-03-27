@@ -168,8 +168,8 @@ html {
   right: 22px;
   top: 70px;
   background-color: #fde512;
-  width: 184px;
-  height: 280px;
+  width: 120px;
+  height: 190px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -182,19 +182,17 @@ html {
   text-align: center;
 }
 .banner-wrapper .banner-items-container li {
-  height: 70px;
-  line-height: 70px;
-  padding: 0 5px;
+  height: 47.5px;
+  line-height: 47.5px;
   border-bottom: 1px solid #fff;
 }
 .banner-wrapper .banner-items-container li a > span {
   cursor: pointer;
-  padding: 2px 10px;
   color: #383d43;
-  font-size: 22px;
+  font-size: 16px;
 }
 .banner-wrapper .banner-items-container li:last-child {
-  margin-right: 0px;
+  border-bottom: none;
 }
 .banner-wrapper .banner-items-container:before {
   content: "";
@@ -225,9 +223,10 @@ html {
   background-color: #fff;
   border-radius: 50px;
   line-height: 28px;
+  font-size: 14px;
 }
 .footer-section.about {
-  padding-top: 95px;
+  padding-top: 50px;
 }
 .footer-section.about .footer-about {
   font-size: 12px;
@@ -352,7 +351,7 @@ img {
 }
 .home-wrapper .home-first .home-p {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 15px;
   right: 15px;
 }
@@ -363,13 +362,13 @@ img {
   font-size: 13px;
 }
 .home-wrapper .home-second {
-  margin-top: 150px;
+  margin-top: 110px;
   position: relative;
   text-align: center;
 }
 .home-wrapper .home-second .second-box-info {
   position: absolute;
-  top: -60%;
+  top: -55%;
   left: 0px;
   right: 0px;
 }
@@ -380,7 +379,7 @@ img {
   background: url("../../mobile/img/home/second-phone.png") 0 0 no-repeat;
   -webkit-background-size: 150px 291.5px;
   background-size: 150px 291.5px;
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 .home-wrapper .home-second .second-box-info .box-info {
   display: -webkit-box;
@@ -395,31 +394,32 @@ img {
   -ms-flex: 1;
   flex: 1;
   color: #FBC02D;
-  font-size: 16px;
+  font-size: 14px;
 }
 .home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img {
   display: inline-block;
   background: url("../../mobile/img/home/sprite.png") no-repeat;
-  -webkit-background-size: 386.4px 272px;
-  background-size: 386.4px 272px;
-  width: 67px;
-  height: 67px;
+  -webkit-background-size: 338.1px 238px;
+  background-size: 338.1px 238px;
+  width: 57px;
+  height: 57px;
+  border-radius: 57px;
 }
 .home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img.org {
   background-position: -7px -5px;
 }
 .home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img.price {
-  background-position: -76px -5px;
+  background-position: -67px -5px;
 }
 .home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img.service {
-  background-position: -149px -5px;
+  background-position: -131px -5px;
 }
 .home-wrapper .home-second .second-box-info .box-info .box-info-li .box-img.guarantee {
-  background-position: -223px -4px;
+  background-position: -196px -4px;
 }
 .home-wrapper .home-third {
   margin-top: 45px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .home-wrapper .home-third > span {
@@ -434,9 +434,12 @@ img {
   position: relative;
   font-size: 0px;
 }
+.home-wrapper .home-fourth #home-fourth-img {
+  margin-top: 50px;
+}
 .home-wrapper .home-fourth .fourth-box-info {
   position: absolute;
-  top: 20px;
+  top: -40px;
 }
 .home-wrapper .home-fourth .fourth-box-info .fourth-box {
   text-align: left;
@@ -469,18 +472,18 @@ img {
 }
 .home-wrapper .home-fifth {
   background-color: #ffeb3b;
-  height: 760px;
+  height: 650px;
   line-height: 22px;
 }
 .home-wrapper .home-fifth .fifth-icon {
-  margin: 70px 0px 30px 45px;
+  margin: 45px 0px 30px 45px;
   width: 47px;
   height: 27px;
   display: inline-block;
   background: url("../../mobile/img/home/sprite.png") no-repeat -376px -24px;
 }
 .home-wrapper .home-fifth .fifth-img {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   margin: 0 auto;
   width: 275px;
   height: 145px;
@@ -493,16 +496,16 @@ img {
   color: #383d43;
 }
 .home-wrapper .home-fifth .fifth-box {
-  margin: 40px 25px 0px 25px;
+  margin: 25px 25px 0px 25px;
 }
 .home-wrapper .home-fifth .fifth-box .fifth-title {
   text-align: center;
-  width: 110px;
-  height: 32px;
+  width: 76px;
+  height: 24px;
   border-radius: 50px;
-  line-height: 32px;
+  line-height: 24px;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 14px;
   background-color: #f7ab00;
   margin-bottom: 10px;
 }
@@ -514,9 +517,12 @@ img {
   position: relative;
   margin-top: 550px;
 }
+.home-wrapper .home-sixth #home-sixth-img {
+  margin-top: 100px;
+}
 .home-wrapper .home-sixth .sixth-box {
   position: absolute;
-  top: -500px;
+  top: -525px;
   left: 0px;
   right: 0px;
 }
@@ -935,7 +941,7 @@ img {
   padding: 0 25px;
 }
 .info-box .box-img {
-  background: url('../../mobile/img/partner/sprite.png');
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png');
   display: inline-block;
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
@@ -1033,7 +1039,7 @@ img {
   letter-spacing: 1px;
 }
 .partner-fourth .partner-fourth-box #fourth-pic-one {
-  background: url('../../mobile/img/partner/sprite.png') -7px -84px;
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png') -7px -84px;
   display: inline-block;
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
@@ -1055,7 +1061,7 @@ img {
   margin-bottom: 25px;
   width: 98px;
   height: 46px;
-  background: url('../../mobile/img/partner/sprite.png') -155px -86px;
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png') -155px -86px;
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
 }
@@ -1078,7 +1084,7 @@ img {
   display: inline-block;
   width: 135px;
   height: 165px;
-  background: url('../../mobile/img/partner/bg_sprite.png');
+  background: url('http://pic.hisihi.com/2017-03-27/1490607025225596.png');
   -webkit-background-size: 264px 336px;
   background-size: 264px 336px;
 }
@@ -1096,10 +1102,9 @@ img {
 }
 .partner-bottom {
   height: 33px;
-  background: url("../../mobile/img/partner/bg_3.png");
+  background: url("http://pic.hisihi.com/2017-03-27/1490607024578768.png") #fae63b;
   -webkit-background-size: 450px 72.6px;
   background-size: 450px 72.6px;
-  background-color: #fae63b;
 }
 .partner-sixth {
   text-align: center;
@@ -1107,7 +1112,7 @@ img {
   margin-bottom: 40px;
 }
 .partner-sixth #partner-sixth-pic {
-  background: url('../../mobile/img/partner/sprite.png') -120px -88px;
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png') -120px -88px;
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
   width: 24px;
@@ -1136,7 +1141,7 @@ img {
   display: inline-block;
   width: 77px;
   height: 77px;
-  background: url('../../mobile/img/partner/sprite.png');
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png');
   -webkit-background-size: 250.5px 130px;
   background-size: 250.5px 130px;
 }
@@ -1167,7 +1172,7 @@ img {
   font-size: 15px;
 }
 .partner-seventh .seventh-box #seventh-pic {
-  background: url('../../mobile/img/partner/sprite.png') -105px -103px;
+  background: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png') -105px -103px;
   -webkit-background-size: 300.6px 156px;
   background-size: 300.6px 156px;
   width: 24px;
