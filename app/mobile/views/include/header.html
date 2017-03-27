@@ -12,7 +12,7 @@
 		<span></span>
 	</div>
 	<ul class="banner-items-container"  ng-show="visible" ng-click="controlUlBox()">
-			<li ng-repeat="item in menus" ng-class="{'selected':headerMenuSelectedIndex==$index}" >
+			<li ng-repeat="item in menus">
 				<a ui-sref="{{item.url}}" title="{{item.title}}">
 					<span>{{item.title}}</span>
 				</a>

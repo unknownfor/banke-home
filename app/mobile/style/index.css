@@ -184,17 +184,15 @@ html {
 .banner-wrapper .banner-items-container li {
   height: 47.5px;
   line-height: 47.5px;
-  padding: 0 5px;
   border-bottom: 1px solid #fff;
 }
 .banner-wrapper .banner-items-container li a > span {
   cursor: pointer;
-  padding: 2px 10px;
   color: #383d43;
   font-size: 16px;
 }
 .banner-wrapper .banner-items-container li:last-child {
-  margin-right: 0px;
+  border-bottom: none;
 }
 .banner-wrapper .banner-items-container:before {
   content: "";
