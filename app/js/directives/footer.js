@@ -1,5 +1,5 @@
 /**
- * Created by jimmy on 16/9/11.
+ * Created  on 16/9/11.
  */
 define(['app'],function(app){
     app.directive('footer',['commonService',function(commonService){
@@ -19,8 +19,6 @@ define(['app'],function(app){
                 commonService.getData(allParas);
             }
         }
-
-
     }]);
 
     app.directive('mfooter',['commonService',function(commonService){

@@ -15,6 +15,7 @@ requirejs.config({
 
         errortip:'directives/errortip',
         footer:'directives/footer',
+        header:'directives/header',
         myUploadFile:'directives/myuploadfile',
 
         homeCtrl:'controllers/homectrl',

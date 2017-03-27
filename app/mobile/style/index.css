@@ -163,7 +163,6 @@ html {
   background-size: 24px 18.4px;
 }
 .banner-wrapper .banner-items-container {
-  display: none;
   border-radius: 8px;
   position: absolute;
   right: 22px;
@@ -293,6 +292,7 @@ html {
   height: 110px;
 }
 .footer-contact {
+  padding-bottom: 20px;
   font-size: 12px;
   text-align: center;
 }
@@ -1255,6 +1255,9 @@ img {
   margin-top: 45px;
   margin-bottom: 45px;
 }
+.org-content {
+  padding: 0 25px;
+}
 .orgdetail-head {
   margin: 90px auto 20px auto;
   width: 80px;
@@ -1264,6 +1267,16 @@ img {
   display: inline-block;
   max-width: 80px;
   height: 80px;
+}
+.org-box {
+  position: relative;
+  margin-bottom: 27px;
+}
+.org-box #org-box-img {
+  position: absolute;
+  top: 95px;
+  left: 0px;
+  right: 0px;
 }
 .org-box .org-detail-box {
   letter-spacing: 1px;
@@ -1315,6 +1328,7 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 20px;
 }
 .org-box .org-album .album-li {
   width: 150px;
@@ -1331,8 +1345,66 @@ img {
   width: 150px;
   height: 50px;
 }
-.org-content {
-  padding: 0 25px;
+.middle-banner {
+  background-color: #fae63b;
+  height: 50px;
+  text-align: center;
+  line-height: 55px;
+}
+.middle-banner > img {
+  display: inline-block;
+  max-width: 60%;
+}
+.class-list {
+  position: relative;
+}
+.class-list .class-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.class-list .class-box .class-img {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50px;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+}
+.class-list .class-box .class-img > img {
+  width: 45px;
+  height: 45px;
+  border-radius: 15px;
+}
+.class-list .class-detail .class-price .class-name .c-name {
+  font-size: 16px;
+  color: #000000;
+}
+.class-list .class-detail .class-price .class-name .save {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.class-list .class-detail .class-price .class-name .save-num {
+  font-size: 14px;
+  color: #fa4535;
+}
+.class-list .class-detail .class-price .class-deal {
+  color: #9b9b9b;
+  font-size: 14px;
+}
+.class-list .class-detail .class-price .class-deal .final-price {
+  color: #fa4535;
+}
+.class-list .class-detail .class-info {
+  color: #9a9a9a;
+  line-height: 22px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .new {
   width: 640px;

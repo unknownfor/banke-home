@@ -6,6 +6,7 @@ define('router',[
     'cookies',
 
     'footer',
+    'header',
 
     'homeCtrl',
     'joinCtrl',
