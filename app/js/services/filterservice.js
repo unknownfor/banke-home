@@ -18,6 +18,9 @@ define(['app'],function(app){
                 if(!formatStr){
                     formatStr='yyyy-MM-dd';
                 }
+                if(item.indexOf('-')>=0) {
+                    item=item.replace(/-/g,'/');
+                }
                 return new Date(item).format(formatStr);
             }else{
                 return null;
