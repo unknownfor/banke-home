@@ -13,8 +13,8 @@
 	</div>
 	<ul class="banner-items-container"  ng-show="visible">
 	<!--<ul class="banner-items-container"  ng-show="visible" ng-touchend="controlUlBox()">-->
-			<li ng-repeat="item in menus">
-				<a ui-sref="{{item.url}}" title="{{item.title}}">
+			<li ng-repeat="item in menus" ng-class="{selected:MenuSelectedIndex==$index}">
+				<a class="section" ui-sref="{{item.url}}" title="{{item.title}}">
 					<span>{{item.title}}</span>
 				</a>
 			</li>

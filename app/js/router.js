@@ -24,17 +24,33 @@ define('router',[
         $rootScope.$on('$stateChangeStart',function(event,toState,toParams,fromState,fromParams) {
             $rootScope.footerFlag=true;  //
             var name=toState.name,menuIndex=0;
+            //判断来源是否是手机
             if(getDeviceType().mobile){
                 if(name.indexOf('m')!=0) {
                     $location.path('/mhome').replace();  //
                 }
-                return;
+                // return;
+                switch (name){
+                    case 'mhome':
+                    case '':
+                        break;
+                    case 'morg':
+                    case 'morgdetail':
+                        menuIndex=1;
+                        break;
+                    case 'mjoin':
+                        menuIndex=2;
+                        break;
+                    default :
+                        menuIndex=3;
+                        break;
+                }
+                $rootScope.MenuSelectedIndex=menuIndex;
             }
             switch (name){
                 case 'home':
                 case '':
                     break;
-
                 case 'org':
                 case 'orgdetail':
                     menuIndex=1;
