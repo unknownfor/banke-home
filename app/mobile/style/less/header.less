@@ -66,16 +66,20 @@
     right: 22px;
     top: 70px;
     background-color: #fde512;
-    width: 120px;
-    height: @bh;
+	  .size(120px,@bh);
     flex-direction: row;
+    align-items: left;
     align-items: left;
 	  text-align: center;
     li {
+		width: 120px;
 		height: @bh/4;
 		line-height: @bh/4;
 		border-bottom: 1px solid #fff;
-      a {
+      .section {
+		  width: 100%;
+		  height: @bh/4;
+		  display: inline-block;
         > span {
           cursor: pointer;
 			color: @fColor;
