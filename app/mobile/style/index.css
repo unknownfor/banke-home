@@ -181,8 +181,6 @@ html {
   right: 22px;
   top: 70px;
   background-color: #fde512;
-  width: 120px;
-  height: 190px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -196,13 +194,13 @@ html {
 }
 .banner-wrapper .banner-items-container li {
   width: 120px;
-  height: 47.5px;
-  line-height: 47.5px;
+  height: 45px;
+  line-height: 45px;
   border-bottom: 1px solid #fff;
 }
 .banner-wrapper .banner-items-container li .section {
   width: 100%;
-  height: 47.5px;
+  height: 45px;
   display: inline-block;
 }
 .banner-wrapper .banner-items-container li .section > span {
