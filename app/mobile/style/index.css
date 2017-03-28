@@ -606,10 +606,6 @@ img {
   margin-top: 45px;
   font-size: 0;
 }
-.home-wrapper .home-img-box .home-img {
-  margin-left: 15px;
-  margin-right: 15px;
-}
 @media screen and (max-width: 375px) {
   .home-first .home-p .second-p {
     font-size: 11px;
