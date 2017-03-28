@@ -9,7 +9,6 @@ define(['app'],function(app){
             replace:true,
             link:function($scope,$element,$attrs){
                 $scope.year=new Date().getFullYear();
-                alert($scope.year);
                 var allParas = {
                     url: window.globalObj.restUrl + 'reports',
                     type: 'get',
@@ -29,7 +28,6 @@ define(['app'],function(app){
             replace:true,
             link:function($scope,$element,$attrs){
                 $scope.year=new Date().getFullYear();
-                alert($scope.year);
                 var allParas = {
                     url: window.globalObj.restUrl + 'reports',
                     type: 'get',
