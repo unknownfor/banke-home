@@ -703,7 +703,7 @@ html {
   margin-bottom: 10px;
 }
 .join-head .join-info .join-head-btn {
-  cursor: pointer;
+  pointer-events: none;
   margin-top: 16px;
   text-align: center;
   line-height: 45px;
@@ -1152,6 +1152,7 @@ html {
   letter-spacing: 1px;
 }
 .partner-first #first {
+  pointer-events: none;
   background-color: #ffeb3b;
 }
 .partner-second {
