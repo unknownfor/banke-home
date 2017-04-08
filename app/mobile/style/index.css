@@ -951,6 +951,173 @@ img {
   font-size: 16px;
   color: #a9a9a9;
 }
+.register {
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  background-color: rgba(234, 237, 236, 0.8);
+}
+.register .registered-box-join {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -150px;
+  background-color: #ffeb3b;
+  border-radius: 25px;
+}
+.register .registered-box-join #close {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  text-align: center;
+  width: 26px;
+  height: 35px;
+  background-color: #ffc045;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: #ffeb3b;
+  font-size: 16px;
+  line-height: 35px;
+}
+.register .registered-box-join .registered-form {
+  margin: 40px 25px 10px 25px;
+}
+.register .registered-box-join .registered-form .registered-head {
+  display: inline-block;
+  color: #383d43;
+  font-size: 12px;
+  margin-bottom: 28px;
+}
+.register .registered-box-join .registered-form .registered-head .box-slogen {
+  display: inline-block;
+  width: 39px;
+  height: 18px;
+  background: url("../../img/join/sprite.png") no-repeat -49px -67px;
+  -webkit-background-size: 295px 208px;
+  background-size: 295px 208px;
+}
+.register .registered-box-join .registered-form .registered-head #dot {
+  border-radius: 4px;
+  height: 4px;
+  width: 4px;
+  background-color: #383d43;
+  margin: 0 8px 0 5px;
+  display: inline-block;
+  vertical-align: 3px;
+}
+.register .registered-box-join .registered-form .registered-head .head-txt {
+  display: inline-block;
+  vertical-align: 5px;
+  letter-spacing: 1px;
+}
+.register .registered-box-join .registered-form .regbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.register .registered-box-join .registered-form .instruction {
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 10px #ffc045;
+  box-shadow: 0 0 10px #ffc045;
+  margin-bottom: 12px;
+  width: 208px;
+  height: 99px;
+}
+.register .registered-box-join .registered-form .instruction > i {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #969696;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.register .registered-box-join .registered-form .instruction > textarea {
+  border-radius: 25px;
+  height: 85px;
+  width: 208px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #eee;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.register .registered-box-join .registered-form .box {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px #ffc045;
+  box-shadow: 0 0 10px #ffc045;
+  margin-bottom: 12px;
+}
+.register .registered-box-join .registered-form .box.box-info {
+  width: 270px;
+}
+.register .registered-box-join .registered-form .box.box-info > input {
+  width: 208px;
+}
+.register .registered-box-join .registered-form .box > i {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #969696;
+  margin-top: 6px;
+  margin-left: 12px;
+}
+.register .registered-box-join .registered-form .box > input {
+  border-radius: 25px;
+  height: 32px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #eee;
+  padding-left: 40px;
+}
+.register .registered-box-join .submit-box {
+  text-align: center;
+}
+.register .registered-box-join .registered-btn {
+  display: inline-block;
+  text-align: center;
+  width: 208px;
+  height: 36px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 36px;
+  border-radius: 50px;
+  background-color: #ffc045;
+}
+.register .registered-box-join .registered-bottom {
+  margin-top: 20px;
+  max-width: 720px;
+  display: inline-block;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.city {
+  padding-left: 40px;
+  outline: none;
+  height: 36px;
+  width: 250px;
+  border-radius: 50px;
+  border: #bfccdc 1px solid;
+  display: inline-block;
+  /*很关键：将默认的select选择框样式清除*/
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-right: 36px;
+  /*在选择框的最右侧中间显示小箭头图片
+  取消center transparent 属性*/
+  background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right;
+  background-color: #FFFFFF;
+}
 .info-box {
   text-align: center;
   color: #383d43;
