@@ -320,24 +320,24 @@
           width: @inputW;
           height: @insH + 15px;
           > i {
-            display: inline-block;
+            z-index: 888;
+            display: block;
             position: absolute;
-            font-size: 20px;
+            font-size: 18px;
             color: #969696;
-            margin-top: 12px;
+            margin-top: 7px;
             margin-left: 12px;
           }
           > textarea {
             border-radius: @bRadius;
-            height: @insH;
-            width: @inputW - 42px;
+            height: @insH + 9px;
+            width: @inputW - 27px;
             font-size: 14px;
             background-color: #FFFFFF;
             border: 1px solid #eee;
             padding-left: 40px;
-            padding-top: 10px;
+            padding-top: 7px;
           }
-
         }
         //输入框统一样式
         .box {
@@ -353,7 +353,7 @@
           > i {
             display: block;
             position: absolute;
-            font-size: 20px;
+            font-size: 18px;
             color: #969696;
             margin-top: 4px;
             margin-left: 12px;
@@ -380,7 +380,7 @@
         line-height: 36px;
         border-radius: 50px;
         background-color: @bColor;
-        //border: 1px solid rgba(238,238,238,0);
+        border: 1px solid rgba(238,238,238,0);
       }
     }
   }

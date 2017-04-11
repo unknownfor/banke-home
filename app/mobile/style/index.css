@@ -1034,22 +1034,23 @@ img {
   height: 85px;
 }
 .join-view .register .registered-box-join .registered-form .instruction > i {
-  display: inline-block;
+  z-index: 888;
+  display: block;
   position: absolute;
-  font-size: 20px;
+  font-size: 18px;
   color: #969696;
-  margin-top: 12px;
+  margin-top: 7px;
   margin-left: 12px;
 }
 .join-view .register .registered-box-join .registered-form .instruction > textarea {
   border-radius: 25px;
-  height: 70px;
-  width: 208px;
+  height: 79px;
+  width: 223px;
   font-size: 14px;
   background-color: #FFFFFF;
   border: 1px solid #eee;
   padding-left: 40px;
-  padding-top: 10px;
+  padding-top: 7px;
 }
 .join-view .register .registered-box-join .registered-form .box {
   border-radius: 20px;
@@ -1066,7 +1067,7 @@ img {
 .join-view .register .registered-box-join .registered-form .box > i {
   display: block;
   position: absolute;
-  font-size: 20px;
+  font-size: 18px;
   color: #969696;
   margin-top: 4px;
   margin-left: 12px;
@@ -1092,6 +1093,7 @@ img {
   line-height: 36px;
   border-radius: 50px;
   background-color: #ffc045;
+  border: 1px solid rgba(238, 238, 238, 0);
 }
 .join-view .city {
   padding-left: 40px;
