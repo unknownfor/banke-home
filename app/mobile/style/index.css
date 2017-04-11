@@ -1045,7 +1045,7 @@ img {
 .join-view .register .registered-box-join .registered-form .instruction > textarea {
   border-radius: 25px;
   height: 79px;
-  width: 223px;
+  width: 206px;
   font-size: 14px;
   background-color: #FFFFFF;
   border: 1px solid #eee;
@@ -1112,9 +1112,6 @@ img {
     取消center transparent 属性*/
   background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right;
   background-color: #FFFFFF;
-}
-.partner-view .home-wrapper {
-  position: relative;
 }
 .partner-view .home-wrapper .info-box {
   text-align: center;
@@ -1607,15 +1604,6 @@ img {
   line-height: 36px;
   border-radius: 50px;
   background-color: #ffc045;
-}
-.partner-view .home-wrapper .register-partner .registered-box .registered-bottom-partner {
-  width: 468px;
-  height: 93px;
-  background: url("../../img/partner/bg_5.png");
-  -webkit-background-size: 468px 93px;
-  background-size: 468px 93px;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
 }
 .org-content {
   padding: 0 25px;
