@@ -1113,6 +1113,9 @@ img {
   background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right;
   background-color: #FFFFFF;
 }
+.partner-view {
+  position: relative;
+}
 .partner-view .home-wrapper .info-box {
   text-align: center;
   color: #383d43;
@@ -1440,7 +1443,6 @@ img {
   margin-bottom: 45px;
 }
 .partner-view .home-wrapper .register-partner {
-  display: block;
   z-index: 10000;
   position: fixed;
   top: 0px;
