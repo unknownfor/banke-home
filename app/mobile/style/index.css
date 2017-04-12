@@ -1575,6 +1575,10 @@ img {
   background-color: #ffc045;
   color: #FFFFFF;
 }
+.partner-view .home-wrapper .register-partner .registered-box .registered-form .advantage .advantage-box .advantage-tips.selected {
+  background-color: #ffc045;
+  color: #FFFFFF;
+}
 .partner-view .home-wrapper .register-partner .registered-box .registered-form .education {
   padding-left: 20px;
   outline: none;
@@ -1599,11 +1603,11 @@ img {
 .partner-view .home-wrapper .register-partner .registered-box .registered-btn {
   display: inline-block;
   text-align: center;
-  width: 270px;
-  height: 36px;
+  width: 227px;
+  height: 25px;
   color: #FFFFFF;
-  font-size: 16px;
-  line-height: 36px;
+  font-size: 14px;
+  line-height: 25px;
   border-radius: 50px;
   background-color: #ffc045;
 }
