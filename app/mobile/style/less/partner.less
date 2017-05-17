@@ -1,7 +1,10 @@
 @pAddress: url('http://pic.hisihi.com/2017-03-27/1490607026321963.png');
 .partner-view {
-  position: relative;
+  @inputW:227px;
+  @inputH:25px;
+  @bRadius: 25px;
   .home-wrapper {
+    position: relative;
     .info-box {
       text-align: center;
       color: @fColor;
@@ -307,15 +310,13 @@
 
     }
     .register-partner {
-      @inputW:227px;
-      @inputH:25px;
-      @bRadius: 25px;
-      z-index: 10000;
+      max-width: 900px;
+      height: 100%;
       position: fixed;
       top: 0px;
       left: 0px;
       right: 0px;
-      height: 100%;
+      z-index: 100000000;
       background-color: rgba(234,237,236,0.8);
       .registered-box {
         position: absolute;

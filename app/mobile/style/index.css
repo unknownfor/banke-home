@@ -1113,7 +1113,7 @@ img {
   background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right;
   background-color: #FFFFFF;
 }
-.partner-view {
+.partner-view .home-wrapper {
   position: relative;
 }
 .partner-view .home-wrapper .info-box {
@@ -1443,12 +1443,13 @@ img {
   margin-bottom: 45px;
 }
 .partner-view .home-wrapper .register-partner {
-  z-index: 10000;
+  max-width: 900px;
+  height: 100%;
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
-  height: 100%;
+  z-index: 100000000;
   background-color: rgba(234, 237, 236, 0.8);
 }
 .partner-view .home-wrapper .register-partner .registered-box {

@@ -5,6 +5,18 @@ define([
     'app'
 ], function(app) {
     app.controller('joinCtrl', ['$scope','commonService',function($scope,cService) {
+
+        var token = {
+            url:window.globalObj.restUrl+'token',
+            type:'get',
+            callback: function(result){
+                result;
+            }
+        }
+        $scope=token;
+        cService.getData(token);
+
+
         var allParas = {
             url: window.globalObj.restUrl + 'orgs',
             type: 'get',
@@ -33,17 +45,17 @@ define([
 
         //提交表单数据
         $scope.formData={
-            // name:'23333',
-            // city:'455555',
-            // contact:'67777',
-            // address:'890',
-            // tel_phone:'18140662282',
-            // introduce:'12345'
+            name:'23333',
+            city:'455555',
+            contact:'67777',
+            address:'890',
+            tel_phone:'18140662282',
+            address:'南湖大道123',
+            introduce:'12345'
         }
         $scope.submitForm=function(){
             var allParas = {
                 url: window.globalObj.restUrl + 'addorgapplyfor',
-                // url: 'http://b.cn/bankehome/addorgapplyfor',
                 type: 'post',
                 data:$scope.formData,
                 callback: function (result) {

@@ -12,5 +12,6 @@
 		 };
 	 	 var app = ng.module('app',['ui.router','angularFileUpload','ngCookies','ngTouch']);
 
+
 	 	return app;
  	});
