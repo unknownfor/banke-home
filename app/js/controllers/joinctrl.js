@@ -5,16 +5,15 @@ define([
     'app'
 ], function(app) {
     app.controller('joinCtrl', ['$scope','commonService',function($scope,cService) {
-
-        var token = {
+        var token;
+        var getTokenParam = {
             url:window.globalObj.restUrl+'token',
             type:'get',
             callback: function(result){
-                result;
+                token=result;
             }
         }
-        $scope=token;
-        cService.getData(token);
+        cService.getData(getTokenParam);
 
 
         var allParas = {
@@ -42,22 +41,22 @@ define([
             $scope.visible=flag;
         }
 
-
-        //提交表单数据
-        $scope.formData={
-            name:'23333',
-            city:'455555',
-            contact:'67777',
-            address:'890',
-            tel_phone:'18140662282',
-            address:'南湖大道123',
-            introduce:'12345'
-        }
         $scope.submitForm=function(){
+            //提交表单数据
+            $scope.formData={
+                _token:token.data,
+                name:'23333',
+                city:'455555',
+                contact:'67777',
+                address:'890',
+                tel_phone:'18140662282',
+                address:'南湖大道123',
+                introduce:'12345'
+            }
             var allParas = {
                 url: window.globalObj.restUrl + 'addorgapplyfor',
                 type: 'post',
-                data:$scope.formData,
+                param:$scope.formData,
                 callback: function (result) {
                     result;
                 }
