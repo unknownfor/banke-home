@@ -43,19 +43,20 @@ define([
 
         $scope.submitForm=function(){
             //提交表单数据
-            $scope.formData={
-                _token:token.data,
-                name:'23333',
-                city:'455555',
-                contact:'67777',
-                address:'890',
-                tel_phone:'18140662282',
-                address:'南湖大道123',
-                introduce:'12345'
-            }
+            // $scope.formData={
+                // _token:token.data,
+                // name:'23333',
+                // city:'455555',
+                // contact:'67777',
+                // address:'890',
+                // tel_phone:'18140662282',
+                // address:'南湖大道123',
+                // introduce:'12345'
+            // }
             var allParas = {
                 url: window.globalObj.restUrl + 'addorgapplyfor',
                 type: 'post',
+                _token:token.data,
                 param:$scope.formData,
                 callback: function (result) {
                     result;
