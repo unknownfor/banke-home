@@ -115,12 +115,8 @@
                         <div class="regbox">
                             <div class="box box-info">
                                 <i class="iconfont icon-city1 city-icon"></i>
-                                <select class="city" ng-model="formData.city">
-                                    <option value="武汉">武汉</option>
-                                    <option value="北京">北京</option>
-                                    <option value="上海">上海</option>
-                                    <option value="广州">广州</option>
-                                    <option value="深圳">深圳</option>
+                                <select class="city" required="required" ng-model="formData.city">
+                                    <option ng-repeat="item in cities" value="item.name">{{item.name}}</option>
                                 </select>
                             </div>
                             <div class="box box-info">
@@ -149,7 +145,7 @@
 
                         <div class="instruction">
                             <i class="iconfont icon-write test-icon"></i>
-                            <textarea type="text" placeholder="机构简介" required="required" max-lenght="200" ng-model="formData.introduce" name="introduce">{{formData.introduce}}</textarea>
+                            <textarea type="text" placeholder="机构简介" required="required" max-lenght="200" ng-model="formData.introduce" name="introduce"></textarea>
                         </div>
                         <div class="submit-box"><input type="submit" class="registered-btn" name="提交"></div>
                     </form>

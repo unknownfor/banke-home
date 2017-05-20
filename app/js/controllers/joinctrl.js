@@ -5,16 +5,6 @@ define([
     'app'
 ], function(app) {
     app.controller('joinCtrl', ['$scope','commonService',function($scope,cService) {
-        // var token;
-        // var getTokenParam = {
-        //     url:window.globalObj.restUrl+'token',
-        //     type:'get',
-        //     callback: function(result){
-        //         token=result;
-        //     }
-        // }
-        // cService.getData(getTokenParam);
-
 
         var allParas = {
             url: window.globalObj.restUrl + 'orgs',
@@ -41,12 +31,25 @@ define([
             $scope.visible=flag;
         }
 
+        $scope.cities = [
+            {name:'武汉',id:'1'},
+            {name:'深圳',id:'2'},
+            {name:'北京',id:'3'},
+            {name:'上海',id:'4'},
+            {name:'广州',id:'5'},
+            {name:'杭州',id:'6'}
+        ];
+        //id的值，区分类型
+        // $scope.selected='1';
+        //如果想要第一个值
+        // $scope.selected=$scope.cities[0].id;
+
+
         $scope.submitForm=function(){
             //提交表单数据
             var allParas = {
                 url: window.globalObj.restUrl + 'addorgapplyfor',
                 type: 'post',
-                // _token:token.data,
                 param:$scope.formData,
                 callback: function (result) {
                     result;

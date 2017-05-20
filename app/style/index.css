@@ -1077,6 +1077,8 @@ html {
   line-height: 36px;
   border-radius: 50px;
   background-color: #ffc045;
+  border: 1px solid rgba(238, 238, 238, 0);
+  border: none;
 }
 .registered .registered-box-join .registered-bottom {
   margin-top: 20px;
