@@ -39,10 +39,6 @@ define([
             {name:'广州',id:'5'},
             {name:'杭州',id:'6'}
         ];
-        //id的值，区分类型
-        // $scope.selected='1';
-        //如果想要第一个值
-        // $scope.selected=$scope.cities[0].id;
 
 
         $scope.submitForm=function(){

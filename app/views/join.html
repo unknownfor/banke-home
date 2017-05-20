@@ -115,8 +115,8 @@
                         <div class="regbox">
                             <div class="box box-info">
                                 <i class="iconfont icon-city1 city-icon"></i>
-                                <select class="city" required="required" ng-model="formData.city">
-                                    <option ng-repeat="item in cities" value="item.name">{{item.name}}</option>
+                                <select class="city" required="required" ng-model="formData.city" ng-init="formData.city = '武汉'">
+                                    <option ng-repeat="item in cities" value="{{item.name}}">{{item.name}}</option>
                                 </select>
                             </div>
                             <div class="box box-info">
@@ -128,7 +128,7 @@
                         <div class="regbox">
                             <div class="box box-info">
                                 <i class="iconfont icon-people test-icon"></i>
-                                <input type="text" placeholder="联系人" ng-maxlength="5" required="required" ng-model='formData.contact' name="contact"/>
+                                <input type="text" placeholder="联系人" required="required" ng-model='formData.contact' name="contact"/>
                             </div>
                             <div class="box box-info">
                                 <i class="iconfont icon-contact test-icon"></i>
