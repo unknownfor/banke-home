@@ -703,7 +703,7 @@ html {
   margin-bottom: 10px;
 }
 .join-head .join-info .join-head-btn {
-  cursor: pointer;
+  pointer-events: none;
   margin-top: 16px;
   text-align: center;
   line-height: 45px;
@@ -1077,8 +1077,6 @@ html {
   line-height: 36px;
   border-radius: 50px;
   background-color: #ffc045;
-  border: 1px solid rgba(238, 238, 238, 0);
-  border: none;
 }
 .registered .registered-box-join .registered-bottom {
   margin-top: 20px;
@@ -1463,7 +1461,6 @@ html {
   border-bottom: 1px solid #fff;
 }
 .partner-eighth .eighth-bottom #eight {
-  pointer-events: none;
   background-color: #FFEB3E;
   margin-bottom: 74px;
 }

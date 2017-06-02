@@ -1,244 +1,405 @@
-@jAddress: url("../../mobile/img/join/sprite.png") no-repeat;
-.join-first {
-  position: relative;
-  text-align: center;
-  letter-spacing: 1px;
-  .first-info {
-    position: absolute;
-    top: 70px;
-    left: 0px;
-    right: 0px;
-    >h2 {
-      color: #FFE712;
-    }
-    .second-p{
-      font-size: 14px;
-      color: #FFFFFF;
-      margin-bottom: 15px;
-      >span {
-        color: #ffae00;
+.join-view {
+  @jAddress: url("../../mobile/img/join/sprite.png") no-repeat;
+  //输入框高度
+  @inputH:27px;
+  @inputW: 250px;
+  .join-first {
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    .first-info {
+      position: absolute;
+      top: 70px;
+      left: 0px;
+      right: 0px;
+      >h2 {
+        color: #FFE712;
       }
-    }
-    .txt {
-      font-size: 12px;
-      color: #fbfbfb;
-      padding-bottom: 5px;
-      letter-spacing: 0px;
-    }
-    .first-btn {
-      margin-top: 15px;
-      @btnH:32px;
-      font-size: 16px;
-      color: #FFFFFF;
-      display: inline-block;
-      .size(108px,@btnH);
-      border-radius: 50px;
-      background-color: #FF8519;
-      line-height: @btnH;
-    }
-  }
-}
-.join-second {
-  text-align: center;
-  margin-top: 45px;
-  .second-title {
-    display: inline-block;
-    .title-img {
-      .size(32px,32px);
-      display: inline-block;
-      background: @jAddress -344px -6px;
-      background-size: 537px*0.7 102px*0.7;
-    }
-    .title-txt {
-      margin-left: 5px;
-      font-size: 20px;
-      vertical-align: 8px;
-      color: #4b4e4d;
-    }
-  }
-  .second-box {
-    display: flex;
-    margin-top: 40px;
-    .join-second-box {
-      flex: 1;
-      width: 225px;
-      .box-pic {
-        display: inline-block;
-        background: @jAddress;
-        background-size: 537px*0.6 102px*0.6;
-        &.service {
-          .size(52px,54px);
-          background-position: -119px -4px;
-        }
-        &.management {
-          .size(59px,54px);
-          background-position: -229px 0px;
-        }
-        &.brand {
-          .size(55px,54px);
-          background-position: -63px -5px;
-        }
-        &.spread {
-          .size(53px,54px);
-          background-position: -174px -0px;
-        }
-        &.admissions {
-          .size(62px,60px);
-          background-position: 0px -3px;
-        }
-      }
-      .box-title {
-        font-size: 16px;
-        color: #383d43;
-        margin-bottom: 14px;
-      }
-      .box-detail {
-        font-size: 12px;
-        color: #9b9b9b;
-      }
-    }
-    &.second-box {
-      margin-bottom: 40px;
-    }
-  }
-
-}
-.join-third {
-  height: 150px;
-  background-color: #FFE712;
-  text-align: center;
-  line-height: 210px;
-  .join-third-pic {
-    display: inline-block;
-    .size(408px*0.7,99px*0.7);
-    background: url("../../mobile/img/join/advantage.png") no-repeat;
-    background-size: 408px*0.7 99px*0.7;
-  }
-}
-.join-fourth {
-  position: relative;
-  text-align: left;
-  .fourth-info-box {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    padding: 0 25px;
-    .fourth-box {
-      color: @fColor;
-      margin-top: 14%;
-      .fourth-title {
+      .second-p{
         font-size: 14px;
-        margin-bottom: 10px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        >span {
+          color: #ffae00;
+        }
       }
-      .fourth-title:before {
-        content: "";
-        margin-right:10px;
-        text-align: center;
-        background: #ff8712;
-        border-radius: 8px;
-        height: 8px;
-        width: 8px;
-        vertical-align: 2px;
-        display: inline-block;
-      }
-      .fourth-info {
+      .txt {
         font-size: 12px;
+        color: #fbfbfb;
+        padding-bottom: 5px;
+        letter-spacing: 0px;
+      }
+      .first-btn {
+        margin-top: 15px;
+        @btnH:32px;
+        font-size: 16px;
+        color: #FFFFFF;
+        display: inline-block;
+        .size(108px,@btnH);
+        border-radius: 50px;
+        background-color: #FF8519;
+        line-height: @btnH;
       }
     }
   }
-}
-.join-fifth {
-  margin-top: 45px;
-  margin-bottom: 45px;
-  padding: 0 25px;
-  text-align: center;
-  .fifth-title {
-    .title-img{
-      .size(22px,25px);
+  .join-second {
+    text-align: center;
+    margin-top: 45px;
+    .second-title {
       display: inline-block;
-      background: @jAddress -344px -44px;
-      background-size: 537px*0.7 102px*0.7;
+      .title-img {
+        .size(32px,32px);
+        display: inline-block;
+        background: @jAddress -344px -6px;
+        background-size: 537px*0.7 102px*0.7;
+      }
+      .title-txt {
+        margin-left: 5px;
+        font-size: 20px;
+        vertical-align: 8px;
+        color: #4b4e4d;
+      }
     }
-    .title-txt {
-      margin-left: 5px;
-      font-size: 20px;
+    .second-box {
+      display: flex;
+      margin-top: 40px;
+      .join-second-box {
+        flex: 1;
+        width: 225px;
+        .box-pic {
+          display: inline-block;
+          background: @jAddress;
+          background-size: 537px*0.6 102px*0.6;
+          &.service {
+            .size(52px,54px);
+            background-position: -119px -4px;
+          }
+          &.management {
+            .size(59px,54px);
+            background-position: -229px 0px;
+          }
+          &.brand {
+            .size(55px,54px);
+            background-position: -63px -5px;
+          }
+          &.spread {
+            .size(53px,54px);
+            background-position: -174px -0px;
+          }
+          &.admissions {
+            .size(62px,60px);
+            background-position: 0px -3px;
+          }
+        }
+        .box-title {
+          font-size: 16px;
+          color: #383d43;
+          margin-bottom: 14px;
+        }
+        .box-detail {
+          font-size: 12px;
+          color: #9b9b9b;
+        }
+      }
+      &.second-box {
+        margin-bottom: 40px;
+      }
+    }
 
-      vertical-align: 4px;
-      color: #4b4e4d;
+  }
+  .join-third {
+    height: 150px;
+    background-color: #FFE712;
+    text-align: center;
+    line-height: 210px;
+    .join-third-pic {
+      display: inline-block;
+      .size(408px*0.7,99px*0.7);
+      background: url("../../mobile/img/join/advantage.png") no-repeat;
+      background-size: 408px*0.7 99px*0.7;
     }
   }
-  .fifth-p {
-    color: #767676;
-    font-size: 14px;
-  }
-  .fifth-ul {
-    margin: 0 auto;
-    .fifth-li-org {
-      display: inline-block;
-      vertical-align: top;
-      padding: 4px;
-      .size(250px,225px);
-      //.size(300px,280px);
-      margin-top: 55px;
-      max-height: 450px;
-      border-radius: 2px;
-      border: 1px solid rgba(188,188,188,0.5);
-      background-color: @mColor;
-      .org-logo {
-        text-align: center;
-        font-size: 0;
-        height: 88px;
-        >img {
-          height: 88px;
-          width: 100%;
+  .join-fourth {
+    position: relative;
+    text-align: left;
+    .fourth-info-box {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      padding: 0 25px;
+      .fourth-box {
+        color: @fColor;
+        margin-top: 14%;
+        .fourth-title {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .fourth-title:before {
+          content: "";
+          margin-right:10px;
+          text-align: center;
+          background: #ff8712;
+          border-radius: 8px;
+          height: 8px;
+          width: 8px;
+          vertical-align: 2px;
           display: inline-block;
         }
+        .fourth-info {
+          font-size: 12px;
+        }
       }
-      .org-box {
-        text-align: left;
-        color: #383d43;
-        margin: 10px;
-        .org-name {
-          .txt-ellipsis-p(1);
-          font-size:15px;
-          padding-bottom: 12px;
-          color: #000;
-        }
-        .org-info {
-          line-height: 22px;
-          font-size: 10px;
-          margin-bottom: 10px;
-          .txt-ellipsis-p(3);
-        }
+    }
+  }
+  .join-fifth {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    padding: 0 25px;
+    text-align: center;
+    .fifth-title {
+      .title-img{
+        .size(22px,25px);
+        display: inline-block;
+        background: @jAddress -344px -44px;
+        background-size: 537px*0.7 102px*0.7;
+      }
+      .title-txt {
+        margin-left: 5px;
+        font-size: 20px;
 
+        vertical-align: 4px;
+        color: #4b4e4d;
       }
-      .org-bottom {
-        margin: 0 10px;
-        font-size: 10px;
-        .org-contactor{
-          float: left;
+    }
+    .fifth-p {
+      color: #767676;
+      font-size: 14px;
+    }
+    .fifth-ul {
+      margin: 0 auto;
+      .fifth-li-org {
+        display: inline-block;
+        vertical-align: top;
+        padding: 4px;
+        .size(250px,225px);
+        //.size(300px,280px);
+        margin-top: 55px;
+        max-height: 450px;
+        border-radius: 2px;
+        border: 1px solid rgba(188,188,188,0.5);
+        background-color: @mColor;
+        .org-logo {
+          text-align: center;
+          font-size: 0;
+          height: 88px;
+          >img {
+            height: 88px;
+            width: 100%;
+            display: inline-block;
+          }
         }
+        .org-box {
+          text-align: left;
+          color: #383d43;
+          margin: 10px;
+          .org-name {
+            .txt-ellipsis-p(1);
+            font-size:15px;
+            padding-bottom: 12px;
+            color: #000;
+          }
+          .org-info {
+            line-height: 22px;
+            font-size: 10px;
+            margin-bottom: 10px;
+            .txt-ellipsis-p(3);
+          }
+
+        }
+        .org-bottom {
+          margin: 0 10px;
+          font-size: 10px;
+          .org-contactor{
+            float: left;
+          }
           .visit{
             float: right;
             cursor: pointer;
             font-weight: bold;
             color: #383d43;
           }
+        }
+      }
+    }
+    .fifth-btn {
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      .size(106px,34px);
+      line-height: 34px;
+      border-radius: 50px;
+      border: 1px solid #a9a9a9;
+      text-align: center;
+      font-size: 16px;
+      color: #a9a9a9;
+    }
+  }
+  .register {
+    @bRadius: 25px;
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    background-color: rgba(234,237,236,0.8);
+    .registered-box-join {
+      position: absolute;
+      @boxw:300px;
+      @boxh:420px;
+      top: 50%;
+      left: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      .size(@boxw,@boxh);
+      margin-top: -@boxh/2;
+      margin-left: -@boxw/2;
+      background-color: @mColor;
+      border-radius: @bRadius;
+      #close {
+        cursor: pointer;
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        text-align: center;
+        .size(26px,35px);
+        background-color: @bColor;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: @mColor;
+        font-size: 16px;
+        line-height: 35px;
+      }
+      .registered-form {
+        margin: 20px 25px 10px 25px;
+        .registered-head {
+          display: inline-block;
+          color: @fColor;
+          font-size: 12px;
+          margin-bottom: 20px;
+          .box-slogen {
+            display: inline-block;
+            .size(39px,18px);
+            background: url("../../img/join/sprite.png") no-repeat -49px -67px;
+            background-size: 590px*0.5 416px*0.5;
+          }
+          #dot {
+            border-radius: 4px;
+            height: 4px;
+            width: 4px;
+            background-color: @fColor;
+            margin: 0 8px 0 5px;
+            display: inline-block;
+            vertical-align: 3px;
+          }
+          .head-txt {
+            display: inline-block;
+            vertical-align: 5px;
+            letter-spacing: 1px;
+          }
+        }
+        .regbox {
+          display: flex;
+        }
+        .instruction {
+          @insH:70px;
+          border-radius: @bRadius;
+          box-shadow: 0 0 10px @bColor;
+          margin-bottom: 12px;
+          width: @inputW;
+          height: @insH + 15px;
+          > i {
+            z-index: 888;
+            display: block;
+            position: absolute;
+            font-size: 18px;
+            color: #969696;
+            margin-top: 7px;
+            margin-left: 12px;
+          }
+          > textarea {
+            border-radius: @bRadius;
+            height: @insH + 9px;
+            width: @inputW - 44px;
+            font-size: 14px;
+            background-color: #FFFFFF;
+            border: 1px solid #eee;
+            padding-left: 40px;
+            padding-top: 7px;
+          }
+        }
+        //输入框统一样式
+        .box {
+          border-radius: 20px;
+          box-shadow: 0 0 10px @bColor;
+          margin-bottom: 12px;
+          &.box-info {
+            width: @inputW + 20px;
+            > input {
+              width: @inputW - 42px;
+            }
+          }
+          > i {
+            display: block;
+            position: absolute;
+            font-size: 18px;
+            color: #969696;
+            margin-top: 4px;
+            margin-left: 12px;
+          }
+          > input {
+            border-radius: @bRadius;
+            height: @inputH;
+            font-size: 14px;
+            background-color: #FFFFFF;
+            border: 1px solid #eee;
+            padding-left: 40px;
+          }
+        }
+      }
+      .submit-box {
+        text-align: center;
+      }
+      .registered-btn {
+        display: inline-block;
+        text-align: center;
+        .size(@inputW - 42px,36px);
+        color: #FFFFFF;
+        font-size: 16px;
+        line-height: 36px;
+        border-radius: 50px;
+        background-color: @bColor;
+        border: 1px solid rgba(238,238,238,0);
       }
     }
   }
-  .fifth-btn {
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    .size(106px,34px);
-    line-height: 34px;
+  .city {
+    padding-left: 40px;
+    outline: none;
+    height: @inputH + 2px;
+    width: @inputW;
     border-radius: 50px;
-    border: 1px solid #a9a9a9;
-    text-align: center;
-    font-size: 16px;
-    color: #a9a9a9;
+    border: rgb(191, 204, 220) 1px solid;
+    display: inline-block;
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding-right: 36px;
+    /*在选择框的最右侧中间显示小箭头图片
+    取消center transparent 属性*/
+    background: url("http://pic.hisihi.com/2017-03-08/1488941852442104.png") no-repeat scroll right ;
+    background-color: #FFFFFF;
   }
 }

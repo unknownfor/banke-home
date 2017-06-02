@@ -5,6 +5,7 @@ define([
     'app'
 ], function(app) {
     app.controller('joinCtrl', ['$scope','commonService',function($scope,cService) {
+
         var allParas = {
             url: window.globalObj.restUrl + 'orgs',
             type: 'get',
@@ -30,24 +31,27 @@ define([
             $scope.visible=flag;
         }
 
+        $scope.cities = [
+            {name:'武汉',id:'1'},
+            {name:'深圳',id:'2'},
+            {name:'北京',id:'3'},
+            {name:'上海',id:'4'},
+            {name:'广州',id:'5'},
+            {name:'杭州',id:'6'}
+        ];
 
-        //提交表单数据
-        $scope.formData={
-            name:'23333',
-            city:'455555',
-            contact:'67777',
-            address:'890',
-            tel_phone:'18140662282',
-            introduce:'12345'
-        }
+
         $scope.submitForm=function(){
+            //提交表单数据
             var allParas = {
                 url: window.globalObj.restUrl + 'addorgapplyfor',
-                // url: 'http://b.cn/bankehome/addorgapplyfor',
                 type: 'post',
-                data:$scope.formData,
+                param:$scope.formData,
                 callback: function (result) {
                     result;
+                    var $tips=result.data.msg;
+                    alert($tips);
+                    $scope.visible=false;
                 }
             };
             cService.getData(allParas);
