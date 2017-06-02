@@ -49,7 +49,8 @@ define([
                 param:$scope.formData,
                 callback: function (result) {
                     result;
-                    alert('申请提交成功，请耐心等待客服审核');
+                    var $tips=result.data.msg;
+                    alert($tips);
                     $scope.visible=false;
                 }
             };
