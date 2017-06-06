@@ -715,6 +715,7 @@ img {
   letter-spacing: 0px;
 }
 .join-view .join-first .first-info .first-btn {
+  pointer-events: none;
   margin-top: 15px;
   font-size: 16px;
   color: #FFFFFF;
@@ -1140,6 +1141,7 @@ img {
   font-size: 12px;
 }
 .partner-view .home-wrapper .btn {
+  pointer-events: none;
   text-align: center;
   cursor: pointer;
   display: inline-block;
