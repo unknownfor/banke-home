@@ -43,7 +43,7 @@ $(function () {
 
     $(document).on(window.eventName,'#register-btn.active', function () {
         window.controlLoadingBox(true);
-        var url='/v1.6/share/doenrol',
+        var url='http://test.cms.91banke.com/bankehome/' + 'appoint',
             comment=$('#org-name').val(),
             mobile = $('#phone-num').val(),
             data={
