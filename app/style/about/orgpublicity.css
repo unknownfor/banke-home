@@ -327,14 +327,15 @@ body {
   height: 62px;
 }
 #publicity .box.cooperation .coo-container .coo-org > a .org-box .org-name {
-  width: 62px;
-  height: 20px;
+  text-align: center;
   border-top: 1px solid #c7c7c7;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-height: 25px;
+  font-size: 12px;
 }
 #publicity .box.appointment {
   margin: 15px;
