@@ -97,15 +97,15 @@ body {
       @h: 62px;
       .coo-container {
         display: flex;
-        justify-content: space-between;
+        width: 300px;
+        flex-wrap:wrap;
         margin: 15px;
         .coo-org {
-          width: 22%;
+          flex: 0 0 @h;
+          margin: 0 5px;
           border: 1px solid #c7c7c7;
           position: relative;
           > a {
-            text-align: center;
-            display: inline-block;
             color: #383d43;
             .tip-box {
               position: absolute;
@@ -135,7 +135,6 @@ body {
               }
             }
             .org-box {
-              height: @h+ 20px;
               .org-img {
                 .size (@h,@h);
               }
@@ -145,61 +144,6 @@ body {
                 .txt-ellipsis-p(1);
               }
             }
-          }
-        }
-      }
-      .org-container {
-        display: flex;
-        flex-wrap:wrap;
-        width: 300px;
-        margin: 15px auto;
-        .coo-org {
-          flex: 0 0 @h;
-          border: 1px solid #c7c7c7;
-          position: relative;
-          margin: 0 5px 10px 5px;
-          > a {
-            text-align: center;
-            display: inline-block;
-            color: #383d43;
-            .tip-box {
-              position: absolute;
-              top:0;
-              right: 0;
-              .tip-img {
-                position: relative;
-                @w:74px * 0.5;
-                display: inline-block;
-                .size(@w,@w);
-                background: url("/front/assets/img/orgpublicity/jiaobiao.png");
-                background-size: @w,@w;
-              }
-              .tip-txt {
-                position: absolute !important;
-                top:0;
-                right: 0;
-                width: 30px;
-                color: #fff;
-                text-align: center;
-                line-height: 22px;
-                .txt-ellipsis-p(1);
-                padding-left: 3px;
-                position: relative;
-                transform: rotate(45deg);
-                font-size: 8px;
-              }
-            }
-            .org-box {
-              .org-img {
-                .size (@h,@h);
-              }
-              .org-name {
-                height: 20px;
-                border-top: 1px solid #c7c7c7;
-                .txt-ellipsis-p(1);
-              }
-            }
-
           }
         }
       }
