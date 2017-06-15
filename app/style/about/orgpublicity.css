@@ -50,14 +50,9 @@ input {
   -webkit-appearance: textfield;
   background-color: white;
   -webkit-rtl-ordering: logical;
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
   user-select: text;
   cursor: auto;
   padding: 1px;
-  -webkit-border-image: initial;
-  -o-border-image: initial;
   border-image: initial;
   text-rendering: auto;
   color: initial;
@@ -136,7 +131,6 @@ input {
   margin-left: -80px;
   margin-top: -35px;
   border-radius: 3px;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   color: #fff;
   text-align: center;
@@ -173,13 +167,17 @@ input {
 }
 @keyframes turning {
   to {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
 @-webkit-keyframes turning {
   to {
     -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes turning {
+  to {
+    -moz-transform: rotate(360deg);
   }
 }
 html {
@@ -247,9 +245,7 @@ body {
   top: 80px;
   left: 37%;
   background: url("http://pic.hisihi.com/2017-06-13/1497345957797211.png") no-repeat;
-  -webkit-background-size: 96px 96px;
   background-size: 96px 96px;
-  -webkit-box-shadow: 4px 4px 10px #c7c7c7;
   box-shadow: 4px 4px 10px #c7c7c7;
   width: 95px;
   height: 94px;
@@ -281,22 +277,14 @@ body {
   overflow: hidden;
 }
 #publicity .box.cooperation .coo-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  width: 300px;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 15px;
+  justify-content: space-between;
 }
 #publicity .box.cooperation .coo-container .coo-org {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 62px;
-  -ms-flex: 0 0 62px;
   flex: 0 0 62px;
-  margin: 0 5px;
+  margin-bottom: 10px;
   border: 1px solid #c7c7c7;
   position: relative;
 }
@@ -314,7 +302,6 @@ body {
   width: 37px;
   height: 37px;
   background: url("http://pic.hisihi.com/2017-06-14/1497403685615926.png");
-  -webkit-background-size: 37px, 37px;
   background-size: 37px, 37px;
 }
 #publicity .box.cooperation .coo-container .coo-org > a .tip-box .tip-txt {
@@ -332,8 +319,6 @@ body {
   -webkit-line-clamp: 1;
   padding-left: 3px;
   position: relative;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   font-size: 8px;
 }
@@ -361,9 +346,6 @@ body {
 }
 #publicity .box.appointment .input-box {
   border-radius: 4px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   background-color: #F2F2F2;
   margin: 20px 0;
@@ -372,27 +354,15 @@ body {
   width: 45px;
   height: 45px;
   font-size: 20px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   justify-items: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 #publicity .box.appointment .input-box .register-img.section {
   border-left: 1px solid #c7c7c7;
 }
 #publicity .box.appointment .input-box .register-code {
-  -webkit-box-flex: 3;
-  -webkit-flex: 3;
-  -ms-flex: 3;
   flex: 3;
   border-radius: 4px;
   height: 45px;
