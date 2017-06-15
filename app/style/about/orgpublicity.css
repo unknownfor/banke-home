@@ -293,8 +293,8 @@ body {
 }
 #publicity .box.cooperation .coo-container .coo-org > a .tip-box {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
 }
 #publicity .box.cooperation .coo-container .coo-org > a .tip-box .tip-img {
   position: relative;
