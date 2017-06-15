@@ -283,7 +283,7 @@ body {
   justify-content: space-between;
 }
 #publicity .box.cooperation .coo-container .coo-org {
-  flex: 0 0 62px;
+  flex: 0 0 66px;
   margin-bottom: 10px;
   border: 1px solid #c7c7c7;
   position: relative;
@@ -323,8 +323,8 @@ body {
   font-size: 8px;
 }
 #publicity .box.cooperation .coo-container .coo-org > a .org-box .org-img {
-  width: 62px;
-  height: 62px;
+  width: 66px;
+  height: 66px;
 }
 #publicity .box.cooperation .coo-container .coo-org > a .org-box .org-name {
   text-align: center;
