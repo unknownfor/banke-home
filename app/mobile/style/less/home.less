@@ -49,20 +49,20 @@ img {
           .box-img{
             display: inline-block;
             background: @hAddress;
-            background-size: 483px*0.7 340px*0.7;
+            background-size: 477px*0.7 341px*0.7;
             .size(57px,57px);
             border-radius: 57px;
             &.org {
-              background-position: -7px -5px;
+              background-position: -5px 2px;
             }
             &.price {
-              background-position: -67px -5px;
+              background-position: -70px 2px;
             }
             &.service {
-              background-position: -131px -5px;
+              background-position: -133px 2px;
             }
             &.guarantee {
-              background-position: -196px -4px;
+              background-position: -193px 2px;
             }
           }
         }
@@ -74,10 +74,12 @@ img {
     margin-bottom: 50px;
     text-align: center;
     > span {
-      .size(290px,315px);
+      @h:485px*0.5;
+      @w:486px*0.5;
+      .size(@h,@w);
       display: inline-block;
       background: url("../../mobile/img/home/bg_3.png") no-repeat;
-      background-size: 478px*0.6 530px*0.6;
+      background-size: @h @w;
     }
   }
   .home-fourth {
@@ -128,7 +130,7 @@ img {
       margin: 45px 0px 30px 45px;
       .size(47px,27px);
       display: inline-block;
-      background: @hAddress -376px -24px;
+      background: @hAddress -370px -24px;
     }
     .fifth-img {
       padding-bottom: 20px;
